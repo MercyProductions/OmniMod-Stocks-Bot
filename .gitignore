@@ -32,3 +32,10 @@ reviewed-uploads/
 evidence-reports/
 .DS_Store
 Thumbs.db
+
+# Predictive research artifacts and Python runtime
+__pycache__/
+*.pyc
+.venv*/
+**/artifacts/
+**/datasets/
