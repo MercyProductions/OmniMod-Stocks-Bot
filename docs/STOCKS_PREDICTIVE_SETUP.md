@@ -95,3 +95,7 @@ Official projects: [LightGBM](https://github.com/lightgbm-org/LightGBM), [Chrono
 ## Review gates still open
 
 Read `STOCKS_PREDICTIVE_PHASES.json` before claiming completion. There are no new approved alerts, no demonstrated lead-time improvement and no profitability evidence. Quiet-market discovery, next-session models, stronger point-in-time news/corporate-action handling, historical/walk-forward comparison and forward-paper promotion remain separate work. Keep live trading disabled.
+
+## Quiet-market and walk-forward continuation
+
+The continuation adds a separate quiet-market shadow rank, bounded deep research, expanding purged walk-forward evaluation and a limited private study using official free historical demos. See [STOCKS_QUIET_WALKFORWARD.md](STOCKS_QUIET_WALKFORWARD.md) and the updated phase checklist. Earlier initial-phase statements about absent historical studies are superseded by this follow-up; no production validation or promotion is implied.

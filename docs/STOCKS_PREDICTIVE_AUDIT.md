@@ -81,3 +81,7 @@ Still required: lawful historical intraday/quote/action data; full Auralith repl
 Baseline: 302/302 Node tests. Current implementation adds contract, timestamp, calendar, missingness, auth, immutable warehouse, gap/feed/cost, calibration/serialization and real loopback HTTP tests. See `STOCKS_PREDICTIVE_SETUP.md` for exact commands and `STOCKS_PREDICTIVE_RESULTS.json` for final recorded results.
 
 No real Stocks model has been trained, validated, promoted or deployed in this phase: suitable historical data/access was absent. The synthetic LightGBM fixture demonstrates that fitting, calibration, serialization and inference execute; it is **not market-performance evidence**. Prediction quality, profitability and earlier actionable detection remain unproved.
+
+## Quiet-market and walk-forward continuation
+
+The continuation adds a separate quiet-market shadow rank, bounded deep research, expanding purged walk-forward evaluation and a limited private study using official free historical demos. See [STOCKS_QUIET_WALKFORWARD.md](STOCKS_QUIET_WALKFORWARD.md) and the updated phase checklist. Earlier initial-phase statements about absent historical studies are superseded by this follow-up; no production validation or promotion is implied.

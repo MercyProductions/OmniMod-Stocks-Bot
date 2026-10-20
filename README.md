@@ -171,3 +171,7 @@ Fork, create a development branch and use your own local credentials. Add regres
 - [The Odds API v4](https://the-odds-api.com/liveapi/guides/v4/)
 
 References checked on 2026-10-20. Confirm current region, licensing, quota and endpoint entitlement in your own account before enabling a paid selector. Each contributor needs their own provider account; this code does not redistribute the maintainer’s data subscriptions.
+
+## Quiet-market and walk-forward continuation
+
+The continuation adds a separate quiet-market shadow rank, bounded deep research, expanding purged walk-forward evaluation and a limited private study using official free historical demos. See [STOCKS_QUIET_WALKFORWARD.md](docs/STOCKS_QUIET_WALKFORWARD.md) and the updated phase checklist. Earlier initial-phase statements about absent historical studies are superseded by this follow-up; no production validation or promotion is implied.
