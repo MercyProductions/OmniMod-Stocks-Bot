@@ -1,0 +1,35 @@
+{
+  "name": "omnimod-stocks-bot",
+  "version": "4.0.0",
+  "private": true,
+  "description": "OmniMod Stocks research, momentum screening, and paper signal tracking bot.",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:cjs": "node app.cjs",
+    "register": "node src/registerCommands.js",
+    "check": "node --check src/paperPositionMonitor.js && node --check src/paperExecutionQuotes.js && node --check src/paperQuoteRefresh.js && node --check scripts/monitor-paper.js && node --check app.js && node --check app.cjs && node --check src/executionCostSchedule.js && node --check src/notificationState.js && node --check src/config.js && node --check src/storage.js && node --check src/guildSettings.js && node --check scripts/probe-discovery.js && node --check src/stockDirectory.js && node --check src/alpacaRequestGate.js && node --check src/stocksData.js && node --check src/scanDiagnostics.js && node --check src/researchTaxonomy.js && node --check src/modelFeatures.js && node --check src/ensembleModel.js && node --check src/researchModel.js && node --check src/counterfactualLabels.js && node --check src/stockHeadlineClassifier.js && node --check src/eventIntelligence.js && node --check src/manualCatalysts.js && node --check src/secFundamentals.js && node --check src/secEvidenceJournal.js && node --check src/universeStore.js && node --check src/portfolioSelector.js && node --check src/researchStore.js && node --check src/backfillCheckpointLock.js && node --check src/alpacaStream.js && node --check src/predictionEngine.js && node --check src/backtestReport.js && node --check src/discordPublisher.js && node --check src/commands.js && node --check src/workspace.js && node --check src/index.js && node --check scripts/backtest.js && node --check src/backtestData.js && node --check src/backtestSettings.js && node --check scripts/train-model.js && node --check scripts/train-research-model.js && node --check scripts/label-research.js && node --check src/alpacaBackfillRequest.js && node --check src/alpacaBackfillPage.js && node --check src/researchBarLockDiagnostics.js && node --check scripts/backfill-alpaca.js && node --check scripts/inspect-research-bar-locks.js && node --check src/investmentResearch.js && node --check src/investmentJournalStore.js && node --check src/forwardInvestmentJournal.js && node --check src/thesisJournal.js && node --check src/thesisReviewFormat.js && node --check scripts/investment-smoke.js",
+    "test": "node --import ../new-bots/scripts/prepare-alpaca-test-budget.mjs --test test/*.test.js",
+    "backtest": "node scripts/backtest.js",
+    "probe:discovery": "node scripts/probe-discovery.js",
+    "model:train": "node scripts/train-model.js",
+    "model:train-research": "node scripts/train-research-model.js",
+    "research:label": "node scripts/label-research.js",
+    "research:backfill": "node scripts/backfill-alpaca.js",
+    "research:locks": "node scripts/inspect-research-bar-locks.js",
+    "investment:smoke": "node scripts/investment-smoke.js",
+    "monitor:paper": "node scripts/monitor-paper.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.5",
+    "dotenv": "^16.6.1",
+    "ws": "^8.21.1"
+  },
+  "overrides": {
+    "undici": "6.28.0"
+  }
+}

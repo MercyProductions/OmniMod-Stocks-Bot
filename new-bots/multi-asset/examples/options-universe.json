@@ -1,0 +1,14 @@
+[
+  { "symbol": "SPY", "expiry": "auto" },
+  { "symbol": "QQQ", "expiry": "auto" },
+  { "symbol": "IWM", "expiry": "auto" },
+  { "symbol": "GLD", "expiry": "auto" },
+  { "symbol": "SLV", "expiry": "auto" },
+  { "symbol": "USO", "expiry": "auto" },
+  { "symbol": "TLT", "expiry": "auto" },
+  { "symbol": "HYG", "expiry": "auto" },
+  { "symbol": "UPRO", "expiry": "auto" },
+  { "symbol": "SQQQ", "expiry": "auto" },
+  { "symbol": "TQQQ", "expiry": "auto" },
+  { "symbol": "VXX", "expiry": "auto" }
+]

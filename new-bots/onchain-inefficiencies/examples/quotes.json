@@ -1,0 +1,4 @@
+[
+  { "venue": "Example A", "chainId": 1, "blockNumber": 21000000, "baseTokenAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", "quoteTokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "quoteTokenUsd": 1, "side": "buy", "quantity": 0.1, "price": 3000, "feeBps": 30, "gasUsd": 0.18, "slippageReserveBps": 15, "observedAt": "2026-09-23T12:00:00.000Z" },
+  { "venue": "Example B", "chainId": 1, "blockNumber": 21000000, "baseTokenAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", "quoteTokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "quoteTokenUsd": 1, "side": "sell", "quantity": 0.1, "price": 3030, "feeBps": 30, "gasUsd": 0.18, "slippageReserveBps": 15, "observedAt": "2026-09-23T12:00:01.000Z" }
+]

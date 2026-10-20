@@ -1,0 +1,363 @@
+[
+  {
+    "symbol": "TQQQ",
+    "name": "ProShares UltraPro QQQ",
+    "productType": "leveraged_etf",
+    "exposureKey": "QQQ",
+    "leverage": 3,
+    "inverse": false,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/tqqq",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "SQQQ",
+    "name": "ProShares UltraPro Short QQQ",
+    "productType": "inverse_etf",
+    "exposureKey": "QQQ",
+    "leverage": -3,
+    "inverse": true,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/sqqq",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "UPRO",
+    "name": "ProShares UltraPro S&P500",
+    "productType": "leveraged_etf",
+    "exposureKey": "SPY",
+    "leverage": 3,
+    "inverse": false,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/upro",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "SPXU",
+    "name": "ProShares UltraPro Short S&P500",
+    "productType": "inverse_etf",
+    "exposureKey": "SPY",
+    "leverage": -3,
+    "inverse": true,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/spxu",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "SOXL",
+    "name": "Direxion Daily Semiconductor Bull 3X",
+    "productType": "leveraged_etf",
+    "exposureKey": "SOXX",
+    "leverage": 3,
+    "inverse": false,
+    "sourceUrl": "https://www.direxion.com/product/daily-semiconductor-bull-bear-3x-etfs",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "SOXS",
+    "name": "Direxion Daily Semiconductor Bear 3X",
+    "productType": "inverse_etf",
+    "exposureKey": "SOXX",
+    "leverage": -3,
+    "inverse": true,
+    "sourceUrl": "https://www.direxion.com/product/daily-semiconductor-bull-bear-3x-etfs",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "LABU",
+    "name": "Direxion Daily S&P Biotech Bull 3X",
+    "productType": "leveraged_etf",
+    "exposureKey": "XBI",
+    "leverage": 3,
+    "inverse": false,
+    "sourceUrl": "https://www.direxion.com/product/daily-sp-biotech-bull-bear-3x-etfs",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "LABD",
+    "name": "Direxion Daily S&P Biotech Bear 3X",
+    "productType": "inverse_etf",
+    "exposureKey": "XBI",
+    "leverage": -3,
+    "inverse": true,
+    "sourceUrl": "https://www.direxion.com/product/daily-sp-biotech-bull-bear-3x-etfs",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "NVDL",
+    "name": "GraniteShares 2x Long NVDA Daily ETF",
+    "productType": "leveraged_etf",
+    "exposureKey": "NVDA",
+    "leverage": 2,
+    "inverse": false,
+    "sourceUrl": "https://graniteshares.com/etfs/nvdl/",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "NVD",
+    "name": "GraniteShares 2x Short NVDA Daily ETF",
+    "productType": "inverse_etf",
+    "exposureKey": "NVDA",
+    "leverage": -2,
+    "inverse": true,
+    "sourceUrl": "https://graniteshares.com/etfs/nvd/",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "YINN",
+    "name": "Direxion Daily FTSE China Bull 3X",
+    "productType": "leveraged_etf",
+    "exposureKey": "CHINA_LARGE_CAP",
+    "leverage": 3,
+    "inverse": false,
+    "sourceUrl": "https://www.direxion.com/product/daily-ftse-china-bull-bear-3x-etfs",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "YANG",
+    "name": "Direxion Daily FTSE China Bear 3X",
+    "productType": "inverse_etf",
+    "exposureKey": "CHINA_LARGE_CAP",
+    "leverage": -3,
+    "inverse": true,
+    "sourceUrl": "https://www.direxion.com/product/daily-ftse-china-bull-bear-3x-etfs",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "TMF",
+    "name": "Direxion Daily 20+ Year Treasury Bull 3X",
+    "productType": "leveraged_etf",
+    "exposureKey": "UST_RATES",
+    "leverage": 3,
+    "inverse": false,
+    "sourceUrl": "https://www.direxion.com/product/daily-20-year-treasury-bull-bear-3x-etfs",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "TMV",
+    "name": "Direxion Daily 20+ Year Treasury Bear 3X",
+    "productType": "inverse_etf",
+    "exposureKey": "UST_RATES",
+    "leverage": -3,
+    "inverse": true,
+    "sourceUrl": "https://www.direxion.com/product/daily-20-year-treasury-bull-bear-3x-etfs",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "UVXY",
+    "name": "ProShares Ultra VIX Short-Term Futures",
+    "productType": "leveraged_etf",
+    "exposureKey": "VIX",
+    "leverage": 1.5,
+    "inverse": false,
+    "sourceUrl": "https://www.proshares.com/our-etfs/strategic/uvxy",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "SVIX",
+    "name": "-1x Short VIX Futures ETF",
+    "productType": "inverse_etf",
+    "exposureKey": "VIX",
+    "leverage": -1,
+    "inverse": true,
+    "sourceUrl": "https://www.volatilityshares.com/SVIX",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "AGQ",
+    "name": "ProShares Ultra Silver",
+    "productType": "leveraged_etf",
+    "exposureKey": "SLV",
+    "leverage": 2,
+    "inverse": false,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/agq",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "ZSL",
+    "name": "ProShares UltraShort Silver",
+    "productType": "inverse_etf",
+    "exposureKey": "SLV",
+    "leverage": -2,
+    "inverse": true,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/zsl",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "UCO",
+    "name": "ProShares Ultra Bloomberg Crude Oil",
+    "productType": "leveraged_etf",
+    "exposureKey": "OIL",
+    "leverage": 2,
+    "inverse": false,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/uco",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "SCO",
+    "name": "ProShares UltraShort Bloomberg Crude Oil",
+    "productType": "inverse_etf",
+    "exposureKey": "OIL",
+    "leverage": -2,
+    "inverse": true,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/sco",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "BOIL",
+    "name": "ProShares Ultra Bloomberg Natural Gas",
+    "productType": "leveraged_etf",
+    "exposureKey": "NATGAS",
+    "leverage": 2,
+    "inverse": false,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/boil",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "KOLD",
+    "name": "ProShares UltraShort Bloomberg Natural Gas",
+    "productType": "inverse_etf",
+    "exposureKey": "NATGAS",
+    "leverage": -2,
+    "inverse": true,
+    "sourceUrl": "https://www.proshares.com/our-etfs/leveraged-and-inverse/kold",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "BITX",
+    "name": "2x Bitcoin ETF",
+    "productType": "leveraged_etf",
+    "exposureKey": "BTC",
+    "leverage": 2,
+    "inverse": false,
+    "sourceUrl": "https://www.volatilityshares.com/bitx",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "DJP",
+    "name": "iPath Bloomberg Commodity Index Total Return ETN",
+    "productType": "etn",
+    "exposureKey": "COMMODITY_BASKET",
+    "leverage": 1,
+    "inverse": false,
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/312070/000031207024000013/a221bbplc-2023x12x31x20fxex.htm",
+    "reviewedAt": "2026-09-29T00:00:00Z"
+  },
+  {
+    "symbol": "USO",
+    "name": "United States Oil Fund",
+    "sourceUrl": "https://www.uscfinvestments.com/uso",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "OIL"
+  },
+  {
+    "symbol": "USL",
+    "name": "United States 12 Month Oil Fund",
+    "sourceUrl": "https://www.uscfinvestments.com/disclosures?tab=usl",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "OIL"
+  },
+  {
+    "symbol": "BNO",
+    "name": "United States Brent Oil Fund",
+    "sourceUrl": "https://www.uscfinvestments.com/disclosures?tab=bno",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "OIL"
+  },
+  {
+    "symbol": "UNG",
+    "name": "United States Natural Gas Fund",
+    "sourceUrl": "https://www.uscfinvestments.com/disclosures?tab=ung",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "NATGAS"
+  },
+  {
+    "symbol": "UNL",
+    "name": "United States 12 Month Natural Gas Fund",
+    "sourceUrl": "https://www.uscfinvestments.com/resources/unl",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "NATGAS"
+  },
+  {
+    "symbol": "UGA",
+    "name": "United States Gasoline Fund",
+    "sourceUrl": "https://www.uscfinvestments.com/uga",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "GASOLINE"
+  },
+  {
+    "symbol": "USCI",
+    "name": "United States Commodity Index Fund",
+    "sourceUrl": "https://www.uscfinvestments.com/disclosures?tab=usci",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "COMMODITY_BASKET"
+  },
+  {
+    "symbol": "CPER",
+    "name": "United States Copper Index Fund",
+    "sourceUrl": "https://www.uscfinvestments.com/disclosures?tab=cper",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "COPPER"
+  },
+  {
+    "symbol": "DBA",
+    "name": "Invesco DB Agriculture Fund",
+    "sourceUrl": "https://www.invesco.com/us/en/financial-products/etfs/invesco-db-agriculture-fund.html",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "AGRICULTURE"
+  },
+  {
+    "symbol": "DBC",
+    "name": "Invesco DB Commodity Index Tracking Fund",
+    "sourceUrl": "https://www.invesco.com/us/en/financial-products/etfs/invesco-db-commodity-index-tracking-fund.html",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "COMMODITY_BASKET"
+  },
+  {
+    "symbol": "PDBC",
+    "name": "Invesco Optimum Yield Diversified Commodity Strategy No K-1 ETF",
+    "sourceUrl": "https://www.invesco.com/us/en/solutions/invesco-etfs/commodity-investing.html",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "COMMODITY_BASKET"
+  },
+  {
+    "symbol": "PDBA",
+    "name": "Invesco Agriculture Commodity Strategy No K-1 ETF",
+    "sourceUrl": "https://www.invesco.com/us/en/financial-products/etfs/invesco-agriculture-commodity-strategy-no-k-1-etf.html",
+    "productType": "commodity_pool",
+    "leverage": 1,
+    "reviewedAt": "2026-09-29T00:00:00.000Z",
+    "inverse": false,
+    "exposureKey": "AGRICULTURE"
+  }
+]
+

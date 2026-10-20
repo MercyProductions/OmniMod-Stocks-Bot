@@ -1,0 +1,28 @@
+{
+  "name": "omnimod-futures-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env app.js",
+    "scan": "node --env-file-if-exists=.env src/index.js",
+    "backtest": "node --env-file-if-exists=.env scripts/replay.js",
+    "discover:contracts": "node --env-file-if-exists=.env scripts/discoverContracts.js",
+    "probe:directory": "node --env-file-if-exists=.env scripts/probeDirectory.js",
+    "probe:activity": "node --env-file-if-exists=.env scripts/probeActivity.js",
+    "discover:day-session-draft": "node --env-file-if-exists=.env scripts/discoverDaySessionDraft.js",
+    "prepare:day-session": "node scripts/prepareDaySessionDraft.js",
+    "template:day-session-review": "node scripts/createDaySessionReviewTemplate.js",
+    "compile:day-session-review": "node scripts/compileReviewedDaySession.js",
+    "review:contracts": "node scripts/reviewContracts.js",
+    "test": "node --test",
+    "register": "node --env-file-if-exists=.env app.js --register",
+    "setup": "node --env-file-if-exists=.env app.js --setup",
+    "start:legacy": "node --env-file-if-exists=.env ../shared/scheduler.js src/index.js",
+    "shutdown": "node ../scripts/stop-discord-app.js futures",
+    "monitor:paper": "node --env-file-if-exists=.env ../shared/paperPositionMonitor.js futures"
+  }
+}

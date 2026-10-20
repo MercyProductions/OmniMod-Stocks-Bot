@@ -1,0 +1,22 @@
+{
+  "name": "omnimod-etfs-etps-day-trading-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "scan": "node --env-file-if-exists=.env src/index.js",
+    "probe:universe": "node --env-file-if-exists=.env scripts/probe-universe.js",
+    "probe:directory": "node scripts/probe-public-directory.js",
+    "start": "node --env-file-if-exists=.env app.js",
+    "backtest": "node --env-file-if-exists=.env scripts/replay.js",
+    "test": "node --test",
+    "register": "node --env-file-if-exists=.env app.js --register",
+    "setup": "node --env-file-if-exists=.env app.js --setup",
+    "start:legacy": "node --env-file-if-exists=.env ../shared/scheduler.js src/index.js",
+    "shutdown": "node ../scripts/stop-discord-app.js etfs-etps",
+    "monitor:paper": "node --env-file-if-exists=.env ../shared/paperPositionMonitor.js etfs-etps"
+  }
+}

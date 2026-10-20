@@ -1,0 +1,34 @@
+# Credentials and local configuration
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+*.pem
+*.key
+.htaccess
+.user.ini
+.npmrc
+# Dependencies, runtime state, generated observations and uploads
+node_modules/
+**/data/
+tmp/
+logs/
+.cache/
+.aegis/
+*.log
+*.pid
+*.lock
+*.bak
+*.zip
+*.gz
+*.sqlite*
+*.db
+*.jsonl
+*.ndjson
+research-dashboard.html
+review-verification/
+reviewed-uploads/
+evidence-reports/
+.DS_Store
+Thumbs.db

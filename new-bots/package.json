@@ -1,0 +1,23 @@
+{
+  "name": "omnimod-research-bots",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "test": "node --import ./scripts/prepare-alpaca-test-budget.mjs --test",
+    "check": "node scripts/check-syntax.js",
+    "verify:all": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify-all-bots.ps1",
+    "report:operator": "node shared/operatorReport.js",
+    "data:setup": "node scripts/configure-market-data.js",
+    "report:research": "node shared/researchDashboard.js",
+    "review:paper": "node --env-file-if-exists=.env scripts/review-paper-trade.js",
+    "recover:paper": "node shared/recoverPaper.js",
+    "audit:discord": "node shared/discordApplicationAudit.js"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0"
+  }
+}

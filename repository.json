@@ -1,0 +1,3614 @@
+{
+  "bot": "stocks",
+  "primaryProject": "stocks-bot",
+  "snapshotDate": "2026-10-19",
+  "sourceSnapshotSha256": "a90226f0db7d7e4eb89e78907274950bb942ac4522ee168ac2ca14d755baba75",
+  "sourceFiles": [
+    {
+      "path": "crypto-bot/.env.example",
+      "sha256": "c7e6ce0f7879246cf4953f02bacf136d5036506e2f981880aab85a02530b88f3",
+      "bytes": 2809
+    },
+    {
+      "path": "crypto-bot/.gitignore",
+      "sha256": "7cdd55ee728277342bfa0fdeaa9362b3ad8753a5cd6767a5e0e71e6ced5bc4df",
+      "bytes": 47
+    },
+    {
+      "path": "crypto-bot/app.cjs",
+      "sha256": "610c6c56ee333e26ac01f56af3fcb0d7874d2dbebfebdb31505aa21fc5e98819",
+      "bytes": 105
+    },
+    {
+      "path": "crypto-bot/app.js",
+      "sha256": "6163840607a6b07e25a84ab9496b3a6fdf12475a3ee645df765d9847ab707712",
+      "bytes": 15840
+    },
+    {
+      "path": "crypto-bot/BTC_ETH_REGIME_ATTRIBUTION_2026-09-29.md",
+      "sha256": "8a5ba93ca51eb97f269ee0d409fb725fcda4ad1bd8d74c103c6e45b3a2dac1dd",
+      "bytes": 2584
+    },
+    {
+      "path": "crypto-bot/CROSS_ASSET_FIXED_RULE_REPLAY_2026-09-30.md",
+      "sha256": "12aa6dfb8e430639445842e790846ab582219463c8a2e0dda190eece8943c94b",
+      "bytes": 3723
+    },
+    {
+      "path": "crypto-bot/CROSS_ASSET_FIXED_RULE_VALIDATION_2026-09-30.md",
+      "sha256": "05950e35c1250e823ebc530762a327d33d4a9738bff6c1fedd0780456c00f8ac",
+      "bytes": 12194
+    },
+    {
+      "path": "crypto-bot/DAILY_DATA_SMOKE.md",
+      "sha256": "a0b82471bd76a13d6556d10c88cdf0889eccf8cb3bf806867c45d9c5a809a324",
+      "bytes": 2078
+    },
+    {
+      "path": "crypto-bot/DAY_MARKET_DATA_SMOKE.md",
+      "sha256": "dd02d1eec221f7a148eb67a61767e0a2ca847983182d73619e9f4973a06e3a43",
+      "bytes": 3828
+    },
+    {
+      "path": "crypto-bot/ETH_CROSS_ASSET_VALIDATION_2026-09-29.md",
+      "sha256": "ac958de61286083a3b5408d4bb408aad95a42d4453b8ef023d3f1424947898fc",
+      "bytes": 4214
+    },
+    {
+      "path": "crypto-bot/EXACT_PAIR_ROUTING.md",
+      "sha256": "33d3083de6ca68e0998522707aefbe6a37c7600f6f5c3af6e32c4ff222d169f0",
+      "bytes": 7561
+    },
+    {
+      "path": "crypto-bot/HORIZON_SENSITIVITY_2026-10-01.md",
+      "sha256": "d5751764c54205f93449fb6acddb7c0e82c6cee3540143c571a6db184da3cd3f",
+      "bytes": 4248
+    },
+    {
+      "path": "crypto-bot/hosting/common.js",
+      "sha256": "3c3e8c08389725618836e7fd64ef2a4825eac9d473b6c29d51525c360ead4bd4",
+      "bytes": 6906
+    },
+    {
+      "path": "crypto-bot/hosting/manager.js",
+      "sha256": "b124b5f1d47a97e137482c4ddb7ec8892ebb5fad3b1c5f364d66a90fe33eef77",
+      "bytes": 3714
+    },
+    {
+      "path": "crypto-bot/hosting/passenger-entry.js",
+      "sha256": "ff724ac792e6692a348b5bbbba067d7fbc5ceee36cff2d137bd29e66e7faf6ea",
+      "bytes": 285
+    },
+    {
+      "path": "crypto-bot/hosting/passenger.js",
+      "sha256": "a179773e68542cfca44116bbf6f00d0b7441023540d92d3a327bf7f36c2a25d7",
+      "bytes": 6257
+    },
+    {
+      "path": "crypto-bot/hosting/preflight.js",
+      "sha256": "b4f02c02178fa692cdb9844c4230b082e77be91ffbfbe59b47c08ef85c6393d0",
+      "bytes": 2527
+    },
+    {
+      "path": "crypto-bot/hosting/probe-worker.js",
+      "sha256": "52f345b78d46e288d7742209f228b9850845892b01d847ace882bc7ef84c9f0c",
+      "bytes": 567
+    },
+    {
+      "path": "crypto-bot/hosting/run-independent-manager.sh",
+      "sha256": "cbba5e5f34ce1bfb43ee0bee27b3bdf141e01c2493e98d964e157a94e3b46544",
+      "bytes": 330
+    },
+    {
+      "path": "crypto-bot/hosting/supervisorCore.js",
+      "sha256": "78e18cea8dcdbaba99f6755d725ff3a2aaca97c1dbdc1fa51291378fd3a673f8",
+      "bytes": 2856
+    },
+    {
+      "path": "crypto-bot/hosting/worker.js",
+      "sha256": "bc97fadc0abe14ad914d46edaeb5540bac55c51e40dbe8629add6e59119d6835",
+      "bytes": 4807
+    },
+    {
+      "path": "crypto-bot/INDEPENDENT_POSITION_MONITORING.md",
+      "sha256": "5e3c1e3cb567c6645617572089b6b871fa6eb4a9605759e182c090e37a38ead3",
+      "bytes": 11278
+    },
+    {
+      "path": "crypto-bot/KRAKEN_ORDER_BOOK_EVIDENCE.md",
+      "sha256": "17b340f72dc912ee5491c32b21b58599f63b88e386473dca6376001fc4eb925e",
+      "bytes": 8344
+    },
+    {
+      "path": "crypto-bot/MODEL_AUDIT.md",
+      "sha256": "40a1c7ff8d2cec55b183bcdede67c0a7ed739c036bd419aa7e4450ea0d2851e5",
+      "bytes": 11026
+    },
+    {
+      "path": "crypto-bot/NATIVE_PRODUCT_SIZING.md",
+      "sha256": "d2e36d764e47843478091c847a14d0fef1b3b3e45211f6d7b1f20cddd3efb439",
+      "bytes": 9836
+    },
+    {
+      "path": "crypto-bot/package-lock.json",
+      "sha256": "ce02f33e0fe32bfde167f0f98c8f857e151966500bbc11868835c59b4dd6e154",
+      "bytes": 12252
+    },
+    {
+      "path": "crypto-bot/package.json",
+      "sha256": "8f2707ffb83c8f6cd7d3723203692b15b89ab4e006bd75b8790aa51efff9e006",
+      "bytes": 4720
+    },
+    {
+      "path": "crypto-bot/PAPER_ORDER_BOOK_EVIDENCE.md",
+      "sha256": "c3310d1828e205116feae7bc2264de3ae9a2aa6213854ba7e38ce568518155a8",
+      "bytes": 8919
+    },
+    {
+      "path": "crypto-bot/PUBLIC_COST_SENSITIVITY.md",
+      "sha256": "b9ae307d2ad2a2a222ff6dad46168bb233a6fd227aedda7d8361c1dc7506a660",
+      "bytes": 13921
+    },
+    {
+      "path": "crypto-bot/PUBLIC_FORWARD_OBSERVATIONS_2026-10-01.md",
+      "sha256": "17ea4af2a30b2e8ab3f5e66a9bbfa6a98a10b737a0e86c59d731eb78a8661fe3",
+      "bytes": 11136
+    },
+    {
+      "path": "crypto-bot/PUBLIC_FUNNEL_PROBE.md",
+      "sha256": "b249d9fbea14a5d52dd36d0c89f2bcbb65d4aa080ce27922aacf4d7e576ac295",
+      "bytes": 29780
+    },
+    {
+      "path": "crypto-bot/README.md",
+      "sha256": "174a9dc6300022cd52d0e6f1864a4cf89aac52a8a144493630ad296bcc570800",
+      "bytes": 67975
+    },
+    {
+      "path": "crypto-bot/scripts/backtest-cross-asset-fixed-rule.mjs",
+      "sha256": "a5bd02d81e0ed6d82f9ce4b6febd476a7273f0d95a3842bb12a8094e72233959",
+      "bytes": 10231
+    },
+    {
+      "path": "crypto-bot/scripts/backtest-historical.js",
+      "sha256": "dff78ac19a1ee8a8803eb36844752eff6ae5fcaef0342669d6f152a701c48bb2",
+      "bytes": 3509
+    },
+    {
+      "path": "crypto-bot/scripts/check-hosting-syntax.js",
+      "sha256": "687d1c87f188f00d318825603b347c3138ea8abbd36f45dfe43ed84492f43d03",
+      "bytes": 568
+    },
+    {
+      "path": "crypto-bot/scripts/fetch-historical-candles.js",
+      "sha256": "15d05667497f937360b4ee5f2e4e08c31b4f876a37c5adf20070bd50bfe30bbb",
+      "bytes": 7774
+    },
+    {
+      "path": "crypto-bot/scripts/monitor-paper.js",
+      "sha256": "0b94e67c4412fe52a1281633503122fcbfe31a9914e69af50c4f171837caa16e",
+      "bytes": 404
+    },
+    {
+      "path": "crypto-bot/scripts/probe-broad-discovery.mjs",
+      "sha256": "492d95bb82742ccfb6e95120033ecd057e5742b029afdc7fd797d7052fe99ea0",
+      "bytes": 1631
+    },
+    {
+      "path": "crypto-bot/scripts/probe-public-funnel.mjs",
+      "sha256": "6af2e5af6bb5284911992cab719d8993625ec60b0137e23a3949a5a38aa20c98",
+      "bytes": 20588
+    },
+    {
+      "path": "crypto-bot/scripts/probe-venue-discovery.mjs",
+      "sha256": "7a716e477996edbf73e0752a43cd680a52b3155c253a587e8b29b4be4088579c",
+      "bytes": 5869
+    },
+    {
+      "path": "crypto-bot/scripts/public-probe-research.mjs",
+      "sha256": "0d3b15e8d67cb29e2b1b78dda041fb41ed7c06457d7c1dde80852ab2e2c45d70",
+      "bytes": 22271
+    },
+    {
+      "path": "crypto-bot/scripts/restart-persistent-worker.cjs",
+      "sha256": "4ae8fc82747cf913a2ef0441ef7242cbb196c8697fe184dbe47bd2b4400fe4bd",
+      "bytes": 2013
+    },
+    {
+      "path": "crypto-bot/scripts/run-persistent-worker.sh",
+      "sha256": "0caf6fb1123eec07b5adf4d64e4871c669b2d2156da2a56f40cd984689554244",
+      "bytes": 457
+    },
+    {
+      "path": "crypto-bot/scripts/smoke-daily-research.mjs",
+      "sha256": "4f4c99d5ef8a33652ff2734273d420f5e9d2b92b3683f66eca5a9c108312be31",
+      "bytes": 1903
+    },
+    {
+      "path": "crypto-bot/scripts/smoke-day-market-data.mjs",
+      "sha256": "743f7228f1b0ed6ed866d5644d2acb0ad95351c9e0270c0f156b5e0518f0d822",
+      "bytes": 4116
+    },
+    {
+      "path": "crypto-bot/scripts/smoke-kraken-websocket.mjs",
+      "sha256": "01e273820671b955d5e1f77b0fa004ce630705fe51ecf5406ac59293bb6a4664",
+      "bytes": 5198
+    },
+    {
+      "path": "crypto-bot/scripts/study-horizon-sensitivity.mjs",
+      "sha256": "fbfc8918ce15045f008e6aba3ae8f4aa3bf3aac1e2807867f6472eafdc1d27f3",
+      "bytes": 7761
+    },
+    {
+      "path": "crypto-bot/scripts/study-public-cost-sensitivity.mjs",
+      "sha256": "075292beaa91476f74b39a855488abbc5075ca211ce2fca6fec5473e2bbeb760",
+      "bytes": 9562
+    },
+    {
+      "path": "crypto-bot/SHARED_EXECUTION_IDENTITY.md",
+      "sha256": "2f881388c15c9407e5a84f13f72a2ce05af78c35ab206e523238d34b23af63f1",
+      "bytes": 7494
+    },
+    {
+      "path": "crypto-bot/src/backtest.js",
+      "sha256": "f2bca8bcba3a88242ac9809d94c6dcfec433e92b0f25fa5e40d5329122a0e07f",
+      "bytes": 12371
+    },
+    {
+      "path": "crypto-bot/src/broadDiscovery.js",
+      "sha256": "614dc63b37ced869b52c09a52e14065b33af2dcc7ae49f6976827dc2a02ebf5c",
+      "bytes": 18851
+    },
+    {
+      "path": "crypto-bot/src/coinbasePaperBook.js",
+      "sha256": "e41e760e9e1cab04f1b51fc73527c8385c538b85c0271f0fc9d069ea9b28f2bc",
+      "bytes": 2492
+    },
+    {
+      "path": "crypto-bot/src/commands.js",
+      "sha256": "75ba84e76780b5c0629b60236c29529f9404704cb21cedd24d922fe6a28914df",
+      "bytes": 15521
+    },
+    {
+      "path": "crypto-bot/src/config.js",
+      "sha256": "07a9d068ddab21f6a7ecf99ad357428a26fd7a2bcb72b2f6564291be2af84d0f",
+      "bytes": 7133
+    },
+    {
+      "path": "crypto-bot/src/cryptoData.js",
+      "sha256": "3740247516bc5e0dabc25a155a23da9df1a6ce7bbbc5c449917e296d19d51ce1",
+      "bytes": 44539
+    },
+    {
+      "path": "crypto-bot/src/cryptoMacroCalendar.js",
+      "sha256": "6ef9325a92c062a08122158f9d697e78e662ccb50f4ef9ad6145a8bc2a2cf55a",
+      "bytes": 3776
+    },
+    {
+      "path": "crypto-bot/src/cryptoNews.js",
+      "sha256": "9181b0e171eeef80fe2f813e17c275e16731e3e71227bb125a2628fb5ba16eb8",
+      "bytes": 13280
+    },
+    {
+      "path": "crypto-bot/src/cryptoProductMetadata.js",
+      "sha256": "78cb186ee909c95a929b863cadda6d8309e61cbbf374826ccb3319024e60d7a2",
+      "bytes": 2392
+    },
+    {
+      "path": "crypto-bot/src/cryptoUniverseJournal.js",
+      "sha256": "ec784ec9347d8ee040c63f9c8591f454f78d51a83fafcdadfb3a507bcd0e7702",
+      "bytes": 5742
+    },
+    {
+      "path": "crypto-bot/src/dayClusterBootstrap.js",
+      "sha256": "94d6d7b39d694d5886e755f8c024c132855e810f059e3c510b980cd65425a3c0",
+      "bytes": 2537
+    },
+    {
+      "path": "crypto-bot/src/dayMarketDataHistory.js",
+      "sha256": "bc85b157832c3dc36e1adf97de0b1992348ca91837ff815a9addf5db6fa17240",
+      "bytes": 2654
+    },
+    {
+      "path": "crypto-bot/src/dayMarketDataSmoke.js",
+      "sha256": "3ef5ed60ed082d8f40b52b6e247e610650fc0e69a8770ca9abbc61915cf06c54",
+      "bytes": 2062
+    },
+    {
+      "path": "crypto-bot/src/dayTradingWatches.js",
+      "sha256": "e2bffe91a76da32237e74dd29b5abe0da916b51b52801938369d7e80ea3aeace",
+      "bytes": 1963
+    },
+    {
+      "path": "crypto-bot/src/derivativesProviders.js",
+      "sha256": "b209bb45d60014a72880da6ad03c063149fd68c822f5f90a74dee2882b7a0eac",
+      "bytes": 19478
+    },
+    {
+      "path": "crypto-bot/src/discordPublisher.js",
+      "sha256": "c13f0d157a4fbc0c9e4d1731e6736a75f60ae00c06e00b5dc5959ec1493da62b",
+      "bytes": 30945
+    },
+    {
+      "path": "crypto-bot/src/edgeEvidence.js",
+      "sha256": "a5d6e9416bcbb274e2466f0c0eb60771ee61c0bb886c1c793ed0d36ef112c17c",
+      "bytes": 6854
+    },
+    {
+      "path": "crypto-bot/src/eventRisk.js",
+      "sha256": "53cca09c5776feb60370f9b0854577646e9c22725bb3f59d607a5968b6c1937f",
+      "bytes": 4440
+    },
+    {
+      "path": "crypto-bot/src/executionCostSchedule.js",
+      "sha256": "19a15273160d92f2089873fc31d39de874f57b2f0298055e19d91e6e4796a68a",
+      "bytes": 4527
+    },
+    {
+      "path": "crypto-bot/src/executionSimulator.js",
+      "sha256": "5af644cb6f3d48c48b157e4f51f63420897ab1789cb844a5ff7a042537141278",
+      "bytes": 3888
+    },
+    {
+      "path": "crypto-bot/src/forwardInvestmentJournal.js",
+      "sha256": "72a47d620a3392811c2bdb0f977c74070eca9f321ad769285434ba14c235c9e1",
+      "bytes": 11149
+    },
+    {
+      "path": "crypto-bot/src/githubActivity.js",
+      "sha256": "55eb0c65fbbb411be98f0b119ec016bc86d1e89d7bdc54890def1e6e35756d64",
+      "bytes": 3971
+    },
+    {
+      "path": "crypto-bot/src/guildSettings.js",
+      "sha256": "41114cb43a88217e9bc6e4098ad021817ac210c60d4674cc959533034f4ea2dd",
+      "bytes": 7358
+    },
+    {
+      "path": "crypto-bot/src/historicalBacktest.js",
+      "sha256": "8e3700754c9c796f1ada5d32597e3a17f7ac39dbc5223e40613c8ead8fb4bcd1",
+      "bytes": 8353
+    },
+    {
+      "path": "crypto-bot/src/historicalImporter.js",
+      "sha256": "670c2ba58d710c14125583d50a66654e68bba33e4581ba95729b4997e3499bee",
+      "bytes": 2544
+    },
+    {
+      "path": "crypto-bot/src/index.js",
+      "sha256": "458cd4b2ccd29e6af61d077afceab81fc78610cfaf23fdc1bf64efc10027ee2e",
+      "bytes": 170402
+    },
+    {
+      "path": "crypto-bot/src/investmentJournal.js",
+      "sha256": "6845c2db7d10284884e63d6af6afc81960d32eeed496474f4bd307d7b7171632",
+      "bytes": 14914
+    },
+    {
+      "path": "crypto-bot/src/investmentResearch.js",
+      "sha256": "a785dbd0a5291b9fb45eebb3d2defc1906b9381678795a5cdfc5323d884afbb8",
+      "bytes": 22723
+    },
+    {
+      "path": "crypto-bot/src/krakenPaperBook.js",
+      "sha256": "59da451661e6bc70fd9f1fda3f0836bb30b2b00a07eaffa4444809ec21456fcd",
+      "bytes": 1664
+    },
+    {
+      "path": "crypto-bot/src/krakenPositionQuotes.js",
+      "sha256": "11b7d29aee71afc50dfb1c2c32f20248707949d6c6d1a18a6bf80e63b6765def",
+      "bytes": 5931
+    },
+    {
+      "path": "crypto-bot/src/krakenWebsocketSmokeHistory.js",
+      "sha256": "409a40a8646076676b533a2fb854c6506d7627e74c6f036c8605e9c6e208d7ba",
+      "bytes": 2486
+    },
+    {
+      "path": "crypto-bot/src/marketProviders.js",
+      "sha256": "9d5a9a7c5049af33b84d05496cf699512d0cb58410f260141a905d51a19e83cf",
+      "bytes": 49542
+    },
+    {
+      "path": "crypto-bot/src/metaModel.js",
+      "sha256": "1e31b775bbae9c81dee7f06421ff9e9e8f2aba80d1a64644b2c7e0e2b99be219",
+      "bytes": 18881
+    },
+    {
+      "path": "crypto-bot/src/microstructure.js",
+      "sha256": "954a073c6dccc5b19a8ba0a92316b03f270fd5d2910773211941f5c5f9fb010d",
+      "bytes": 8951
+    },
+    {
+      "path": "crypto-bot/src/modelFeatures.js",
+      "sha256": "72bb2f83ae6f6072c1dc2b1d944f9539a869d0c6e8f1c2606ffa9c9776e564b3",
+      "bytes": 5930
+    },
+    {
+      "path": "crypto-bot/src/modelRegistry.js",
+      "sha256": "0b40692d5eb7e8ef67595bee2b9d259a2f3373a9cf5d9814e0ba75bea605f63e",
+      "bytes": 12531
+    },
+    {
+      "path": "crypto-bot/src/outcomeModels.js",
+      "sha256": "b40de25add1c1766f6b1df1f29d535c91c0f81af4660b7db9b9a8f0e27c4de8b",
+      "bytes": 8938
+    },
+    {
+      "path": "crypto-bot/src/paperExecutionQuotes.js",
+      "sha256": "56b9b2387d3418f74edba444e6f4a6abb2fa52a5c1f0440e5c6526369fb25657",
+      "bytes": 5193
+    },
+    {
+      "path": "crypto-bot/src/paperIdentityCache.js",
+      "sha256": "336d6b2e9236f72490c260581ac6711f6610ebee43079a4742097cf877de6b63",
+      "bytes": 2382
+    },
+    {
+      "path": "crypto-bot/src/paperPositionMonitor.js",
+      "sha256": "a5514cf37fd83501ede68e6b6db2e68f77056fef3b9975c345f9a0942d745300",
+      "bytes": 4601
+    },
+    {
+      "path": "crypto-bot/src/paperQuoteRefresh.js",
+      "sha256": "370c2843aca20faf87e0562f694c3c5546da308f14fa3aff4d3e2ec5552648cd",
+      "bytes": 6510
+    },
+    {
+      "path": "crypto-bot/src/portfolioRisk.js",
+      "sha256": "fe12615478109247efbed7469e23a44648881a09b70c7bfb63ee649c379a8b0e",
+      "bytes": 7767
+    },
+    {
+      "path": "crypto-bot/src/positionQuotes.js",
+      "sha256": "5b9d4c18c9f3d6e08cc8d33759c9f40da537e57a1b10b2bf86a70afa146ab4c1",
+      "bytes": 8562
+    },
+    {
+      "path": "crypto-bot/src/predictionEngine.js",
+      "sha256": "dbb0a49530c58238bceffb4e9552ec5f661ba4913d9695e4d6e3b6583dd3cb8a",
+      "bytes": 33174
+    },
+    {
+      "path": "crypto-bot/src/protocolFundamentals.js",
+      "sha256": "ed6a5788cb598e9582341b34c9d6949c298c9aaea13426dbabe94942d0c99dcf",
+      "bytes": 14075
+    },
+    {
+      "path": "crypto-bot/src/providerCooldown.js",
+      "sha256": "e247b15bdd927db72aace604ad1ef2234635ba06297b36c7fb421f288d720c0e",
+      "bytes": 2902
+    },
+    {
+      "path": "crypto-bot/src/providerTelemetry.js",
+      "sha256": "89ec8dc63df0115bd37905a10951c754139d640b0e90165552a62263735aac4e",
+      "bytes": 3843
+    },
+    {
+      "path": "crypto-bot/src/realtimeFeeds.js",
+      "sha256": "027bbaf80fcc1a3ea4a250b0f2a8243b9981f1a16bbffce9610316da9e188b4a",
+      "bytes": 15792
+    },
+    {
+      "path": "crypto-bot/src/registerCommands.js",
+      "sha256": "0eb3b3996bc5ff77235221ab64b4c17b04598ca3be0d475368cec1a6b20802ee",
+      "bytes": 559
+    },
+    {
+      "path": "crypto-bot/src/researchProviderPacing.js",
+      "sha256": "194faef775764a19f0e5d3a7c6aa9dacbd5a899a21796d454b995ff052feffbc",
+      "bytes": 716
+    },
+    {
+      "path": "crypto-bot/src/researchStore.js",
+      "sha256": "3f21bb01662ee22abebeeaf5ff8edb29e915524515dbe9d6020afc61a7c8a74f",
+      "bytes": 40683
+    },
+    {
+      "path": "crypto-bot/src/researchTaxonomy.js",
+      "sha256": "cf346733550dc806a2e64e733309e7a95509acecb6c97a3803e7d24bda0d027e",
+      "bytes": 2661
+    },
+    {
+      "path": "crypto-bot/src/retryPolicy.js",
+      "sha256": "0ecc3a94145fbe57514fc1da0e6761d3e41760fe836893f763ccc2b207d83789",
+      "bytes": 1569
+    },
+    {
+      "path": "crypto-bot/src/riskGuard.js",
+      "sha256": "a87c20bc3377978a9f49492b4465178e97f6504359cec4bbf7b7ccf7ed338841",
+      "bytes": 6936
+    },
+    {
+      "path": "crypto-bot/src/runtimeMode.js",
+      "sha256": "881de50a68bf27baa8b9eb8ee4860740266e6a048419dba1eed0e648b9e3a40a",
+      "bytes": 406
+    },
+    {
+      "path": "crypto-bot/src/scanDiagnostics.js",
+      "sha256": "53ef854c80a5313b924fdde73827773626df40c767feca804c46f3547a058968",
+      "bytes": 13438
+    },
+    {
+      "path": "crypto-bot/src/shadowEntryEvidence.js",
+      "sha256": "b29b21af056e28832742cc1047b333ba5a5ec185aabd681a9863094b61537410",
+      "bytes": 876
+    },
+    {
+      "path": "crypto-bot/src/spotPairRouting.js",
+      "sha256": "02916c852ba2a039b7b795a0185bc0c1f6df264f2352b40d4bc9f85a24993263",
+      "bytes": 3678
+    },
+    {
+      "path": "crypto-bot/src/standaloneHost.js",
+      "sha256": "b03c7a8fbfc0218ad47fb08243930b7f266ba10a153ce5355fa98ab644c3bf32",
+      "bytes": 2450
+    },
+    {
+      "path": "crypto-bot/src/storage.js",
+      "sha256": "cd7ca1f110affb3101120c080d5282b36eabb42be53fad517da352e0a6a683d5",
+      "bytes": 9326
+    },
+    {
+      "path": "crypto-bot/src/technicalAnalysis.js",
+      "sha256": "f2581887a14241f9878833602558d6a3bcac7c7087fc2aa9a9646b0c3482b2c4",
+      "bytes": 10299
+    },
+    {
+      "path": "crypto-bot/src/thesisEvidence.js",
+      "sha256": "27c00cd71cf940d926501e6edcabe475881d915f3fd0f5a3fc22d76837609a52",
+      "bytes": 727
+    },
+    {
+      "path": "crypto-bot/src/thesisJournal.js",
+      "sha256": "52d6780f3c472fa274a96ec209f2797607d6e1388ac7e77406c17ba83b5f7f0d",
+      "bytes": 33578
+    },
+    {
+      "path": "crypto-bot/src/time.js",
+      "sha256": "8c9f4817a854c2e08d03fb9b26a94a673cff8b23fa2ed294e79969c4afecebd4",
+      "bytes": 1268
+    },
+    {
+      "path": "crypto-bot/src/tokenSupplyJournal.js",
+      "sha256": "30d07f604f3e027770dfa711a7f42f18f20fc99d1e8c8f316b94da14aeacba43",
+      "bytes": 7328
+    },
+    {
+      "path": "crypto-bot/src/validationCostSensitivity.js",
+      "sha256": "2f633d9adeb95bb348cce2ae41c5d69e75d0f9dc14cad33e5577f01f2751d6a3",
+      "bytes": 2451
+    },
+    {
+      "path": "crypto-bot/src/venueDiscovery.js",
+      "sha256": "cf19824b4c8f70cfd76c9a86317f96f4881971e968da3dd9a3db6109ecf10280",
+      "bytes": 22043
+    },
+    {
+      "path": "crypto-bot/src/venueResearch.js",
+      "sha256": "273cc1d8730514f9062fc2b15926e55b4c86410337e45568f3e716ee2e80a091",
+      "bytes": 3225
+    },
+    {
+      "path": "crypto-bot/src/workerConfiguration.js",
+      "sha256": "7b1a3e3b808b21898807c1c67e8f705ad287ab2d4e5fb2dae086e61886fa546f",
+      "bytes": 463
+    },
+    {
+      "path": "crypto-bot/src/workspace.js",
+      "sha256": "64fa1caba2474a2588307cc128bf800d991aa1464abf0a9ec584539f74f25be2",
+      "bytes": 4500
+    },
+    {
+      "path": "crypto-bot/standalone.js",
+      "sha256": "6847c6a70905c4712eb150fbc1adec9f0ba77ae2cf5cdfb9ce70776c2de41d3a",
+      "bytes": 871
+    },
+    {
+      "path": "crypto-bot/test/accuracy-integrity.test.js",
+      "sha256": "a542bbd72c1f4ecaf997e655b3f5ff812019f30df962368ea6e6c69ecf3f74a0",
+      "bytes": 42697
+    },
+    {
+      "path": "crypto-bot/test/accuracy-roadmap.test.js",
+      "sha256": "406445a944ab46b53cde77532126acb04161cf1573245ac32a5d249d45312f14",
+      "bytes": 29824
+    },
+    {
+      "path": "crypto-bot/test/broad-discovery.test.js",
+      "sha256": "19bac811784b9e4fff4f4b041a3d7391d910d6db5fac86a0e6bedb8ac8aee18b",
+      "bytes": 13857
+    },
+    {
+      "path": "crypto-bot/test/crypto-data.test.js",
+      "sha256": "7424d130a5aadaa512e954fd6ed6e36a19358de0072c987c7ae843e05ebbbce1",
+      "bytes": 8462
+    },
+    {
+      "path": "crypto-bot/test/crypto-universe-journal.test.js",
+      "sha256": "8caaa647320407c0c72eb420a321113a1b9b2b4c77ab528cd51d19b2660e5151",
+      "bytes": 3990
+    },
+    {
+      "path": "crypto-bot/test/cryptoMacroCalendar.test.js",
+      "sha256": "3077ca9bc5ea22fb097a73a1597624e07c797cba2a4c701704ae016e3df9c25e",
+      "bytes": 4720
+    },
+    {
+      "path": "crypto-bot/test/cryptoNews.test.js",
+      "sha256": "15e26b1ccc36bcbff03e9a6e37ada1543169c31c132e894f46a30ed195801b54",
+      "bytes": 9961
+    },
+    {
+      "path": "crypto-bot/test/day-cluster-bootstrap.test.js",
+      "sha256": "6e2229f55911745f6f20addda6aa9c68739e77d93051c2b128edec453089c6e6",
+      "bytes": 1482
+    },
+    {
+      "path": "crypto-bot/test/day-trading-watches.test.js",
+      "sha256": "e814527ba77176b0724254e8a12deecd53538d4ca8fdefca3c43f68d1307c0da",
+      "bytes": 3655
+    },
+    {
+      "path": "crypto-bot/test/dayMarketDataHistory.test.js",
+      "sha256": "b5bf5b4ef15731823afebab3247dfdd0f956aa3475fe2e115091c844dcdea82e",
+      "bytes": 3088
+    },
+    {
+      "path": "crypto-bot/test/dayMarketDataSmoke.test.js",
+      "sha256": "b27a31c6fe58386db2834486c2f40a0429fce48d4d389ecd9dfd0c707241b0f4",
+      "bytes": 1783
+    },
+    {
+      "path": "crypto-bot/test/derivatives-provider-reliability.test.js",
+      "sha256": "8c9acf47d1347ce65c13b26d713f8aa4b79da9b1537a4565f59f91d1b8b62798",
+      "bytes": 5265
+    },
+    {
+      "path": "crypto-bot/test/ensemble-model.test.js",
+      "sha256": "500ee19408c2d9238a00b305e0ed7c53fab79cbe849107c539f6cd786a1741ce",
+      "bytes": 24598
+    },
+    {
+      "path": "crypto-bot/test/evidence-and-investment.test.js",
+      "sha256": "d37e6f449dbae4ddfc8c3f13c0e5f91c535824c0a32fa61ab658bdcdcef6da5d",
+      "bytes": 18602
+    },
+    {
+      "path": "crypto-bot/test/exact-pair-routing.test.js",
+      "sha256": "31c9e83a3c560371aa63ddabf9fef74d9a81618e49548e9999aaa106c95dbc1f",
+      "bytes": 15749
+    },
+    {
+      "path": "crypto-bot/test/github-activity.test.js",
+      "sha256": "44befb7e5fccb1dd3715c04f91816b038afd043d3d114034b5e57a5919828153",
+      "bytes": 3231
+    },
+    {
+      "path": "crypto-bot/test/historical-backtest.test.js",
+      "sha256": "33e42a0a810e34fdeac76b64b665f84407811b353e08d471bf69873f3a8dd2ea",
+      "bytes": 9883
+    },
+    {
+      "path": "crypto-bot/test/historical-fetch.test.js",
+      "sha256": "c79f4422d3bbc26064ced3f464e137aaec625d139d010a944883c43c7d16b468",
+      "bytes": 4572
+    },
+    {
+      "path": "crypto-bot/test/independent-host.test.js",
+      "sha256": "344f9db015939ce12dea3f6848c4745aa17037644f1910bf3e9ddccac20fc78b",
+      "bytes": 9488
+    },
+    {
+      "path": "crypto-bot/test/investment-journal.test.js",
+      "sha256": "86c6c675baab2a640c74f61f3a797d8e51ed17ee2ee458d8486f4d5cc6778f56",
+      "bytes": 26762
+    },
+    {
+      "path": "crypto-bot/test/kraken-paper-book.test.js",
+      "sha256": "231aaa342026b869899d4b7bb1584d17534283079544b035a0c4f48fe2599e3c",
+      "bytes": 8277
+    },
+    {
+      "path": "crypto-bot/test/krakenWebsocketSmokeHistory.test.js",
+      "sha256": "c74d6a355483ae751b9f6dcaca878451b54922e57197fbff762be1d04e524a4b",
+      "bytes": 2468
+    },
+    {
+      "path": "crypto-bot/test/liquidity-shadow.test.js",
+      "sha256": "16e28c02addcd50ba268050fc2ff514c5175b66eb2dab71cd61c99569eadfe70",
+      "bytes": 6138
+    },
+    {
+      "path": "crypto-bot/test/market-universe.test.js",
+      "sha256": "284b54842dfc6b37e766ccd5a775bc8d002d87d6024884cd7d98874301108cf3",
+      "bytes": 13419
+    },
+    {
+      "path": "crypto-bot/test/paper-book-refresh.test.js",
+      "sha256": "d9af7f2ee764635d2eda130177a3ad0e6180b38b2ee5bcc7e2c573bbd3b2432a",
+      "bytes": 8478
+    },
+    {
+      "path": "crypto-bot/test/position-monitor.test.js",
+      "sha256": "3094576b81c20f78c69c55f7242a34de52207b7a24bb41a5401d5482e32ff1ac",
+      "bytes": 24825
+    },
+    {
+      "path": "crypto-bot/test/prediction-engine.test.js",
+      "sha256": "2dcaf40a5d3289e0cc190d30b80c08458589c52e402ca5fc9ff1ae8dc50020a0",
+      "bytes": 11476
+    },
+    {
+      "path": "crypto-bot/test/product-metadata.test.js",
+      "sha256": "bebd3fa71fdafb35bc33e06b7b0ba7e59d3968cef8b104b66e791001c46078ec",
+      "bytes": 8683
+    },
+    {
+      "path": "crypto-bot/test/protocol-fundamentals.test.js",
+      "sha256": "6eb86082008b263e1be31f68468846375b0a2ebd5058df8795e6b2fa68d5499f",
+      "bytes": 10484
+    },
+    {
+      "path": "crypto-bot/test/public-cost-sensitivity.test.js",
+      "sha256": "6ed930bd71635e43603e59dfbb2bdcbbf33ddc531100974c5c762be42a933944",
+      "bytes": 3337
+    },
+    {
+      "path": "crypto-bot/test/public-probe-research.test.js",
+      "sha256": "f1bf9d1ad3ceb95e321bfeaefd1472e3bc32f4b7b76f08915e02c2fb4201bc6a",
+      "bytes": 23006
+    },
+    {
+      "path": "crypto-bot/test/research-provenance.integration.test.js",
+      "sha256": "bf9e2309d9e49ec5333f197ea78877a75edd3fd2241132627a716ebd431df867",
+      "bytes": 3047
+    },
+    {
+      "path": "crypto-bot/test/research-taxonomy.test.js",
+      "sha256": "da371458e3b514080c4fdfb5fb5275c6cfc3b43990d40d8c3cac31c19ac1a8c4",
+      "bytes": 4559
+    },
+    {
+      "path": "crypto-bot/test/retry-policy.test.js",
+      "sha256": "73ad0db14befd6b6a97862cff58bbad8074a8e0091b9a0ece2a2796234d78baa",
+      "bytes": 3897
+    },
+    {
+      "path": "crypto-bot/test/runtime-mode.test.js",
+      "sha256": "1cada1578cf8ae3ba5f31eed8b4edd9fc20e4fda0202379084bb43529fa41f83",
+      "bytes": 672
+    },
+    {
+      "path": "crypto-bot/test/scan-diagnostics.test.js",
+      "sha256": "b2fcad443455609d1f0ba9540923e7e9b0bc8f5b1e7b312d83ce288707604bea",
+      "bytes": 14973
+    },
+    {
+      "path": "crypto-bot/test/scan-failure.integration.test.js",
+      "sha256": "184d20477a7d02d71d84f83b8f659c3d63938ecf4f9ed3ab775f06205104edfa",
+      "bytes": 3540
+    },
+    {
+      "path": "crypto-bot/test/standalone-host.test.js",
+      "sha256": "56192205afd19cb62c0bb31359ae17d873fe7201b929f7e4681cfd92ec02e883",
+      "bytes": 2201
+    },
+    {
+      "path": "crypto-bot/test/storage-integrity.test.js",
+      "sha256": "f95658b3e0ecc15203796957bf986591025e0047a0c4f2dd4c243f137ae74504",
+      "bytes": 2998
+    },
+    {
+      "path": "crypto-bot/test/thesis-journal.test.js",
+      "sha256": "3312e5888690969136f0879f644d196561269f3401bc98181d105a01f20cb946",
+      "bytes": 23705
+    },
+    {
+      "path": "crypto-bot/test/token-supply-journal.test.js",
+      "sha256": "9dd8e1e7c4a5bdf96d87321079061f6ffd90c8092bc9aeff5338e2c21c53de9b",
+      "bytes": 5892
+    },
+    {
+      "path": "crypto-bot/test/validation-cost-sensitivity.test.js",
+      "sha256": "2092e19370f17e3a8d8fe5a11332481a7e98604c74902731c01291c4c900e7bc",
+      "bytes": 3010
+    },
+    {
+      "path": "crypto-bot/test/venue-discovery.test.js",
+      "sha256": "626197f562b126921c0e7407467709586f43a59cbaf9fed9928ba19cac07b58e",
+      "bytes": 16685
+    },
+    {
+      "path": "crypto-bot/test/venue-research-report.test.js",
+      "sha256": "0244d31dc6ea010fccde161741c15ca27adc39b2f387887382850471485e0071",
+      "bytes": 8870
+    },
+    {
+      "path": "crypto-bot/VENUE_FORWARD_EVIDENCE.md",
+      "sha256": "2ca63f798afd7037bbfbfa0ef2da67e37ce7703ed8a50cd546022bf966cf4ca6",
+      "bytes": 6340
+    },
+    {
+      "path": "new-bots/.gitignore",
+      "sha256": "8f7e7795143d8514a0af829f4514cd359ea3cdefcd4412a190c05d4f787aaea1",
+      "bytes": 84
+    },
+    {
+      "path": "new-bots/CRYPTO_BTC_HISTORICAL_REPLAY_2026-09-29.md",
+      "sha256": "8d33bc7b239e7982171b1280ab2824a33317112de8b9a07c48f847bba16a578c",
+      "bytes": 4422
+    },
+    {
+      "path": "new-bots/DATA_PROVIDER_SETUP.md",
+      "sha256": "1b363b3efddb13ee48323c84d1c3ceb7fc7b83288c39db8b5d4797301c51d592",
+      "bytes": 15902
+    },
+    {
+      "path": "new-bots/defi-yield/.env.example",
+      "sha256": "6425ea649a13ac5c696021803e1d797472c9ea005305555d9fe29d535f33e31c",
+      "bytes": 380
+    },
+    {
+      "path": "new-bots/defi-yield/package.json",
+      "sha256": "13579bd061e1206b20010b07858855c23f1ee53c8a40e894d58dd6ce15ccd56b",
+      "bytes": 314
+    },
+    {
+      "path": "new-bots/defi-yield/README.md",
+      "sha256": "8f4992a72e201fe1ab1ff0051c677bf6b4b631cdc5c707579bce513f44ab6e53",
+      "bytes": 1421
+    },
+    {
+      "path": "new-bots/defi-yield/src/index.js",
+      "sha256": "495bc7ad79c1daa107e47d7f9cc1dd7f0fcf7af58b32d6ea4b19e0064d8e311c",
+      "bytes": 6286
+    },
+    {
+      "path": "new-bots/defi-yield/src/ranking.js",
+      "sha256": "af89449b3b3caa18280507f66a8980027c14bb6b3a3f64f8e281e56f802a0cef",
+      "bytes": 1814
+    },
+    {
+      "path": "new-bots/defi-yield/test/ranking.test.js",
+      "sha256": "36a992264874397415837081f94b9dae7ae8dd8bed424910373e12bc16f97476",
+      "bytes": 1722
+    },
+    {
+      "path": "new-bots/DEVELOPER_HANDOFF_2026-10-01.md",
+      "sha256": "57dc310439ec0cdc510fa3919bd9b27eaf8261502461bfc3403e592e2afee8c2",
+      "bytes": 51910
+    },
+    {
+      "path": "new-bots/DISCORD_APPLICATION_MIGRATION.md",
+      "sha256": "fa6a01246b79f12520f560924786a8a1f2cece7a5d06cbf727a6d799c5468620",
+      "bytes": 16161
+    },
+    {
+      "path": "new-bots/etfs-etps/.env.example",
+      "sha256": "c7b7d79a70c9646c04f880dd1d4f2e71125e8587fdb763d0d226efd28a08fd73",
+      "bytes": 2780
+    },
+    {
+      "path": "new-bots/etfs-etps/app.js",
+      "sha256": "3e0fbb3e55bb75e54a17b96b4bd3466955d2b98dd24192e382de5795bd1c5ca6",
+      "bytes": 295
+    },
+    {
+      "path": "new-bots/etfs-etps/DECISION_QUOTE_REFRESH.md",
+      "sha256": "f48112bd5cbcf6938d63ef9bfd1d78e52cf0306b39d852a95a8248b3ebb4586a",
+      "bytes": 9129
+    },
+    {
+      "path": "new-bots/etfs-etps/examples/catalyst-reviews.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "bytes": 3
+    },
+    {
+      "path": "new-bots/etfs-etps/examples/etp-classifications.json",
+      "sha256": "12b55a74e46ad8af66b378046714483283c98417b65a9989e5d7570d4e5f5593",
+      "bytes": 11548
+    },
+    {
+      "path": "new-bots/etfs-etps/examples/paper-session.json",
+      "sha256": "862dd6eaac75f7a558e325a571137826b7c8bb28bf24616b3e3a8c5b678df4a3",
+      "bytes": 49
+    },
+    {
+      "path": "new-bots/etfs-etps/NATIVE_QUOTE_EVIDENCE.md",
+      "sha256": "c1024ab03edfd32519898c49aff5a4d6eba35725d2f6ed15a8f47a6910a0e0d9",
+      "bytes": 8834
+    },
+    {
+      "path": "new-bots/etfs-etps/package.json",
+      "sha256": "9b6fb45ab39858768786162f688784d14b521bbde04dd65af98b6b8d0dd0b78c",
+      "bytes": 915
+    },
+    {
+      "path": "new-bots/etfs-etps/PUBLIC_DIRECTORY_AUDIT.md",
+      "sha256": "ae87aabb5b03b39db8f9e674c16e4b90b5dd60f1c41fa20c6685c00e48b0c94f",
+      "bytes": 7547
+    },
+    {
+      "path": "new-bots/etfs-etps/README.md",
+      "sha256": "5bb841797fb5859f3c962dcd8d7c00ee14db67bb0cc9ced634c5e9457a5dd672",
+      "bytes": 17823
+    },
+    {
+      "path": "new-bots/etfs-etps/scripts/probe-public-directory.js",
+      "sha256": "55271763d7af83d0ce121242b013cd7d7233c6dd952abe1637d80c9f7fd19495",
+      "bytes": 716
+    },
+    {
+      "path": "new-bots/etfs-etps/scripts/probe-universe.js",
+      "sha256": "8044ea167a12d1abceed08c21371647dcef3a345dda9837b9e4ef80d92b874e5",
+      "bytes": 1747
+    },
+    {
+      "path": "new-bots/etfs-etps/scripts/replay.js",
+      "sha256": "d2b8c0ed5b01cd5dd363c582a824ef402b357a92077373302a05c82765a36719",
+      "bytes": 921
+    },
+    {
+      "path": "new-bots/etfs-etps/src/alertFormat.js",
+      "sha256": "81eec9689d8cb24ca4021b191890b12d6a703bda31925bafd0d460a8f5f142db",
+      "bytes": 4556
+    },
+    {
+      "path": "new-bots/etfs-etps/src/alpacaMarketData.js",
+      "sha256": "988208d6a1fd1404119603524b04ffde3a22f3058eaaa6a47e09c81171dff298",
+      "bytes": 52371
+    },
+    {
+      "path": "new-bots/etfs-etps/src/decisionQuotes.js",
+      "sha256": "d8159682bce43b82ae1f60ea6a64dd0bc4efc8b275ad0c4f8b74472e439eb2bf",
+      "bytes": 8612
+    },
+    {
+      "path": "new-bots/etfs-etps/src/diagnostics.js",
+      "sha256": "38b099906987f9840ab323f5a549d8d4f5a90de64aa3a1a6a4c8635c2907feb3",
+      "bytes": 6534
+    },
+    {
+      "path": "new-bots/etfs-etps/src/entryWorkflow.js",
+      "sha256": "14eff2cae8696fc62c4cfb0717b304f4097ba836373fc0ef680dde6057da3cd5",
+      "bytes": 4227
+    },
+    {
+      "path": "new-bots/etfs-etps/src/exposure.js",
+      "sha256": "3f81979f2324dec5e002c07083417f07e49d0e83886f3dbb8afafc263c639331",
+      "bytes": 120
+    },
+    {
+      "path": "new-bots/etfs-etps/src/fullMarketDiscovery.js",
+      "sha256": "180cd0dd288f9dc45680054cd6e2dfa6c46c137806386b840341d0a0293dba6f",
+      "bytes": 436
+    },
+    {
+      "path": "new-bots/etfs-etps/src/index.js",
+      "sha256": "2f1b4081e2b0b9bc0698c9ba90a7c70d573c9b65382c42685ff43727788de57a",
+      "bytes": 20052
+    },
+    {
+      "path": "new-bots/etfs-etps/src/publicDirectoryProbe.js",
+      "sha256": "a9b1138598190f85532fffe6a618ff5b9f6cd991a3cc80105d139ba8b41d9709",
+      "bytes": 6530
+    },
+    {
+      "path": "new-bots/etfs-etps/src/replay.js",
+      "sha256": "a49006260a946685f201c584b5f325d7a7dcc819fc1b84d1d9d3f63b04f74682",
+      "bytes": 2103
+    },
+    {
+      "path": "new-bots/etfs-etps/src/sharedSignals.js",
+      "sha256": "e19efe773a0d0de91bfd94263ddf0bf6eab1cf97d676626892e5738d1f45e48c",
+      "bytes": 1570
+    },
+    {
+      "path": "new-bots/etfs-etps/src/strategies.js",
+      "sha256": "f9120d7dd9628deca83bec1f2c60b3f1dededf2102773f706598f2a6157f78bc",
+      "bytes": 19644
+    },
+    {
+      "path": "new-bots/etfs-etps/src/universe.js",
+      "sha256": "1bc05850cd7d637ac15818fd3231e505f5242c666c4740511e852b07ba23a0e0",
+      "bytes": 4413
+    },
+    {
+      "path": "new-bots/etfs-etps/test/alertFormat.test.js",
+      "sha256": "af41572f9a9a316633a259086f24e6e8b7e01c2646ec35604de965fc7f2826b9",
+      "bytes": 2982
+    },
+    {
+      "path": "new-bots/etfs-etps/test/alpacaMarketData.test.js",
+      "sha256": "e399ce49b67146dd2407ed44dcf95d6228464939f24f7f0aa47c34e2e195c2a4",
+      "bytes": 31525
+    },
+    {
+      "path": "new-bots/etfs-etps/test/decisionQuoteBaseline.test.js",
+      "sha256": "957b0bf1591ef95a0f018e96373686332d8690f120eb6e901cee3ec9dd3c51cd",
+      "bytes": 6124
+    },
+    {
+      "path": "new-bots/etfs-etps/test/decisionQuoteLifecycle.test.js",
+      "sha256": "158d6eabc79f75a076d07481f070b4af2e304f461260395794424077336f9932",
+      "bytes": 5083
+    },
+    {
+      "path": "new-bots/etfs-etps/test/decisionQuoteRunner.integration.test.js",
+      "sha256": "69867d2dba4c2b6e7ee8c13cc6278be0bc773aa66be906adcc101902a5275f32",
+      "bytes": 5308
+    },
+    {
+      "path": "new-bots/etfs-etps/test/decisionQuotes.test.js",
+      "sha256": "c4ab3134c902cf1b6d2c35963bc1fd6d1b69396f482c58e64e75a19c3bbeff13",
+      "bytes": 11395
+    },
+    {
+      "path": "new-bots/etfs-etps/test/diagnostics.test.js",
+      "sha256": "898e95cfea9c72a9865c8b7cf89c1a652a89aabfb7ab83da569f083b67b7c4aa",
+      "bytes": 7299
+    },
+    {
+      "path": "new-bots/etfs-etps/test/economicCalendar.integration.test.js",
+      "sha256": "b017af3b841234ede34e7ba30c6e1e024e3d9c314bd2d6a9b42f2bbfa5c27d9b",
+      "bytes": 2345
+    },
+    {
+      "path": "new-bots/etfs-etps/test/exposure.test.js",
+      "sha256": "ddb6449c7fca1ba8cf582c81dc2ba2880b0ed65806722c8f391ce224e314cdcc",
+      "bytes": 1410
+    },
+    {
+      "path": "new-bots/etfs-etps/test/fixtures/etf-universe-cache.json",
+      "sha256": "b0aa1764bcb6d7ddba5553fe672e71c6cca70abb1c35e566f505c3ae624721c7",
+      "bytes": 483
+    },
+    {
+      "path": "new-bots/etfs-etps/test/fullMarketDiscovery.test.js",
+      "sha256": "3e534b03fca13075658de0ecb5046f863cb87cfdf6deec21aa77ee980f9d68bb",
+      "bytes": 21043
+    },
+    {
+      "path": "new-bots/etfs-etps/test/publicDirectoryProbe.test.js",
+      "sha256": "9e55beba836cc1f59d65bf96c771502310fd60513f74146b6945c446e99c6459",
+      "bytes": 8696
+    },
+    {
+      "path": "new-bots/etfs-etps/test/quoteEvidence.test.js",
+      "sha256": "1fdb021ef90c69fac4d4fcd6050bfacea06ca17271663deedfdbfad7d54ac2b5",
+      "bytes": 11843
+    },
+    {
+      "path": "new-bots/etfs-etps/test/quoteRefreshFixtures.js",
+      "sha256": "da27c4f515c25a16b06db7df8c86b46ca053f5642cbf452d2ad4f2edbdceb1a3",
+      "bytes": 1519
+    },
+    {
+      "path": "new-bots/etfs-etps/test/replay.test.js",
+      "sha256": "897d09da2e138423534f988817cac6f27c1110434da5e077c367915aafe28521",
+      "bytes": 5067
+    },
+    {
+      "path": "new-bots/etfs-etps/test/sharedSignals.test.js",
+      "sha256": "2a5e01a73f4104a6b8a6729f57d70101213c8cdc702ec3c31bdaded8926610dc",
+      "bytes": 2626
+    },
+    {
+      "path": "new-bots/etfs-etps/test/strategies.test.js",
+      "sha256": "7472e5ca92d32992f7fdd29e6cb1df1f07887bf3f4b550db4208c36b5f7635f7",
+      "bytes": 18429
+    },
+    {
+      "path": "new-bots/etfs-etps/test/universe.test.js",
+      "sha256": "a8914e3eea2fd5256bf2686670b2764b1e7924ef46be38f05a9c9f8b68f68af3",
+      "bytes": 15930
+    },
+    {
+      "path": "new-bots/forex/.env.example",
+      "sha256": "1ead360b4ba9769152cc3b181253fb6f5ed0686f449c25559474c7cc9ac9ead1",
+      "bytes": 2905
+    },
+    {
+      "path": "new-bots/forex/app.js",
+      "sha256": "0aa824fd4c562df7844b1d3a28a121029a4712db474a114c9c5128e6c798cd72",
+      "bytes": 291
+    },
+    {
+      "path": "new-bots/forex/DECISION_QUOTE_REFRESH.md",
+      "sha256": "a2431e410f57490914b7bd9c8dd1120d18eb9f7e2eb43552ecf439a78e089dcd",
+      "bytes": 7053
+    },
+    {
+      "path": "new-bots/forex/package.json",
+      "sha256": "a2fb5aae99002c64839b72932b538bfaa4fe56a94b2a635a5c515f198a9b1995",
+      "bytes": 826
+    },
+    {
+      "path": "new-bots/forex/README.md",
+      "sha256": "d1ad29c99e3c90ee03cc34408f03d27109c658a8541fc0863adec52db43fcfa2",
+      "bytes": 13505
+    },
+    {
+      "path": "new-bots/forex/scripts/probe-universe.js",
+      "sha256": "6e6fad8b0f1988836f51032563fc070fb0b5b2e9ed604fabb397faab7f239cf5",
+      "bytes": 2461
+    },
+    {
+      "path": "new-bots/forex/scripts/replay.js",
+      "sha256": "621965f71d52e99ecbaaacfc4e107de8c3008ab085c1e62e6353f34707c1232d",
+      "bytes": 902
+    },
+    {
+      "path": "new-bots/forex/src/dayStrategy.js",
+      "sha256": "084b1ed079a14bf9f6783c50156969d02195827bb4fcdb0a4304cb88e6a3c2d3",
+      "bytes": 10315
+    },
+    {
+      "path": "new-bots/forex/src/decisionQuotes.js",
+      "sha256": "a761b39948f3943fbc3308f0aa86b46313aee4a905d5bfc65d0d560feda8cf45",
+      "bytes": 4390
+    },
+    {
+      "path": "new-bots/forex/src/diagnostics.js",
+      "sha256": "1c70d6a693ba00ec0e35c1d915e2ab2ecf8d00adbe4d68b6ae8d4f2c1d78c3bc",
+      "bytes": 13721
+    },
+    {
+      "path": "new-bots/forex/src/economicCalendar.js",
+      "sha256": "fa55acd66fd35689f509673a8954b3acd665f3b79062976890fe703f44137604",
+      "bytes": 116
+    },
+    {
+      "path": "new-bots/forex/src/index.js",
+      "sha256": "020526dfea03390762eab2114cbf880ed54479715f18e3c41d5ae06cd85c21dc",
+      "bytes": 32578
+    },
+    {
+      "path": "new-bots/forex/src/marketSession.js",
+      "sha256": "db9aabcc6f081a7b53dfeb590a1f7d76de7a3a3da6613700542567a00cc862f3",
+      "bytes": 5131
+    },
+    {
+      "path": "new-bots/forex/src/oandaDirectoryCache.js",
+      "sha256": "14d3d742db064ca471c45e2bc9e7bd46df488629be72649ae9fd0366a1270c3e",
+      "bytes": 3695
+    },
+    {
+      "path": "new-bots/forex/src/oandaUniverse.js",
+      "sha256": "0c50019d73e7ca275d3215ce2bf83d64ffc8806571a965a0b7ac199f8ce78dea",
+      "bytes": 10580
+    },
+    {
+      "path": "new-bots/forex/src/positionQuotes.js",
+      "sha256": "0f68fa7c773692a4ce495ee7d54989b69e9349ba07635f3db1d29b6adec8f8a0",
+      "bytes": 2376
+    },
+    {
+      "path": "new-bots/forex/src/providerRequest.js",
+      "sha256": "3639d7e28061d25781b9a611a26fc154087b711f4bca64cb04064995b5798aa1",
+      "bytes": 8436
+    },
+    {
+      "path": "new-bots/forex/src/quoteConversion.js",
+      "sha256": "8253c3471f359dfdf62c49aaf12df7b4f78ad7f23dda48cf2e27cecd1adbbccf",
+      "bytes": 3828
+    },
+    {
+      "path": "new-bots/forex/src/quoteQuality.js",
+      "sha256": "6c7266a469cf009bcf90b3973afa6f711a2c389bdc1596bedafd34dbc5bb4ee2",
+      "bytes": 1385
+    },
+    {
+      "path": "new-bots/forex/src/replay.js",
+      "sha256": "3a95f865be6ef1d166683d1772cd1c194e8ddd0eb55a8f90f701b78498668793",
+      "bytes": 1829
+    },
+    {
+      "path": "new-bots/forex/src/scenarios.js",
+      "sha256": "b9ed0e0812282c1bedb153bf5a248abe1f7e939d1d957746d4ccbdf4d34fd749",
+      "bytes": 1247
+    },
+    {
+      "path": "new-bots/forex/src/sharedSignals.js",
+      "sha256": "b18c9045da96c0f33f08557edf05c8cd209e4cc6b530f1d490a3f6dcde8eee31",
+      "bytes": 3291
+    },
+    {
+      "path": "new-bots/forex/src/yahooFx.js",
+      "sha256": "6de193b9b78e3ff43ded81b173141dc74d86c955c2d246153bd05cafd084b323",
+      "bytes": 8133
+    },
+    {
+      "path": "new-bots/forex/test/day-strategy.test.js",
+      "sha256": "629ecc7a80310c1d91edcd70021af239956d15a50cc93f42b10631dc785d007f",
+      "bytes": 11585
+    },
+    {
+      "path": "new-bots/forex/test/decisionQuotes.test.js",
+      "sha256": "ac0f9d0388bc9cbb032ad63622abb6527b3ef52e57f561bb94be8a18affd8f34",
+      "bytes": 9021
+    },
+    {
+      "path": "new-bots/forex/test/decisionQuotesBaseline.test.js",
+      "sha256": "aff6ca2bfa429927088db1c04b8c189496ae43357046cbf5306b0c6c03e1bafc",
+      "bytes": 4200
+    },
+    {
+      "path": "new-bots/forex/test/diagnostics.test.js",
+      "sha256": "59bfa451d11a41a3363c6f395911cd72b4dae9faf2ce62bb4e99a34597b25ebe",
+      "bytes": 10772
+    },
+    {
+      "path": "new-bots/forex/test/economicCalendar.test.js",
+      "sha256": "ab36d515c5d216c9ed545c9c923a976630a8e0c985b20c09d7e345593e8bf8aa",
+      "bytes": 10229
+    },
+    {
+      "path": "new-bots/forex/test/oanda-cache-position.test.js",
+      "sha256": "89f48e0da18108f890f4df841c945eaed37b3ff962d1f2eb9d2975b2b1bee9ea",
+      "bytes": 5599
+    },
+    {
+      "path": "new-bots/forex/test/oanda-discovery.integration.test.js",
+      "sha256": "d18abd16f94892ac9ad96fad0961bc9f204edc007247e2a9d77f83115a10098e",
+      "bytes": 9833
+    },
+    {
+      "path": "new-bots/forex/test/oanda-universe.test.js",
+      "sha256": "a34cfeed18164ff432e2c22025c47294ecaffdde8a17e253b0a9b5b01df1824e",
+      "bytes": 9502
+    },
+    {
+      "path": "new-bots/forex/test/providerRequest.test.js",
+      "sha256": "30cc509a241a47258926d08abb16b571a9f24a51457c2e2eb067d62220c3acd3",
+      "bytes": 6621
+    },
+    {
+      "path": "new-bots/forex/test/quote-conversion.test.js",
+      "sha256": "aad9680a33ccc3eb163e30ffa6cedcbef644432f06703588cf700a434738f478",
+      "bytes": 3956
+    },
+    {
+      "path": "new-bots/forex/test/quote-quality.test.js",
+      "sha256": "0509fd8a7a46a823580379f9ea0c80438caac38d255e5b1dfc8c6daf2d53108e",
+      "bytes": 989
+    },
+    {
+      "path": "new-bots/forex/test/replay.test.js",
+      "sha256": "7fb3f1e9d905b1d70bfb1861729782b032a2f1e4fe8f8f4e263e97e35811d435",
+      "bytes": 6607
+    },
+    {
+      "path": "new-bots/forex/test/runnerDiagnostics.integration.test.js",
+      "sha256": "ddba40688f1b07cc07db9415a30bfae571c89b8acac659242e02d75b5fed685d",
+      "bytes": 1810
+    },
+    {
+      "path": "new-bots/forex/test/scenarios.test.js",
+      "sha256": "3ecd1d2a5124f54516d38fe4fdec1f63393b821e09211798a80da9df201357c7",
+      "bytes": 1240
+    },
+    {
+      "path": "new-bots/forex/test/shared-signals.test.js",
+      "sha256": "786e87091be5b45ab264b76e359db7ef58b2e07e6a73671ee23ac7b77075c8a8",
+      "bytes": 4067
+    },
+    {
+      "path": "new-bots/forex/test/yahoo-fx.test.js",
+      "sha256": "60bb98326410a70a98994fc2d22b2adb83823d5b59fae8186ebd05b48ee356ab",
+      "bytes": 5217
+    },
+    {
+      "path": "new-bots/futures/.env.example",
+      "sha256": "4a31c2f1250c361c49ed4092edede3762993199be49617bfd7b855c6ca6740a1",
+      "bytes": 4486
+    },
+    {
+      "path": "new-bots/futures/ACTIVITY_ANALYSIS_ROUTING.md",
+      "sha256": "548feec41711ce856567305a02791bc46f70b9f83c8a5ef9becda3838034b6f8",
+      "bytes": 9852
+    },
+    {
+      "path": "new-bots/futures/ACTIVITY_DISCOVERY.md",
+      "sha256": "4d712644f03d6f94b46bbfe6c99a38c0a128c085770d8359c51d03803dae1d11",
+      "bytes": 10338
+    },
+    {
+      "path": "new-bots/futures/app.js",
+      "sha256": "57834e900f2ecd4250a95665cfefcc9160f7f372cf176c3cae96fa927a33d463",
+      "bytes": 293
+    },
+    {
+      "path": "new-bots/futures/DATASET_DIRECTORY.md",
+      "sha256": "ab48ecc5d5e26041b7bfbdb915a0735f6ff9c7e395fa77e7953d466e9989290a",
+      "bytes": 9937
+    },
+    {
+      "path": "new-bots/futures/DECISION_TIMING.md",
+      "sha256": "0192fa8150c9fe2db0afb7e99fc7f5c170c932e3d5812ec8bc81d6578b07e0c0",
+      "bytes": 7574
+    },
+    {
+      "path": "new-bots/futures/examples/day-session.json",
+      "sha256": "22630d47893c39d6a1c67bffb8590ccc1b1c2906251621695b8f18feef14535e",
+      "bytes": 60
+    },
+    {
+      "path": "new-bots/futures/examples/futures.json",
+      "sha256": "0840435b3b6d030f4a95e9bc8ef75146821d31e9725645c9d66b97e8e670e726",
+      "bytes": 4605
+    },
+    {
+      "path": "new-bots/futures/H1_DATA_INTEGRITY.md",
+      "sha256": "543a762941948b728bfc7dab77c5e14916d4197f5e5b780b696f55d9349977d8",
+      "bytes": 6613
+    },
+    {
+      "path": "new-bots/futures/LIVE_PROTOCOL_INTEGRITY.md",
+      "sha256": "62a85825dad6984a40873c2fddae06b1534391341c8882dd60b1c1b738971004",
+      "bytes": 6983
+    },
+    {
+      "path": "new-bots/futures/package.json",
+      "sha256": "6181a2989557158a57a01aa46945f0c4b80d9dd1c91a94b78aa209a2d9f9da72",
+      "bytes": 1398
+    },
+    {
+      "path": "new-bots/futures/README.md",
+      "sha256": "4674da66858cd79b6a5dcbc17ed151edf6e46d4faf757c510765a834eda858d1",
+      "bytes": 23822
+    },
+    {
+      "path": "new-bots/futures/scripts/compileReviewedDaySession.js",
+      "sha256": "d8c897b5ce1b2f58f02be33d8d9ac0a66bed3c03195d32346a8821af3cab6cda",
+      "bytes": 1508
+    },
+    {
+      "path": "new-bots/futures/scripts/createDaySessionReviewTemplate.js",
+      "sha256": "f5479214451c0525e110f20e172a9fa3abc8d533bb72a4938eefd251d836b1af",
+      "bytes": 733
+    },
+    {
+      "path": "new-bots/futures/scripts/discoverContracts.js",
+      "sha256": "100d38239e7f0510e42a63aa90026430d175332cbf5b813f8819a7d25d8cc740",
+      "bytes": 1426
+    },
+    {
+      "path": "new-bots/futures/scripts/discoverDaySessionDraft.js",
+      "sha256": "56016dc82ab5011b12071dc41cd81b926c9f89ae28214b921d30d0e4df511513",
+      "bytes": 1209
+    },
+    {
+      "path": "new-bots/futures/scripts/prepareDaySessionDraft.js",
+      "sha256": "7b7ec7c5c1e7ac2a3a7e1ba2606d64ae0b58df52bdf5a9a31e3ba9bfeea019f2",
+      "bytes": 1334
+    },
+    {
+      "path": "new-bots/futures/scripts/probeActivity.js",
+      "sha256": "acef1fc80cf0beb8eeed5c8a24f86850af4fb29b9e07afc134858eb6858373b6",
+      "bytes": 1101
+    },
+    {
+      "path": "new-bots/futures/scripts/probeDirectory.js",
+      "sha256": "ccdf121a58c04b03086b461e027b7bccbfabb4ff9808d78396aebb7bcf8149f1",
+      "bytes": 965
+    },
+    {
+      "path": "new-bots/futures/scripts/replay.js",
+      "sha256": "b0c23f4b3c8f4f47dd0a16d2ca32cceac12c740b4c1109a69aa7da895eee98ac",
+      "bytes": 982
+    },
+    {
+      "path": "new-bots/futures/scripts/reviewContracts.js",
+      "sha256": "d3891de2cd3b8d2dfb4f21990ef97cdbd031348652da8ab60c362da33bf19b26",
+      "bytes": 936
+    },
+    {
+      "path": "new-bots/futures/src/activityAnalysisRouting.js",
+      "sha256": "6172001103b227285a159ddce4609ba9a3d8e7d9aff6196604222dac4d3e9976",
+      "bytes": 12520
+    },
+    {
+      "path": "new-bots/futures/src/contractDiscoveryAudit.js",
+      "sha256": "76c669983bfdba2f0cd84ffa67b8ac2a368f7853851a5b823090eec308286bf0",
+      "bytes": 5242
+    },
+    {
+      "path": "new-bots/futures/src/contractDiscoveryCache.js",
+      "sha256": "f8702622a913e93a83d229e6fcec2d169792e4f0767a16a58b1f281334cced84",
+      "bytes": 3709
+    },
+    {
+      "path": "new-bots/futures/src/contractLifecycle.js",
+      "sha256": "4ecf565a70fd5a30dfea7d832a6594d9b9696e29605cf5a5a6719d0f95dd08fc",
+      "bytes": 4818
+    },
+    {
+      "path": "new-bots/futures/src/contractReview.js",
+      "sha256": "9b767f204b4f40bc600fe0ed183bfb081451159915f9965f6b9ab4830db403e9",
+      "bytes": 10955
+    },
+    {
+      "path": "new-bots/futures/src/databentoContractDiscovery.js",
+      "sha256": "8a439709ab59aad68da68f6042081829d3c749e744dd56c3c5f48082c4342e5f",
+      "bytes": 19152
+    },
+    {
+      "path": "new-bots/futures/src/databentoDatasetDirectory.js",
+      "sha256": "ed02082ca205abf0c50222fc32954333bbe6261849d488fc4c9b6cb94905b424",
+      "bytes": 17263
+    },
+    {
+      "path": "new-bots/futures/src/databentoH1Cache.js",
+      "sha256": "0b259761f770f4db210e5bbf41072ddc31b5ec2d42cba9fb6a1ea93f179d12f2",
+      "bytes": 3162
+    },
+    {
+      "path": "new-bots/futures/src/databentoH1Normalization.js",
+      "sha256": "f2c6cb1171c8e8b240fc595ed93c5e8eb2b93d2e14d983bde8e9ca34a87b1b9c",
+      "bytes": 8993
+    },
+    {
+      "path": "new-bots/futures/src/databentoLiveMarks.js",
+      "sha256": "bb901b3a76f3e69e398b81c3ac72cbee2718e5df2706c59fec2131a83b43241a",
+      "bytes": 13421
+    },
+    {
+      "path": "new-bots/futures/src/databentoLiveProtocol.js",
+      "sha256": "c19e6502558077d223371dd585aaea22fcecdf3d4514400c11e286cbeaeaf932",
+      "bytes": 10344
+    },
+    {
+      "path": "new-bots/futures/src/databentoLiveSession.js",
+      "sha256": "395acd2398c43cc7d382e2dba27742e87063fe6756a329307961a2dd513b385d",
+      "bytes": 14989
+    },
+    {
+      "path": "new-bots/futures/src/databentoMarketData.js",
+      "sha256": "e60e2f14d6287055e4ce05cbd232a10792f83d60f2075aab22409091ab754b92",
+      "bytes": 12896
+    },
+    {
+      "path": "new-bots/futures/src/databentoTrendData.js",
+      "sha256": "ee20d1555cbb10ecd22ebbff99c871654d40facdea7d55b7e240eee67c2b28c5",
+      "bytes": 10382
+    },
+    {
+      "path": "new-bots/futures/src/datasetDirectoryCache.js",
+      "sha256": "99a4ec0286e01ae5ccc63110d2f08cb668755d6d2848c0adade0c45ab55eef23",
+      "bytes": 6461
+    },
+    {
+      "path": "new-bots/futures/src/dayStrategy.js",
+      "sha256": "076f91cd76762377537b58c059ab676f68b4a3d8a73eadcc240d1b6653401554",
+      "bytes": 18957
+    },
+    {
+      "path": "new-bots/futures/src/dayTradeReadiness.js",
+      "sha256": "07a5d622294892ad857035024bd48597eccebbc44617576d3e86293e06032db0",
+      "bytes": 3878
+    },
+    {
+      "path": "new-bots/futures/src/diagnostics.js",
+      "sha256": "abb89799b8cd4fa6f204b07421a78be5a77c993a0c0e0a7b2d3744dd5c733cd7",
+      "bytes": 7140
+    },
+    {
+      "path": "new-bots/futures/src/futuresActivityDiscovery.js",
+      "sha256": "4ac56f3132522d5e12803864774d1cd2cf7973188119be8144c807425f846848",
+      "bytes": 15791
+    },
+    {
+      "path": "new-bots/futures/src/futuresActivityScreen.js",
+      "sha256": "0935d43c6e9577907481b69d30216b321bf2d32e1a53e09b10b2265a035f6666",
+      "bytes": 12947
+    },
+    {
+      "path": "new-bots/futures/src/futuresDiscoveryReview.js",
+      "sha256": "92aee89033dcc8f1722cd4568ecfc503211289c0a4cb322fe0483d1ec44e5e16",
+      "bytes": 2176
+    },
+    {
+      "path": "new-bots/futures/src/historicalCostBudget.js",
+      "sha256": "4619bff020917921a2065ddcb7c6b5e21bb4994b2dcd28cebb895d2fbe7d06de",
+      "bytes": 1615
+    },
+    {
+      "path": "new-bots/futures/src/index.js",
+      "sha256": "a971b175646b579a49d3daaa0eb1637087c3e57d161721be3296c6a8a9639119",
+      "bytes": 41233
+    },
+    {
+      "path": "new-bots/futures/src/prepareDaySessionDraft.js",
+      "sha256": "680c72dfd178622bd9c8008df51722e874ade753980541a18c08d890cc2e1267",
+      "bytes": 6586
+    },
+    {
+      "path": "new-bots/futures/src/replay.js",
+      "sha256": "8ad555c2e9d9a5b69492dd8c75d72cf8f035073e474dcd9f4fe4358722438c5c",
+      "bytes": 2328
+    },
+    {
+      "path": "new-bots/futures/src/reviewedDaySession.js",
+      "sha256": "df758a9750911950d6385c03008bb517bb0a3a0ee8af12c605d1b31cf279f29c",
+      "bytes": 8684
+    },
+    {
+      "path": "new-bots/futures/src/sessionDate.js",
+      "sha256": "7d7b3733adb7c4ad60579191945fe00d9791208c7227f602887570e790182103",
+      "bytes": 248
+    },
+    {
+      "path": "new-bots/futures/src/sharedSignals.js",
+      "sha256": "550656a4939b07ef79756b05ee75e12e408109eb6faba1ddd68f5f39dbdd0fa5",
+      "bytes": 2261
+    },
+    {
+      "path": "new-bots/futures/src/universe.js",
+      "sha256": "e849f47e409979bfea0cd79ad993ef966b80f2273e3da9bb5aa8801f99154895",
+      "bytes": 6869
+    },
+    {
+      "path": "new-bots/futures/test/activity-analysis-routing.test.js",
+      "sha256": "6d7cd638f82176abf0c101ec50eb2afdc243882e461109819cb6f0daad115796",
+      "bytes": 9051
+    },
+    {
+      "path": "new-bots/futures/test/activity-analysis-runner.integration.test.js",
+      "sha256": "6cc48142a2e2e1e0ca0003d338063e4bc3dfcac8415e0541c0bef5950e2c39c3",
+      "bytes": 11910
+    },
+    {
+      "path": "new-bots/futures/test/activity-discovery.integration.test.js",
+      "sha256": "05f16e14483a80a1c67e0716a220a1345b72ec0b7f3e6195f8d02015bc934d95",
+      "bytes": 6524
+    },
+    {
+      "path": "new-bots/futures/test/activity-discovery.test.js",
+      "sha256": "a4e3cb524004965e473d807567f783c89356a1a93bb14f4377a7934ca3a6edae",
+      "bytes": 9975
+    },
+    {
+      "path": "new-bots/futures/test/activity-screen.test.js",
+      "sha256": "7ea97fb7e5662c70d9aea8d557e35aad71b693394d0c4329555d43dec4828390",
+      "bytes": 7666
+    },
+    {
+      "path": "new-bots/futures/test/contract-discovery-audit.test.js",
+      "sha256": "e22a079c51a4a42e7a427ed0cca5dc908050dc3dcb346cc512340fb376efcb45",
+      "bytes": 3391
+    },
+    {
+      "path": "new-bots/futures/test/contract-discovery-cache.test.js",
+      "sha256": "5c8d261366407ae31bcede11bb66c62a6e699fb24639c158ee602dbf825cb39d",
+      "bytes": 5764
+    },
+    {
+      "path": "new-bots/futures/test/contractLifecycle.test.js",
+      "sha256": "6ca7198e2875b7837be34259d0b625586255cc3e151f295c6c7bd1c206f6d017",
+      "bytes": 3238
+    },
+    {
+      "path": "new-bots/futures/test/contractReview.test.js",
+      "sha256": "0f28244fa239a76002faf8d90950ecb458357589f09818b68a216cc25536bad8",
+      "bytes": 7214
+    },
+    {
+      "path": "new-bots/futures/test/databento-contract-discovery.test.js",
+      "sha256": "0e33d955e9ff5f4da7ec31846af5a4f19f1b5ed622aad4ae5623d163f91bd4f0",
+      "bytes": 12650
+    },
+    {
+      "path": "new-bots/futures/test/databento-live-marks.test.js",
+      "sha256": "7e6b9d75df18816e58171a7e73b43f7560622310e69b9f9644127577dd7026ad",
+      "bytes": 7175
+    },
+    {
+      "path": "new-bots/futures/test/databento-live-protocol.test.js",
+      "sha256": "8bcfed03603004c3b1fe4822c47f11551f546ac1dcb720bbe272255d1bdb557a",
+      "bytes": 16645
+    },
+    {
+      "path": "new-bots/futures/test/databento-live-session.test.js",
+      "sha256": "8c1e7fd73fd6a4327acb60369650b7f8c159f7a3654ac6584e93799c58018052",
+      "bytes": 10871
+    },
+    {
+      "path": "new-bots/futures/test/databento-market-data.test.js",
+      "sha256": "4eab09c1aa34726680161eb4d81144857cd27143fdf3e409c6c5cc0630c3ea43",
+      "bytes": 9011
+    },
+    {
+      "path": "new-bots/futures/test/databento-trend-data.test.js",
+      "sha256": "6400b7d4b8f0df90484e164cdbd87b8d6812574eff8700cb793a2a68570494ae",
+      "bytes": 8022
+    },
+    {
+      "path": "new-bots/futures/test/dataset-directory.integration.test.js",
+      "sha256": "76c4fd1cd76bb7cfe3e44a5ff40301a151e192f6dc497185cd27232f62203214",
+      "bytes": 4012
+    },
+    {
+      "path": "new-bots/futures/test/dataset-directory.test.js",
+      "sha256": "7ca18ea627057c916c3f5a0abc1d7d992f1d3984859408863c601497ec5b4767",
+      "bytes": 13692
+    },
+    {
+      "path": "new-bots/futures/test/day-strategy.test.js",
+      "sha256": "f8543e00996781dbf615302ec650327e5d0f43e9ec161690b30da4feb01e039c",
+      "bytes": 19017
+    },
+    {
+      "path": "new-bots/futures/test/day-trade-readiness.test.js",
+      "sha256": "2fe55595d3c8003ec222aeb26b854d62c8057934d9dec2b632d5bcb3a9d26bd6",
+      "bytes": 3585
+    },
+    {
+      "path": "new-bots/futures/test/dayData.integration.test.js",
+      "sha256": "acfd7cb7a997ec2b319465424571443f74c7adf5a234f169a615016c4d9f2e6a",
+      "bytes": 13179
+    },
+    {
+      "path": "new-bots/futures/test/decisionTiming.integration.test.js",
+      "sha256": "911d56747651616ef206aa9d7aa575b4878554e2b118aef1a8d24906433473c2",
+      "bytes": 11340
+    },
+    {
+      "path": "new-bots/futures/test/decisionTimingDiagnostics.test.js",
+      "sha256": "3ff7f7c02cde43b296f0fdea51c41340e8d88bf20b7504b2190111558f7a7fea",
+      "bytes": 2138
+    },
+    {
+      "path": "new-bots/futures/test/diagnostics.test.js",
+      "sha256": "7a23c42acb476e92e8fa50d340b02bed6a6e3e0045aacf001d9c381738bbcd9c",
+      "bytes": 7735
+    },
+    {
+      "path": "new-bots/futures/test/discover-day-session-draft-cli.integration.test.js",
+      "sha256": "3b204f8b97213d5058b467f059bf9ed11b184f59744318b55bdb095491ec9562",
+      "bytes": 3564
+    },
+    {
+      "path": "new-bots/futures/test/fixtures/activity.mjs",
+      "sha256": "6039a970897e8ba81b4f262d02a366b7842a22da26b35445ce1f5069862e3fc6",
+      "bytes": 1113
+    },
+    {
+      "path": "new-bots/futures/test/fixtures/activityRouting.mjs",
+      "sha256": "f3e3be6432ef58b5358a5e7f57c8478dd9e712f8871dcc21c6c599fbecc99e85",
+      "bytes": 2471
+    },
+    {
+      "path": "new-bots/futures/test/fixtures/mockActiveContractDiscovery.mjs",
+      "sha256": "ae641735ad82652f0543fe79c9f7dd4e3a13101aba46beb77429bf967719d77b",
+      "bytes": 1273
+    },
+    {
+      "path": "new-bots/futures/test/h1-integrity.test.js",
+      "sha256": "b3a111e391b97f91b408f4e573a5f22b2e9578c3f127a6a6f91cc912b71c19f9",
+      "bytes": 12874
+    },
+    {
+      "path": "new-bots/futures/test/h1-runner.integration.test.js",
+      "sha256": "5dcc3e3c3370d250a57df5ce35bdf92e770f4e72412bfa8ace80f4373be633a8",
+      "bytes": 6315
+    },
+    {
+      "path": "new-bots/futures/test/livePositionMarks.integration.test.js",
+      "sha256": "57caee7e3edd179d69d575c6c7d8b4b5c36a6208265f113b4c05ec47c32bb2bb",
+      "bytes": 5294
+    },
+    {
+      "path": "new-bots/futures/test/prepare-day-session-cli.integration.test.js",
+      "sha256": "1909de06a19b12cf40cf86dea87690be2c93a9e6adf8b506ff45a2f2d25117ac",
+      "bytes": 3915
+    },
+    {
+      "path": "new-bots/futures/test/prepare-day-session-draft.test.js",
+      "sha256": "bd549a06b5288d7e9f0c23ab7e2d58de43a193cd357a3fcbed06f2721b76ac94",
+      "bytes": 8187
+    },
+    {
+      "path": "new-bots/futures/test/replay.test.js",
+      "sha256": "f6fad1eb76c5398a8c7bde6ab5adc9d64f0d413ae58a8844ae39d65866a3942c",
+      "bytes": 7665
+    },
+    {
+      "path": "new-bots/futures/test/reviewed-day-session-cli.integration.test.js",
+      "sha256": "850421e9386cf0a2ffe6dbf967160bcfc5ceac35be4c086ea916861c42ac875e",
+      "bytes": 4346
+    },
+    {
+      "path": "new-bots/futures/test/reviewed-day-session.test.js",
+      "sha256": "efb2f483819b4e24d1a8087b97cdaa53bfc215c614f6db81ea8a8d38e1c4cfbd",
+      "bytes": 6166
+    },
+    {
+      "path": "new-bots/futures/test/session-date.test.js",
+      "sha256": "c2da9b73b1f0a948a4c4321522705f5c029c7232d07e397e51e5851210a4e6f2",
+      "bytes": 962
+    },
+    {
+      "path": "new-bots/futures/test/shared-signals.test.js",
+      "sha256": "47787562e5ee31840a8e40e07b707de6d2aee0f905e3eaff438636b74bbd2c7d",
+      "bytes": 2659
+    },
+    {
+      "path": "new-bots/futures/test/universe.test.js",
+      "sha256": "9f34aff90a02d9a668b80965416a0f0ebc6092e331c7167c393853fbc92bd2ac",
+      "bytes": 5993
+    },
+    {
+      "path": "new-bots/IMPLEMENTATION_CHECKLIST.md",
+      "sha256": "176c508ce4be637f7cc06ae105d3017dde51a0291d642ed0e4ce813ba49e0b11",
+      "bytes": 152333
+    },
+    {
+      "path": "new-bots/IMPLEMENTATION_PHASES.md",
+      "sha256": "17e1dc5c6100ed19148301130526b7934a551bce4945fb2fbc7e7e982a5c0cf1",
+      "bytes": 327601
+    },
+    {
+      "path": "new-bots/multi-asset/.env.example",
+      "sha256": "a78e1c503939e03a29096943f083cb14da3af759c87f3cc862ea60b51d26f923",
+      "bytes": 598
+    },
+    {
+      "path": "new-bots/multi-asset/examples/markets.json",
+      "sha256": "4b1cdfde945c2cad238121aa99976cb164340b374691f16b10fc6ae259241aae",
+      "bytes": 666
+    },
+    {
+      "path": "new-bots/multi-asset/examples/options-universe.json",
+      "sha256": "2cd52f0f4279d26dce8ebd89448f103fd8294598e8d939de3f5585791b50d122",
+      "bytes": 498
+    },
+    {
+      "path": "new-bots/multi-asset/examples/options.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "new-bots/multi-asset/examples/wrappers-and-macro-markets.json",
+      "sha256": "eb71ce42d0c2ff046b462ab62131192055324e87d9317aaae2831cd9a4d4e4ef",
+      "bytes": 5519
+    },
+    {
+      "path": "new-bots/multi-asset/package.json",
+      "sha256": "c7015423827264f32b31ecf0a41ef80efe9aaeb93b98e048e027492cfa8cc92f",
+      "bytes": 315
+    },
+    {
+      "path": "new-bots/multi-asset/README.md",
+      "sha256": "16a806001604dd8cda7daaf32ed33eecebdfeca7db63ae57f3e943fd88c5d9a1",
+      "bytes": 4089
+    },
+    {
+      "path": "new-bots/multi-asset/src/freshness.js",
+      "sha256": "a1ac9a4875cdcbef1851048d9e9e5704e2ba45f6d894b5daafa58d72b88e2366",
+      "bytes": 596
+    },
+    {
+      "path": "new-bots/multi-asset/src/index.js",
+      "sha256": "d4928966767ef44e842c02947788369db1a57b90db3dfd70854efdf3469a6f8b",
+      "bytes": 8579
+    },
+    {
+      "path": "new-bots/multi-asset/src/scenarios.js",
+      "sha256": "4fe2b14aebc8b2eda259e9aad4c3543f732bb6dc9d00d9241edfad1a389f710b",
+      "bytes": 1496
+    },
+    {
+      "path": "new-bots/multi-asset/src/tradierOptions.js",
+      "sha256": "f4588e76a8c44a0adc5fe28f4edaa48966292c47465ecae4b9b8092e4c9c135a",
+      "bytes": 15399
+    },
+    {
+      "path": "new-bots/multi-asset/src/yahooChart.js",
+      "sha256": "f97e5d17be66501169e3b2532983dd8d3771521a2823706b9814a867f3789bdc",
+      "bytes": 5680
+    },
+    {
+      "path": "new-bots/multi-asset/test/coverage.test.js",
+      "sha256": "6c7d68b296ae1007a8412677d878d2b07b65a94f3e3374c68c6447577d1860cc",
+      "bytes": 1512
+    },
+    {
+      "path": "new-bots/multi-asset/test/freshness.test.js",
+      "sha256": "c82dc3cab4ce874ba33648c1c40004478e5af5c730de891d191d35fc68194261",
+      "bytes": 955
+    },
+    {
+      "path": "new-bots/multi-asset/test/scenarios.test.js",
+      "sha256": "3171396177259b79dda2209e621c83e647f9559ff712e98757b9fe39891b0063",
+      "bytes": 1198
+    },
+    {
+      "path": "new-bots/multi-asset/test/tradierOptions.test.js",
+      "sha256": "8827c76a8ecf27789de5a8966ab9d38463c9742254a1177ee3a8d2fa9842c378",
+      "bytes": 16349
+    },
+    {
+      "path": "new-bots/multi-asset/test/yahooChart.test.js",
+      "sha256": "ca751124ca016204737192a27347a0e4b7d2826fe271c554801bd19cfdf893f3",
+      "bytes": 3771
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/.env.example",
+      "sha256": "49fb3eb1105d963b9f350f7ad6c0e2b85391dd87a50708d8d82e025b4267d009",
+      "bytes": 324
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/examples/quotes.json",
+      "sha256": "232d9c697b0314eac97d796109d74417dc894079659e2d5be53779739837ddb0",
+      "bytes": 734
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/examples/routes.json",
+      "sha256": "2320c5a227ac3d42a0ff1a2ad8873261e5184f433525c9c0ded0e9a18fb8c216",
+      "bytes": 816
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/package.json",
+      "sha256": "3edd199b57d1896e3b9aa9980550bb572b6465def7315f1c543c1f2035418ac8",
+      "bytes": 317
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/README.md",
+      "sha256": "d163a8c9caa383404a2054db801172c1314784f9394609b8c471af9b40691224",
+      "bytes": 2834
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/src/evmRouterQuotes.js",
+      "sha256": "b111c9468c84131ccc8d89f66f228fb8951544c0c93da95159aa37e0152fc7d5",
+      "bytes": 6783
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/src/index.js",
+      "sha256": "5bcae29e97e537b35d69197915039669f880e3bb87c9d5df7775baf8d378e8b4",
+      "bytes": 3833
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/src/quoteAnalysis.js",
+      "sha256": "522a7f594fcb28b29d3f9386a433f43de5f8eec09d7d4b7ce1eda0526cd1aed9",
+      "bytes": 5817
+    },
+    {
+      "path": "new-bots/onchain-inefficiencies/test/quoteAnalysis.test.js",
+      "sha256": "7c5fa4b1f06448240daecd5559f2f03bf80e03c3f81eff4f81398839f3cb6c39",
+      "bytes": 5482
+    },
+    {
+      "path": "new-bots/options/.env.example",
+      "sha256": "a09422ea92d8221021dc0cb5a036169330fdd8acc052b82a2c41fc373c212e9a",
+      "bytes": 4439
+    },
+    {
+      "path": "new-bots/options/app.js",
+      "sha256": "98ef98185bc3fab5edee1b30966a63ecc9e4bc9e1479a0e30b10c5d60d81554d",
+      "bytes": 293
+    },
+    {
+      "path": "new-bots/options/DECISION_QUOTE_REFRESH.md",
+      "sha256": "b872c1e0bccde3a38e912b1b17c27930e503ea0d582047d3db049e3198543197",
+      "bytes": 7754
+    },
+    {
+      "path": "new-bots/options/examples/catalyst-reviews.json",
+      "sha256": "c06cf69b30ca8727f9a29bf55d61f4b3483ac137c8064e74af0ce35a743a2dab",
+      "bytes": 47
+    },
+    {
+      "path": "new-bots/options/examples/paper-session.json",
+      "sha256": "6a3c7f06ab4194a2d04922fd58cfa86dd617ed829ca688675b620cdf75aadf8c",
+      "bytes": 50
+    },
+    {
+      "path": "new-bots/options/FILL_EVIDENCE.md",
+      "sha256": "7ad059615026edd524e2af66e4df938868f4a25ba99078c0f82a436abb4bfba3",
+      "bytes": 6537
+    },
+    {
+      "path": "new-bots/options/package.json",
+      "sha256": "5bc03d716b9ee045f26b76073528750dcbc5a5486b54c290422394393f99859e",
+      "bytes": 844
+    },
+    {
+      "path": "new-bots/options/PRIMARY_HYPOTHESIS.md",
+      "sha256": "1c9532f5505488ec33306737c4ca04b17a0144d4628b3368a0e3c5a0f644828a",
+      "bytes": 6271
+    },
+    {
+      "path": "new-bots/options/README.md",
+      "sha256": "0a7d9d946181d87c339bc14ff2bf71d9ada922cb10310d6fb519dd54a1ef4d25",
+      "bytes": 39333
+    },
+    {
+      "path": "new-bots/options/scripts/probe-universe.js",
+      "sha256": "fb80195e54bfae26e4d44cf0ff78d5825c57bfafee55a4f31964510cd72b5a95",
+      "bytes": 1350
+    },
+    {
+      "path": "new-bots/options/scripts/replay.js",
+      "sha256": "ad5bb4e7f086a82b1146c9bc929c97cff0ca6f07b0329f5116580d3800a6fd0b",
+      "bytes": 918
+    },
+    {
+      "path": "new-bots/options/src/alpacaDividendScreen.js",
+      "sha256": "3e31dd43c29d7c79ac7c51857a836abf5e37b312d65a2a415a368252fd06a57a",
+      "bytes": 10068
+    },
+    {
+      "path": "new-bots/options/src/contractDiscovery.js",
+      "sha256": "2eb13668d910b5f4d0d7d17d9ba69c735e2e50453cc40e800bea3cf5754e8243",
+      "bytes": 17025
+    },
+    {
+      "path": "new-bots/options/src/contractInventory.js",
+      "sha256": "3fff7b8b9d0a6970fdd075980465563e96091db1db6d5a856b9842015fab8886",
+      "bytes": 5612
+    },
+    {
+      "path": "new-bots/options/src/decisionQuotes.js",
+      "sha256": "9c9dc7aea11227b4c2644ede2d78e18c4af5fa534df4aaf24bcd2818abd92281",
+      "bytes": 12580
+    },
+    {
+      "path": "new-bots/options/src/diagnostics.js",
+      "sha256": "01a2ed97db2374ccbe98589ab68de63ddde995b73551fdfef2997d0f50a14b6d",
+      "bytes": 11318
+    },
+    {
+      "path": "new-bots/options/src/expiryLifecycle.js",
+      "sha256": "6d057f89d1456fe55a18aefe340f6f657435a0cb8e56389b951da1f6fe7e33cb",
+      "bytes": 2828
+    },
+    {
+      "path": "new-bots/options/src/independentPaperResearch.js",
+      "sha256": "d8d1c315c70bac50984c94fa280c6c127c875f14f513d12736940393b4a779f3",
+      "bytes": 24417
+    },
+    {
+      "path": "new-bots/options/src/index.js",
+      "sha256": "275b5cc85dc6cd161f0dd730452b43bca45d2f500f994707a540ab60a3bd42bd",
+      "bytes": 35801
+    },
+    {
+      "path": "new-bots/options/src/pendingEntryReviews.js",
+      "sha256": "584a498e829424505ef794ad1b6033bb4bae76da7964d9f24651a6fb7fa8bd47",
+      "bytes": 5431
+    },
+    {
+      "path": "new-bots/options/src/primaryHypothesis.js",
+      "sha256": "5383233d51ee1d6b08cec76b5004574f55880afe7bf3c4878de562a4ba395dc7",
+      "bytes": 147
+    },
+    {
+      "path": "new-bots/options/src/replay.js",
+      "sha256": "adc1ceb3d54a231d4f3b78e7c7104db1c840c6f2f394f3a23a3f5ba26c035085",
+      "bytes": 7961
+    },
+    {
+      "path": "new-bots/options/src/signalSources.js",
+      "sha256": "406ec7cabca6c0b66cb5208ccdb55a21604f9e34fdc992ab83b7f66c50c213d0",
+      "bytes": 6226
+    },
+    {
+      "path": "new-bots/options/src/strategies.js",
+      "sha256": "072b025b21eccec1e7d3c94a8381a26280a894432081666f5893108ac390777d",
+      "bytes": 23652
+    },
+    {
+      "path": "new-bots/options/src/tradierMarketData.js",
+      "sha256": "1fe754c8a5000334168759861263a5034b07acf38458ecc46630596991b77b30",
+      "bytes": 27772
+    },
+    {
+      "path": "new-bots/options/src/tradierRateLimit.js",
+      "sha256": "11f0dba04e2cd2c506f4d50de6abc7c1d957e8d5ffc641b6594d7630d8ba40c4",
+      "bytes": 3256
+    },
+    {
+      "path": "new-bots/options/src/underlyingDiscovery.js",
+      "sha256": "b9121d469f35339e34d310ebdbff249cc32112cc0ef4989fc2dc5d9ac1d56d16",
+      "bytes": 14195
+    },
+    {
+      "path": "new-bots/options/src/underlyingIntradayResearch.js",
+      "sha256": "a12dc4d99fa5b0b2761da7848a4aa824e336adc7c5cf5b7a23879c67fc5085fe",
+      "bytes": 14577
+    },
+    {
+      "path": "new-bots/options/src/underlyingResearchStrategy.js",
+      "sha256": "0b82e69ddc0347e878bb23c7980b1b54f8bde21cdd8b69288cdeff7129b5f607",
+      "bytes": 9684
+    },
+    {
+      "path": "new-bots/options/test/alpacaDividendScreen.test.js",
+      "sha256": "bb8da6d6a3f5d7d7ca3b7dcba3d800fa65e38d6fa98dc70be328fecb294155e2",
+      "bytes": 5047
+    },
+    {
+      "path": "new-bots/options/test/assignmentDividend.integration.test.js",
+      "sha256": "f94d4e251e15eea4020ec05156fe46bc887487d308c6a323d246b47c132d676d",
+      "bytes": 7668
+    },
+    {
+      "path": "new-bots/options/test/contractDiscovery.test.js",
+      "sha256": "a23fba700ea4e90e3fb4f87f16173839b68ea74c2bb0c79e61cdf6b8af6e00f0",
+      "bytes": 13516
+    },
+    {
+      "path": "new-bots/options/test/contractInventory.test.js",
+      "sha256": "2f3d0774051ef68c53994a9b766554f0db5e875d3d0981609b835d9159f0cf6e",
+      "bytes": 6097
+    },
+    {
+      "path": "new-bots/options/test/decisionQuotes.test.js",
+      "sha256": "cdf4a12972a8e0341e57f2909c2dcfb30399efc66f337a14c901430af898a1ad",
+      "bytes": 13348
+    },
+    {
+      "path": "new-bots/options/test/decisionQuotesRunner.integration.test.js",
+      "sha256": "82bb79c97afb2078e92e1c4fac46900aca9e0f53be8bb29a59fc3a56a029354c",
+      "bytes": 10804
+    },
+    {
+      "path": "new-bots/options/test/diagnostics.test.js",
+      "sha256": "7c117550079fc455a7cb5c029f2a25501dfe197e88aa11760ef57ba4d0b3e510",
+      "bytes": 12952
+    },
+    {
+      "path": "new-bots/options/test/economicCalendar.integration.test.js",
+      "sha256": "763c52e163519926d1f6ef04651f6b5e7e6c3bcdef1f95813af1e94946453b51",
+      "bytes": 5860
+    },
+    {
+      "path": "new-bots/options/test/expiryLifecycle.test.js",
+      "sha256": "7dcf8b1d7d48f1950bb87bc7abc42d39625fa6175b7f05d2da64b70ec4183628",
+      "bytes": 2846
+    },
+    {
+      "path": "new-bots/options/test/fillEvidence.test.js",
+      "sha256": "948497c39bb748a4d04477f747e68cc9abcf4578db1d14715bdc3e321841f0fc",
+      "bytes": 6249
+    },
+    {
+      "path": "new-bots/options/test/helpers/optionFillFixture.js",
+      "sha256": "c8a88380147f762bb04daa88bc090fde4a11a1416da0ebcdadce55e5152cdea7",
+      "bytes": 2185
+    },
+    {
+      "path": "new-bots/options/test/hypothesisLifecycle.test.js",
+      "sha256": "92e49159f12f7fcd4f04aa1bd85af526100a90816c8b6fa7fa86280d95dfb9e8",
+      "bytes": 12422
+    },
+    {
+      "path": "new-bots/options/test/independentDiscovery.integration.test.js",
+      "sha256": "06d00b62918f906a4b8a872fb95b28c7cd9ad68aec2ed5166e537f6c72af323c",
+      "bytes": 10189
+    },
+    {
+      "path": "new-bots/options/test/independentPaperResearch.test.js",
+      "sha256": "bb673ef0c0c2f678168ac65aa49375a5389201f268226a0911370a8d46e42d74",
+      "bytes": 19573
+    },
+    {
+      "path": "new-bots/options/test/independentPaperRunner.integration.test.js",
+      "sha256": "50f7705ca0335d6348a0e6c0301ebf5ad6cb94ecadfeda94e7c91e8f0e7ac692",
+      "bytes": 8130
+    },
+    {
+      "path": "new-bots/options/test/pendingEntryReviews.test.js",
+      "sha256": "1d20113a4b7f006be0bf80d6b7be9d044bec9cc5c4f50c40c0c2363e97381de8",
+      "bytes": 5273
+    },
+    {
+      "path": "new-bots/options/test/positionMarks.integration.test.js",
+      "sha256": "99c20850ffe54b6838e5294a1d9584a7c44f0dc7a9116f0e773b6407a775461b",
+      "bytes": 5636
+    },
+    {
+      "path": "new-bots/options/test/replay.test.js",
+      "sha256": "677e22ea576b3d3921f8d76f1ce2103418eff24c7e44d388e2a453db55a2425e",
+      "bytes": 9439
+    },
+    {
+      "path": "new-bots/options/test/sharedSignalConflict.integration.test.js",
+      "sha256": "6a6a711d68ec639214567a95ae9d91631d3e8f17a102d2a3812e55620b3a594e",
+      "bytes": 4296
+    },
+    {
+      "path": "new-bots/options/test/signalSources.test.js",
+      "sha256": "cd9ba8dd8c1fb809428db2af99d42a837c0c962077d5da9e33ccc6ea32b91e79",
+      "bytes": 5984
+    },
+    {
+      "path": "new-bots/options/test/strategies.test.js",
+      "sha256": "c666301d0658bc115c2e2b968043adba04f6dcbf2a571dd70773e63baed3eaef",
+      "bytes": 22957
+    },
+    {
+      "path": "new-bots/options/test/tradierMarketData.test.js",
+      "sha256": "bdc1b19ed4dce7cfea71e213e43cc994dda6b3c115f814d0889c1e6c85cfa054",
+      "bytes": 31475
+    },
+    {
+      "path": "new-bots/options/test/tradierRateLimit.test.js",
+      "sha256": "9442cef9f4f9721a83fefacb160b7237d960334295210dd748b1551e4fc323c9",
+      "bytes": 3552
+    },
+    {
+      "path": "new-bots/options/test/tradierSharedBudgetBaseline.test.js",
+      "sha256": "a7b2140dde45e76085bd017976965e5d7613aa39dae62aab9c8706c06ceacf45",
+      "bytes": 3565
+    },
+    {
+      "path": "new-bots/options/test/underlyingDiscovery.test.js",
+      "sha256": "6fe0f8b242e73b4a1e9bb608293439a2d0cd7ee5d4ecc9e4e14f09a27e0f9648",
+      "bytes": 14701
+    },
+    {
+      "path": "new-bots/options/test/underlyingIntradayResearch.test.js",
+      "sha256": "a9a41cf6ce4b777c56d40fb9164b0c3b52fd405cf7a55212a2a29a76e85b979e",
+      "bytes": 10954
+    },
+    {
+      "path": "new-bots/options/test/underlyingResearchFixtures.js",
+      "sha256": "10b0e8c0e0e5fd682199b810cef530bf7c91a7fdd1119cabbad7fb9479d63f94",
+      "bytes": 1307
+    },
+    {
+      "path": "new-bots/options/test/underlyingResearchStrategy.test.js",
+      "sha256": "3e6308fa23b81848a2f18f332d094f25b1220ccabc8c3785a5d0c7f426aa60f7",
+      "bytes": 6200
+    },
+    {
+      "path": "new-bots/package-lock.json",
+      "sha256": "d91d7b7f8f70793578424d9fa2ea28fd5962e936af802695936dee3cabbe8283",
+      "bytes": 11730
+    },
+    {
+      "path": "new-bots/package.json",
+      "sha256": "6f9af635bce7834dbfff89a27359277c08928da0efe09f22a81dc506a3ec6367",
+      "bytes": 808
+    },
+    {
+      "path": "new-bots/PAPER_TRADE_REVIEW.md",
+      "sha256": "a05dd80b9db0e620254ea93d7f1eb20b82e2d2213883b7102e2cc0cc8830e7b7",
+      "bytes": 4095
+    },
+    {
+      "path": "new-bots/prediction-markets/.env.example",
+      "sha256": "90c3ba18ccdbaa49fb97a39e892b9f82e1dc4ce23369d2fc33527878ab781a9a",
+      "bytes": 544
+    },
+    {
+      "path": "new-bots/prediction-markets/kalshi-matches.json",
+      "sha256": "567f73fcfd233848618ef758dd1adf163e7944b6cc78077342b9e793bf400be9",
+      "bytes": 193
+    },
+    {
+      "path": "new-bots/prediction-markets/package.json",
+      "sha256": "ad731f7fb3450dae3f7b291f090a3deceb93a9466149431fef62dee19562228c",
+      "bytes": 313
+    },
+    {
+      "path": "new-bots/prediction-markets/README.md",
+      "sha256": "27337b32d80d2c5944740a798f2a407b6ece5b7b97a763112a37dae2e49bd456",
+      "bytes": 2134
+    },
+    {
+      "path": "new-bots/prediction-markets/src/bookAnalysis.js",
+      "sha256": "eeae3fe146c41ea973b233f0ed30cbc6b9d845b9c63615896840d08ec9c361ee",
+      "bytes": 5211
+    },
+    {
+      "path": "new-bots/prediction-markets/src/index.js",
+      "sha256": "46edf726787db40a0bf63456c6204e1fe5fdc6de6fee230ebd20ba0e9bc1b2f9",
+      "bytes": 12315
+    },
+    {
+      "path": "new-bots/prediction-markets/src/mappingReview.js",
+      "sha256": "9e50dd2bef542487034d45ae1581094368184d0dcc4a65110979c267a263b1d2",
+      "bytes": 947
+    },
+    {
+      "path": "new-bots/prediction-markets/test/bookAnalysis.test.js",
+      "sha256": "982f6111687fb3bbda4c91e2d96b40be00659f6a0b2f45bd4cffa386ce1d02b8",
+      "bytes": 3369
+    },
+    {
+      "path": "new-bots/prediction-markets/test/mappingReview.test.js",
+      "sha256": "cb7a6a765603fbfd14274b2c8fecb814f2b032631e07b38bc3e57a7527793e2a",
+      "bytes": 1395
+    },
+    {
+      "path": "new-bots/PROVIDER_CAPABILITY_MATRIX.md",
+      "sha256": "eb4c5e7226b72fc36f4e539f362b85feccb74b76f8ee2e8e6d97e7143f11221f",
+      "bytes": 34065
+    },
+    {
+      "path": "new-bots/PROVIDER_SETUP_CHECKLIST.md",
+      "sha256": "8549a3d6af0ed474501d4975a0d73f268bb13729b35710995d3bef5bad9fdb1f",
+      "bytes": 10472
+    },
+    {
+      "path": "new-bots/README.md",
+      "sha256": "9cb5fcd8fbd27bfe3e065a6d0a6eb7d7f385582eaa9d5bdf81fc35b92c02fbeb",
+      "bytes": 27401
+    },
+    {
+      "path": "new-bots/RESEARCH_AND_READINESS.md",
+      "sha256": "a313f394119812d4bbab89e9fbb85f764602eb2094806d9c84e8d4f6e1214e7f",
+      "bytes": 15060
+    },
+    {
+      "path": "new-bots/scripts/check-syntax.js",
+      "sha256": "71ccb515e49eb7b6f5258a45971ac42e44acf34392352a06858b6b0c2cf973ec",
+      "bytes": 1011
+    },
+    {
+      "path": "new-bots/scripts/configure-market-data.js",
+      "sha256": "ada312f64d9006d009e6cccb12dc097391f57bab004d14bd1d198b14408eb11e",
+      "bytes": 5313
+    },
+    {
+      "path": "new-bots/scripts/install-windows-discord-tasks.ps1",
+      "sha256": "04d9de144b96cbb2890fa52c6d612127a8584325355af0a3bf7db6bb561a804f",
+      "bytes": 2304
+    },
+    {
+      "path": "new-bots/scripts/prepare-alpaca-test-budget.mjs",
+      "sha256": "0238346ba20592ba5932a904bb7d5fa97601b18ca13858982a72948b4cdd05bf",
+      "bytes": 886
+    },
+    {
+      "path": "new-bots/scripts/review-paper-trade.js",
+      "sha256": "3045b7bb12c89f78ebf434b0cc7583e3baa85aeee7efc710567b6ec8e920ebce",
+      "bytes": 1205
+    },
+    {
+      "path": "new-bots/scripts/run-windows-discord-bot.ps1",
+      "sha256": "f3c9ae323dc53d3bee9e5995b8c3e09d76e0c31765ea6cc24b1390e070385b5e",
+      "bytes": 4313
+    },
+    {
+      "path": "new-bots/scripts/stop-discord-app.js",
+      "sha256": "7132a0e5e86b78a2caca07c281c8e9f351ed11326f65eaeed18d61e55168ef24",
+      "bytes": 855
+    },
+    {
+      "path": "new-bots/scripts/test-windows-discord-runtime.ps1",
+      "sha256": "178c72e7b96b6504cf3ea058ac4700e99f2a6fb50395c7abeaa13733d878d053",
+      "bytes": 1886
+    },
+    {
+      "path": "new-bots/scripts/verify-all-bots.ps1",
+      "sha256": "dc9cefe4045409ea7f2b1d653b787556f10ac93410aa63b4bbf265c64fcb111a",
+      "bytes": 1986
+    },
+    {
+      "path": "new-bots/scripts/verify-embed-delivery.js",
+      "sha256": "0d884fbf537d095050a3a51420b2f312a801157a21065fdad427f6f50a56944b",
+      "bytes": 3379
+    },
+    {
+      "path": "new-bots/scripts/windows-discord-runtime.ps1",
+      "sha256": "d029e35ad0198dba3fc31411059d7ee53845c2b1b3fe65c77192bb1248224d70",
+      "bytes": 1889
+    },
+    {
+      "path": "new-bots/SHADOW_REPLAY.md",
+      "sha256": "7f88888612154127e788dc0795b05073423c43b6cb571d8556730201bef47517",
+      "bytes": 1783
+    },
+    {
+      "path": "new-bots/shared/alpaca-budget.env.example",
+      "sha256": "080250e6ce30917d16c9ac9f70a8fd8b121a5ecf1f4f03e82b669a94a5f10a6e",
+      "bytes": 501
+    },
+    {
+      "path": "new-bots/shared/ALPACA_SHARED_BUDGET.md",
+      "sha256": "1a4bcf8096c3c00676d515b2c66fb73c3b4a8e2a6c9d11bbafeb5d3a8e0e3ad0",
+      "bytes": 11240
+    },
+    {
+      "path": "new-bots/shared/alpacaCatalystNews.js",
+      "sha256": "77a50c9dc5bef613ea0190d11586173d625b8bb1ca9d459b3bf69814f3164b23",
+      "bytes": 8434
+    },
+    {
+      "path": "new-bots/shared/alpacaCatalystNews.test.js",
+      "sha256": "67ef133fb4011779670651403630559c7f3c19227996fdde6155b81811ab65d1",
+      "bytes": 4712
+    },
+    {
+      "path": "new-bots/shared/alpacaHttp.js",
+      "sha256": "5e74cb802af8902d147b0f637f070a39950bbabbe23304be02109f91573acf5b",
+      "bytes": 5790
+    },
+    {
+      "path": "new-bots/shared/alpacaRequestGate.js",
+      "sha256": "15b7fac00491e665993f5a4e2eb5ef4ed5991f536df983424fdc5b30a7eed4ee",
+      "bytes": 3771
+    },
+    {
+      "path": "new-bots/shared/alpacaSharedBudget.js",
+      "sha256": "743a2f4ea2a7d6975de9be92d6ffdb52b06463190a8cad4860ae38141d15da9c",
+      "bytes": 1666
+    },
+    {
+      "path": "new-bots/shared/catalystReview.js",
+      "sha256": "904c0f3804054e8fcdb169b9266c3c781973abefbede7568a2bf502cb9e4b4e8",
+      "bytes": 571
+    },
+    {
+      "path": "new-bots/shared/chronologicalReplay.js",
+      "sha256": "ff5f0b4a9b3abcc1157bc3663b7857f8f1bf924b3507e280845b318200919d2a",
+      "bytes": 28890
+    },
+    {
+      "path": "new-bots/shared/chronologicalWindows.js",
+      "sha256": "7e1af2e3199274b83266599684186efccc521a87f8abd16b96b450a6a6fb8b42",
+      "bytes": 4473
+    },
+    {
+      "path": "new-bots/shared/closedTradeSequence.js",
+      "sha256": "2952b80daa65dfe9f9f5d944b1778db93cef872322e98d1d6954c96b4535d31f",
+      "bytes": 1764
+    },
+    {
+      "path": "new-bots/shared/cryptoExecutionIdentity.js",
+      "sha256": "1e48b37e0d6a4c5b509fb8cda7c4742a8eed64c058bd040d8af368a8c9fde10e",
+      "bytes": 2887
+    },
+    {
+      "path": "new-bots/shared/cryptoInstrumentRules.js",
+      "sha256": "c8219e972e1f33a4e92982a2876ecfd1492423b9a70aff3552de0effb2a722f5",
+      "bytes": 2938
+    },
+    {
+      "path": "new-bots/shared/cryptoQuoteEvidence.js",
+      "sha256": "41b3f2497f6764896a0c17d1fa7b07413b02adf559abe80b5099368181c54125",
+      "bytes": 2131
+    },
+    {
+      "path": "new-bots/shared/dayClusterBootstrap.js",
+      "sha256": "1f22fb8bfe6406fcd8d7eb429cd45dbe388602677b383efd5854006847f8f39d",
+      "bytes": 2804
+    },
+    {
+      "path": "new-bots/shared/decimalQuantity.js",
+      "sha256": "9ca487cc29440b81fb2cad280e6aec75c3c1b266415d187c76ac36b1c2bdb0fb",
+      "bytes": 3193
+    },
+    {
+      "path": "new-bots/shared/diagnosticNumbers.js",
+      "sha256": "2adf6d7e1c7c80676015737509cac1ae4dfd4a183ceff5c33ba4634f3ee280a3",
+      "bytes": 353
+    },
+    {
+      "path": "new-bots/shared/discordApplicationAudit.js",
+      "sha256": "db7009a1f7b056fff032d120aed2531cb1301e846e6c6918a49513e77b7899ba",
+      "bytes": 3622
+    },
+    {
+      "path": "new-bots/shared/discordPresentation.js",
+      "sha256": "d97d12a038c08064e8d5c020e149770d1ddeadd5b38d003c2be7b0b5f40c03ce",
+      "bytes": 7653
+    },
+    {
+      "path": "new-bots/shared/discordWebhook.js",
+      "sha256": "5d059a551f21d9d17f44373cb3f3badadb4862c07d634ebf7a7d425ed9fb44f3",
+      "bytes": 6899
+    },
+    {
+      "path": "new-bots/shared/equitySnapshotDiscovery.js",
+      "sha256": "b66f4ca81315fad31921485e1d36c8f2fb93d144b198ac406e8cebec16c27c95",
+      "bytes": 10446
+    },
+    {
+      "path": "new-bots/shared/etpClassification.js",
+      "sha256": "f5d9368d8e6373fc7a636b9cd004f5cbd5bdd5f8d378e86345ba9027a6285988",
+      "bytes": 2549
+    },
+    {
+      "path": "new-bots/shared/executionCostSchedule.js",
+      "sha256": "88adbc5e1128faf5031d5d9f5d3336de4760c53f038fbd084de3efd2b20080ce",
+      "bytes": 3696
+    },
+    {
+      "path": "new-bots/shared/exposureAliases.js",
+      "sha256": "961e1e31aa37866a1b1e7e78a38cafaef1e47958729b463438819b6b34798b62",
+      "bytes": 11753
+    },
+    {
+      "path": "new-bots/shared/filesystemRequestBudget.js",
+      "sha256": "fc6dcd067a404d8abe2a1b640a56d8634899f3e45de1965db10e9e2e7b3f0674",
+      "bytes": 12297
+    },
+    {
+      "path": "new-bots/shared/FILL_PORTFOLIO_RISK.md",
+      "sha256": "218399351adb018157073828a248439d24d8b0f704ad624c6125c082dd25cd04",
+      "bytes": 7084
+    },
+    {
+      "path": "new-bots/shared/finnhubEconomicCalendar.js",
+      "sha256": "cfb59f8309361de9bf80b403cc45d06a9a3aaedacc548c8d01ecba3382093e1b",
+      "bytes": 14968
+    },
+    {
+      "path": "new-bots/shared/fixtures/alpacaBudgetWorker.js",
+      "sha256": "ed0d0653cc32db6538ab94efa0be32ece52534da23d05c59a3c823a95c659a01",
+      "bytes": 380
+    },
+    {
+      "path": "new-bots/shared/fixtures/cryptoBookEvidence.js",
+      "sha256": "2e488b82cda6853c61a65589c3851bba276fb7636d448a4f6d5decbe0c334690",
+      "bytes": 1199
+    },
+    {
+      "path": "new-bots/shared/fixtures/fillRiskPolicy.js",
+      "sha256": "a4ea8adcce04a696df34247722681ab13deb612d93b6a1bd6a12d1ff82093d38",
+      "bytes": 538
+    },
+    {
+      "path": "new-bots/shared/fixtures/reservePaperWorker.js",
+      "sha256": "079c0c535c7e02689cdedb26df8a92d23d503b8e8f4b4009ff7730001b984d4d",
+      "bytes": 342
+    },
+    {
+      "path": "new-bots/shared/fixtures/stockQuoteEvidence.js",
+      "sha256": "33f0b2f93fcc62b0aa75804352c844980bf77772da098d3af93923cf94ca71ed",
+      "bytes": 1413
+    },
+    {
+      "path": "new-bots/shared/formatDiagnosticCount.js",
+      "sha256": "b9186f068a77afbae98138889465d22961d5cba88db5383882a2356ab8066f74",
+      "bytes": 345
+    },
+    {
+      "path": "new-bots/shared/forwardShadowPaper.js",
+      "sha256": "29e7948d27505b8d42445a1e664ab41965051150d156e1efe629681d57eb0e32",
+      "bytes": 35618
+    },
+    {
+      "path": "new-bots/shared/inspectPaperRiskLock.js",
+      "sha256": "3ea6a26933aa6bb29865fca2a1723828899e11e26f508ee9bc7062e6f7feec6e",
+      "bytes": 403
+    },
+    {
+      "path": "new-bots/shared/marketApplicationControl.js",
+      "sha256": "7eae9f171535ff1db0b88dde9c4425e123f6bfe140d1b853d207af84cc9b6909",
+      "bytes": 3227
+    },
+    {
+      "path": "new-bots/shared/marketBotRuntime.js",
+      "sha256": "fcc5dd7557abc6a9b78a4a70674c40800c84b949e3e77e907adaac69901eabd0",
+      "bytes": 6276
+    },
+    {
+      "path": "new-bots/shared/marketDataReadiness.js",
+      "sha256": "76d583ec684db02728904299a7d74d57381522b817b6ecea3adb9b44c0792ef3",
+      "bytes": 5453
+    },
+    {
+      "path": "new-bots/shared/marketDate.js",
+      "sha256": "6114930f0e36ed3e0ca0a2837028b7b7ba66cbcfe4c5172661c18cc5b3ccc3f8",
+      "bytes": 696
+    },
+    {
+      "path": "new-bots/shared/marketDiscordApplication.js",
+      "sha256": "87165ceeb628575af21bc5d95d3cc9418a766670fd88d309cefae407a314a684",
+      "bytes": 10187
+    },
+    {
+      "path": "new-bots/shared/marketDiscordConfig.js",
+      "sha256": "5e74ecc2bd79932c1f09dc4e8eb6a356c7d9818d39b2f5ad4ef844c1f5e23ce3",
+      "bytes": 3339
+    },
+    {
+      "path": "new-bots/shared/marketDiscordOperations.js",
+      "sha256": "36073969275e0cf9a86f0d1496183bac6d8a8a9d2bf454e81e218fff935888a5",
+      "bytes": 9853
+    },
+    {
+      "path": "new-bots/shared/marketPositionQuotes.js",
+      "sha256": "0768f5bc844a971389dcd33ec142f98c070c28cb44de44b19b07947c892ad4d0",
+      "bytes": 5880
+    },
+    {
+      "path": "new-bots/shared/nasdaqEtfDirectory.js",
+      "sha256": "58f3bb2e4df42f76e80e2160f872808f9c4a909ecf9231ac86b0eef7b2b2363e",
+      "bytes": 7649
+    },
+    {
+      "path": "new-bots/shared/OPERATOR_DATA_LOCATIONS.md",
+      "sha256": "cd5d805e9ffcca4ed30df5d573556505c31ce7bf2f70b0b87021b01028556f03",
+      "bytes": 4800
+    },
+    {
+      "path": "new-bots/shared/operatorDataPaths.js",
+      "sha256": "97e8ca2697ec989c66af5d73afd2154cc00760d01211a264bc40c900ca9a2b67",
+      "bytes": 2671
+    },
+    {
+      "path": "new-bots/shared/operatorReport.js",
+      "sha256": "f949e5f4f1244aae2d9692283661008a9beecd56672004f6e664136ae361e193",
+      "bytes": 44932
+    },
+    {
+      "path": "new-bots/shared/optionContractIdentity.js",
+      "sha256": "bda1649d0f7b4ba2153c0979ea774802919f9d412c739df37a5e51d795e15d7b",
+      "bytes": 3794
+    },
+    {
+      "path": "new-bots/shared/optionEntryEvidence.js",
+      "sha256": "76aba26734ff960773aca4a92d851de3add3a1590dd6d3758404d9ace2549bf3",
+      "bytes": 6632
+    },
+    {
+      "path": "new-bots/shared/optionHypothesis.js",
+      "sha256": "f0e6cef6387fa91640a44b54ee57dc278a45a13339c704bad4b64cf363d80b23",
+      "bytes": 5513
+    },
+    {
+      "path": "new-bots/shared/OWNER_RECOVERY_AND_DECISION_TIME.md",
+      "sha256": "539ccbabbe2e4bd7f9da9bd591e2d9857f8ed6192139560d4dcf108e9b500597",
+      "bytes": 6249
+    },
+    {
+      "path": "new-bots/shared/PAPER_QUOTE_INTEGRITY.md",
+      "sha256": "30f1013027e94786cec07f961257f661d2aadfcd75f62d6be068f703222bb75d",
+      "bytes": 5517
+    },
+    {
+      "path": "new-bots/shared/paperApprovalEvidence.js",
+      "sha256": "efe41248258ddfe3cf47a02af281e7cc2eaf2e6a72f5a5afeea2a011ab58e20c",
+      "bytes": 3390
+    },
+    {
+      "path": "new-bots/shared/paperJournal.js",
+      "sha256": "9cddb3f22ab4fef10f48411377f709d1e650da8c44e931ee57e6fd0f9150cca6",
+      "bytes": 993
+    },
+    {
+      "path": "new-bots/shared/paperMonitorConfig.js",
+      "sha256": "574a37e5681d9478627cefd7ff141dfd38bbac7e3b22a1a6482f2a92f6501e6a",
+      "bytes": 992
+    },
+    {
+      "path": "new-bots/shared/paperPositionMonitor.js",
+      "sha256": "efae305bb43f1ee843cdd0f2cb0e2d3a4b9d81a7f73e29fad08cd54a17574b96",
+      "bytes": 12209
+    },
+    {
+      "path": "new-bots/shared/paperResearchContext.js",
+      "sha256": "d9b8769d4327bc86093c3cc82c1c2416bce80e30e0408a3219681e2f7c0e2773",
+      "bytes": 1956
+    },
+    {
+      "path": "new-bots/shared/paperRisk.js",
+      "sha256": "64c9b2581184509e467199668db935e76509d50721e98bf3ae950f3cb1ba0d4a",
+      "bytes": 93478
+    },
+    {
+      "path": "new-bots/shared/paperSignalHandoff.js",
+      "sha256": "ec6482881d0dcacde96dbef506191b5aa19496301fea76cf03b633c4d5920b6d",
+      "bytes": 4663
+    },
+    {
+      "path": "new-bots/shared/paperStatePath.js",
+      "sha256": "283f252323880ae4621c7efaa37a833a37a3b2ca117da19bca3c36e8380200fb",
+      "bytes": 1040
+    },
+    {
+      "path": "new-bots/shared/paperTradeReviewJournal.js",
+      "sha256": "857d33d8ca2045cc6c465d971c8d5f51e2f11654a5f5b2223299cef0e3391136",
+      "bytes": 8720
+    },
+    {
+      "path": "new-bots/shared/POSITION_MONITORING.md",
+      "sha256": "839fb83acd0036e7d1b782c3cd56d01c014beabb58a7382a95e0e277997d47f4",
+      "bytes": 8542
+    },
+    {
+      "path": "new-bots/shared/positionMarkDiagnostics.js",
+      "sha256": "1685b0990cc29107150527a24e2b599119c289a14899b29ff795718d432f5687",
+      "bytes": 2763
+    },
+    {
+      "path": "new-bots/shared/postTradeReview.js",
+      "sha256": "987ca0683dbc6194c92d1c156447e288a549461e2e940c2bf0c106cb4d3d6e48",
+      "bytes": 12080
+    },
+    {
+      "path": "new-bots/shared/primarySignal.js",
+      "sha256": "fb3c835f1a1641661597f1ffec99a314457718fe69b0c2c16fef45578564ea3d",
+      "bytes": 18679
+    },
+    {
+      "path": "new-bots/shared/providerProfiles.js",
+      "sha256": "d4d35eb62e1cbe7c32a6bbfc476275e108f6580a13537e76173120ee9e896c6b",
+      "bytes": 8705
+    },
+    {
+      "path": "new-bots/shared/providerRateLimit.js",
+      "sha256": "86b712ec8430c2fb198c3e641b2438ed40332b406fd3159a85de598ad109615d",
+      "bytes": 1676
+    },
+    {
+      "path": "new-bots/shared/providerReadiness.js",
+      "sha256": "e5ce2d34393bd5a7e331a669c4dbd18dee3cba917271d239d54bdc1e99fb93fe",
+      "bytes": 14461
+    },
+    {
+      "path": "new-bots/shared/recoverPaper.js",
+      "sha256": "82bb79d191b5c4454eb6fc3c5ee623e548630a370a91d4ba492897ba2108b21e",
+      "bytes": 1665
+    },
+    {
+      "path": "new-bots/shared/replayPayload.js",
+      "sha256": "5de985ae20ffc28ba7d466acf24cccd0b9e48fd35541144ca8eacd5d5bc71c25",
+      "bytes": 658
+    },
+    {
+      "path": "new-bots/shared/researchDashboard.js",
+      "sha256": "ed339759b71ff6b1cd8fdeaf831df60929fd28fce7e3302fe63363811e1da2aa",
+      "bytes": 28396
+    },
+    {
+      "path": "new-bots/shared/runnerHeartbeat.js",
+      "sha256": "e1477dff293297d23762f96e76f7eb7b6d5ee3c2ef5cf6fd01ba4295f70fef22",
+      "bytes": 5795
+    },
+    {
+      "path": "new-bots/shared/scanDiagnosticsJournal.js",
+      "sha256": "10835bfd9ccf5e8ca5fb6ee40964f220c0b6ed78377a19f25bc658c4a47e5b3e",
+      "bytes": 1564
+    },
+    {
+      "path": "new-bots/shared/scheduler.js",
+      "sha256": "459e782be15d843601dbfe7f38f31033992e29f5111ddc2a210f759dd9a25711",
+      "bytes": 3009
+    },
+    {
+      "path": "new-bots/shared/shadowReplay.js",
+      "sha256": "3b187875728c81d7204963b31e77331ed02b76374adb4069533e5281e195ccc4",
+      "bytes": 2415
+    },
+    {
+      "path": "new-bots/shared/signalResearch.js",
+      "sha256": "0fc1465e0e976e2b657b2f78ad6f81285bb569e4545885a91f4ff7f07673726e",
+      "bytes": 18358
+    },
+    {
+      "path": "new-bots/shared/stockPositionQuotes.js",
+      "sha256": "f2f135fa719d950707f59386c922fb757fb3487dc95a49f5757218c1d053286f",
+      "bytes": 6953
+    },
+    {
+      "path": "new-bots/shared/stockQuoteEvidence.js",
+      "sha256": "298a5f36f758b9833cd656aa1e435a3361118f98f53d9971ac30ebb9edbdc253",
+      "bytes": 5095
+    },
+    {
+      "path": "new-bots/shared/strategyConfig.js",
+      "sha256": "88c8923d1c65c2abdf054d74db7e7d4280f4b7470fcb76f11e51a4289a851e31",
+      "bytes": 794
+    },
+    {
+      "path": "new-bots/shared/test/alpacaAuxiliaryBudget.test.js",
+      "sha256": "7082f86ce64ac46242af5bdd7ba466fd1cad216ceddecad364a4b2157c1aaeb9",
+      "bytes": 5251
+    },
+    {
+      "path": "new-bots/shared/test/alpacaRequestGate.test.js",
+      "sha256": "f9798198a5b1d246dc0cbcc8c5869114f13c70561577dd5d7dbc5e74703a0a54",
+      "bytes": 2030
+    },
+    {
+      "path": "new-bots/shared/test/alpacaSharedBudget.test.js",
+      "sha256": "92d6214ffd8a4669d88d3ef598ecf3e389baa1b0ab37af5b11619621d9f153e7",
+      "bytes": 8538
+    },
+    {
+      "path": "new-bots/shared/test/alpacaSharedBudgetIntegration.test.js",
+      "sha256": "acb42f527f1220497a00574ff6028370738036ae887eba87ee9c4c30b4150d74",
+      "bytes": 3224
+    },
+    {
+      "path": "new-bots/shared/test/catalystReview.test.js",
+      "sha256": "c49f9ed044290741275ef75b81b740451965c174c3a264cbd2caeb90f919becc",
+      "bytes": 890
+    },
+    {
+      "path": "new-bots/shared/test/chronologicalReplay.test.js",
+      "sha256": "024f6a1b983282a5b9783d391d61973ced281a2155b02232d62c6a3a7853a36a",
+      "bytes": 23102
+    },
+    {
+      "path": "new-bots/shared/test/chronologicalWindows.test.js",
+      "sha256": "29705013534d33fee0d7d1959be98df011eba876803f20ad79dcee5255fdfb21",
+      "bytes": 5876
+    },
+    {
+      "path": "new-bots/shared/test/closedTradeSequence.test.js",
+      "sha256": "83d05afdab1238fa2fce105f39a72eb5f35734ee0967b8a69817d518a3625da8",
+      "bytes": 1196
+    },
+    {
+      "path": "new-bots/shared/test/cryptoExecutionIdentity.test.js",
+      "sha256": "083a5da6c370403a6a67a6b5f2d7371cdbcd25fe6224806676518ff25bb744c4",
+      "bytes": 13266
+    },
+    {
+      "path": "new-bots/shared/test/cryptoFractionalSizing.test.js",
+      "sha256": "fca5391510500ccbdcd10f9e1faf245f765a29914a78bc697af16fe64e47f94a",
+      "bytes": 10238
+    },
+    {
+      "path": "new-bots/shared/test/cryptoPaperBook.test.js",
+      "sha256": "2af4cb9320b53ed42972a4f2d732b5818758995691205f3905f914c7a8fabfa1",
+      "bytes": 6356
+    },
+    {
+      "path": "new-bots/shared/test/cryptoPositionMonitor.test.js",
+      "sha256": "426d062f0c1f7dfdc08fe58bbebc634c44aec4da9ff79c421ed10e931f3ab939",
+      "bytes": 4711
+    },
+    {
+      "path": "new-bots/shared/test/dayClusterBootstrap.test.js",
+      "sha256": "2ba37b15dc481c6b30d3b363862bdd9896354f81f789692e64372eff55576afe",
+      "bytes": 1562
+    },
+    {
+      "path": "new-bots/shared/test/diagnosticNumbers.test.js",
+      "sha256": "42f46beae2c8932a9e52e258c1fa4121c0be1f684ca65d2eb1247c93225a0f98",
+      "bytes": 487
+    },
+    {
+      "path": "new-bots/shared/test/discordBotDelivery.test.js",
+      "sha256": "0a4607ff0292a642473424680dd34a5ced47a88af1604926d998b52bf984af27",
+      "bytes": 3657
+    },
+    {
+      "path": "new-bots/shared/test/discordPresentation.test.js",
+      "sha256": "0cdc1cc8e5b8bcc2f599e9375e634130acd03c5d050fe4e6f21f79d170c7a568",
+      "bytes": 3911
+    },
+    {
+      "path": "new-bots/shared/test/discordWebhook.test.js",
+      "sha256": "cbaf191be666c3178588826d816c54456c25d6bb0cf9e6da24a89c51df1d3042",
+      "bytes": 2537
+    },
+    {
+      "path": "new-bots/shared/test/executionCostSchedule.test.js",
+      "sha256": "13f49894a302c62c65d6f9f1cedad49684f2bdac19f725f1e53f8ed1aee82df8",
+      "bytes": 1885
+    },
+    {
+      "path": "new-bots/shared/test/exposureAliases.test.js",
+      "sha256": "80353575e0c6a8d7431e1ec11d450a5af890e8d0fc8487414dbc7620b22adb3c",
+      "bytes": 9813
+    },
+    {
+      "path": "new-bots/shared/test/formatDiagnosticCount.test.js",
+      "sha256": "3ed5f2c603e75195993b2fcac4cd192811272ae43a727d711f94fb9374758220",
+      "bytes": 457
+    },
+    {
+      "path": "new-bots/shared/test/forwardShadowDecisionClock.test.js",
+      "sha256": "822998c4dee52f4dae0ea778ba72683b82dc95c39ee3aceaeacdd1caf9906463",
+      "bytes": 2356
+    },
+    {
+      "path": "new-bots/shared/test/forwardShadowPaper.test.js",
+      "sha256": "69ff3a51b176b5889323f82924fd3c21ec0c5ced66f1d3588b9ec2debf03c0b9",
+      "bytes": 41754
+    },
+    {
+      "path": "new-bots/shared/test/fxGainConversion.test.js",
+      "sha256": "d75213176720dc0f18e035c972de04b8a9ad886f5222dae818cc909ff845d77c",
+      "bytes": 3966
+    },
+    {
+      "path": "new-bots/shared/test/krakenPaperBook.test.js",
+      "sha256": "cf7c25b60085dba4c7f4bb39070d6c9cf89df24a819c438bd07b86428d9c4036",
+      "bytes": 8248
+    },
+    {
+      "path": "new-bots/shared/test/localSessionDateRunners.integration.test.js",
+      "sha256": "d875543037c28a5e96034a3c6b3a6ad6f171a7a9e0a80478d04e3d77ae6ade25",
+      "bytes": 4012
+    },
+    {
+      "path": "new-bots/shared/test/marketApplicationControl.test.js",
+      "sha256": "f2ce03f605a535c484ac0d30b51cadce7fc0507299bfaeefef5a9b62f53e89ef",
+      "bytes": 4236
+    },
+    {
+      "path": "new-bots/shared/test/marketDataReadiness.integration.test.js",
+      "sha256": "949ab8c20223bd7234ed9c5b44ce8a4cecf1517975269a101844e65d2efed875",
+      "bytes": 2769
+    },
+    {
+      "path": "new-bots/shared/test/marketDate.test.js",
+      "sha256": "cbd3dfbf8218660c1135c9522dce4d1d0fa37a193cbdf7b18988afea3068514f",
+      "bytes": 899
+    },
+    {
+      "path": "new-bots/shared/test/marketDiscordApplication.test.js",
+      "sha256": "bb9ac6e7f98c05ae547676f33b88bebd247bfe6419bacd0936e68e0632b7f7e4",
+      "bytes": 19929
+    },
+    {
+      "path": "new-bots/shared/test/operatorDataPaths.test.js",
+      "sha256": "8a9995d0f3863f6c8c99bef8dd724d96a53fdf53b35141d868e5e86048ce277f",
+      "bytes": 7759
+    },
+    {
+      "path": "new-bots/shared/test/operatorForexDecisionQuotes.test.js",
+      "sha256": "f2a767632eaecfcc9cc8dc7bfa52885b06bd296673259353377de84a118ad814",
+      "bytes": 1377
+    },
+    {
+      "path": "new-bots/shared/test/operatorReport.test.js",
+      "sha256": "7b6396fce68752bc4efb45566f4156b862290db4feea58a3a0c96f76623cb378",
+      "bytes": 63092
+    },
+    {
+      "path": "new-bots/shared/test/optionContractIdentity.test.js",
+      "sha256": "2712b6781d7de7c8c4cc34438306ec42162b1577890088802a9b35e020f4a379",
+      "bytes": 2840
+    },
+    {
+      "path": "new-bots/shared/test/ownerRecovery.test.js",
+      "sha256": "d0900aa22c0b45d5983319f37b5d7fe89a5bbbb9954c00900a3c97050c192fdb",
+      "bytes": 7635
+    },
+    {
+      "path": "new-bots/shared/test/paperApprovalEvidence.test.js",
+      "sha256": "3bdba3649a0015c6d21865df69e5ed7fb124c35526a01037c3adffb03effc2e8",
+      "bytes": 5677
+    },
+    {
+      "path": "new-bots/shared/test/paperFillRisk.test.js",
+      "sha256": "d63d2309c8f24d04f474fb450a042a64449c686125acf00b6c024bfb206d26b7",
+      "bytes": 14720
+    },
+    {
+      "path": "new-bots/shared/test/paperPositionMonitor.test.js",
+      "sha256": "3b5b7ec6a70c0c2e38f44555bd68d75152fab9a72a00a7961ba8b59a7d6f6012",
+      "bytes": 14154
+    },
+    {
+      "path": "new-bots/shared/test/paperQuoteIntegrity.test.js",
+      "sha256": "f05da4a0429e3095203bd283891e9f0ca40601069cc095237226c32b66206432",
+      "bytes": 12866
+    },
+    {
+      "path": "new-bots/shared/test/paperResearchContext.test.js",
+      "sha256": "b816c92391498b7de9dd4fd9e7e620d9facda2af634c16051d6a043d33d49fac",
+      "bytes": 1533
+    },
+    {
+      "path": "new-bots/shared/test/paperRisk.test.js",
+      "sha256": "d8f80b42de72be11421ae5ebf03d94bf384713ac526d73cf4959d9b15a12b7f5",
+      "bytes": 105718
+    },
+    {
+      "path": "new-bots/shared/test/paperSignalHandoff.test.js",
+      "sha256": "ae3cda8e187316d51bbaaba2f2ecdef573d405269e1587b75f6d4db922b5bb64",
+      "bytes": 4656
+    },
+    {
+      "path": "new-bots/shared/test/paperStatePath.test.js",
+      "sha256": "fed141a80e0036a409bb1b465b5a953ea05b531b7e2180972f04038b7965550c",
+      "bytes": 1794
+    },
+    {
+      "path": "new-bots/shared/test/paperTradeReviewJournal.test.js",
+      "sha256": "635581d5d1773ceb3bd4257db264e28a18b65126b59a53ee93ca67b2272468f9",
+      "bytes": 5796
+    },
+    {
+      "path": "new-bots/shared/test/positionMarkDiagnostics.test.js",
+      "sha256": "1f61c05eab9d7c45e0161f1356c15356cafbda3cce747c0f3b60f02cb953aeae",
+      "bytes": 2644
+    },
+    {
+      "path": "new-bots/shared/test/postTradeReview.test.js",
+      "sha256": "a56830d2f995ba6ff35b59c1e80f0ef160e3315de60609a2b9ac062053eb1dc6",
+      "bytes": 6522
+    },
+    {
+      "path": "new-bots/shared/test/primaryServiceRecovery.integration.test.js",
+      "sha256": "1ad548c3a493c162a695421c98c1c2dd3cc0b39da7ce6a8a13e144cd33e70635",
+      "bytes": 6069
+    },
+    {
+      "path": "new-bots/shared/test/primarySignal.test.js",
+      "sha256": "3ac61753160f142649890f5b987b4917a439277a8a61113bc1423c0f488e36f8",
+      "bytes": 13933
+    },
+    {
+      "path": "new-bots/shared/test/providerRateLimit.test.js",
+      "sha256": "44c60d093ed9049416701732cdcfc98e597caee5ebed21d19e828a8df056e471",
+      "bytes": 875
+    },
+    {
+      "path": "new-bots/shared/test/providerReadiness.test.js",
+      "sha256": "b3982424c5951add58eba578eb2a7e01ac6c04c506b8bbf86154fbbcc78f00ac",
+      "bytes": 5494
+    },
+    {
+      "path": "new-bots/shared/test/recoverPaperCommand.test.js",
+      "sha256": "7649d1b69ae4efc454c7ac989f613a494c8d914d51737185ffd36c1d0cede811",
+      "bytes": 4757
+    },
+    {
+      "path": "new-bots/shared/test/researchDashboard.test.js",
+      "sha256": "4918d676090b15b0a6da50546b011531f99bace0c843f1f614054af4f20060d6",
+      "bytes": 12820
+    },
+    {
+      "path": "new-bots/shared/test/runnerRecovery.integration.test.js",
+      "sha256": "bdb496780631e4e10a17db5db80d29ce5bd5a3978bc5029e3db0dda3a6177308",
+      "bytes": 5124
+    },
+    {
+      "path": "new-bots/shared/test/signalResearch.test.js",
+      "sha256": "5fb68ad1b5150bc35b2fc038ac83fa7aa4156f5181cf62f92e780b675e9fa004",
+      "bytes": 15531
+    },
+    {
+      "path": "new-bots/shared/test/sixMarketPortfolioLifecycle.integration.test.js",
+      "sha256": "45fee4bb9232e53c1fbddc64cf40c794fd35517d403cba652a867a4658ef28ac",
+      "bytes": 8035
+    },
+    {
+      "path": "new-bots/shared/test/stockPositionMonitor.test.js",
+      "sha256": "a4f91e53ff42a134b7a968165e72e03a5a8cbcdf543582ba17b8c1990f1c3cea",
+      "bytes": 16987
+    },
+    {
+      "path": "new-bots/shared/test/stockQuoteEvidence.test.js",
+      "sha256": "d700959295dc565ec2af958416c2368344af410232863b233804adf4cdfd1e65",
+      "bytes": 10017
+    },
+    {
+      "path": "new-bots/shared/test/strategyConfig.test.js",
+      "sha256": "8e8104ba119d1dbcb338051ae60eac4117d1f5b4294a61f07d93004f15c6b408",
+      "bytes": 1385
+    },
+    {
+      "path": "new-bots/shared/test/tradierSharedBudget.test.js",
+      "sha256": "2c0d168b4822e01994f3ad6999e2c4f11dac5f4b13a469638cd718813a5a248f",
+      "bytes": 13986
+    },
+    {
+      "path": "new-bots/shared/TRADIER_SHARED_BUDGET.md",
+      "sha256": "12c00edeeafc3d1a058d13e3e0d27ec49da66933f53092ac07fbe8e46e79f746",
+      "bytes": 10028
+    },
+    {
+      "path": "new-bots/shared/tradierHttp.js",
+      "sha256": "a6ef548f09cdad338c6b7ff73637b4e843df9b1eddb3c4d2bbeed40b609c3dac",
+      "bytes": 7508
+    },
+    {
+      "path": "new-bots/shared/tradierOptionResponses.js",
+      "sha256": "724009194eb3d69b1bf86800e3cbefe25048d1dd9b5cd76c42b07985a1a3a5f4",
+      "bytes": 1607
+    },
+    {
+      "path": "new-bots/shared/tradierSharedBudget.js",
+      "sha256": "fe697f9c64ebda78a5e62e9619d034e90200d42d73e385c86c4dd6a05b87ea71",
+      "bytes": 5671
+    },
+    {
+      "path": "new-bots/STOCKS_CRYPTO_STRATEGY_AUDIT.md",
+      "sha256": "71387d0630d4675f4a397a6ac9084b47996827346c3fe47248f926f126db8804",
+      "bytes": 11123
+    },
+    {
+      "path": "new-bots/UNIVERSE_COVERAGE_AUDIT.md",
+      "sha256": "8ec0d8d3b97c8affd023f06ac07811f65e264163bb867a6126ce491fe762faf1",
+      "bytes": 27628
+    },
+    {
+      "path": "stocks-bot/.env.example",
+      "sha256": "4d95ff442324d81f0a366e74f354f94db2923537a24348408d6c98963e888c81",
+      "bytes": 3189
+    },
+    {
+      "path": "stocks-bot/.gitignore",
+      "sha256": "7cdd55ee728277342bfa0fdeaa9362b3ad8753a5cd6767a5e0e71e6ced5bc4df",
+      "bytes": 47
+    },
+    {
+      "path": "stocks-bot/.npmignore",
+      "sha256": "7cdd55ee728277342bfa0fdeaa9362b3ad8753a5cd6767a5e0e71e6ced5bc4df",
+      "bytes": 47
+    },
+    {
+      "path": "stocks-bot/ACCURACY-REVIEW.md",
+      "sha256": "db62f5ee269d056aa4b1903d11387c76cfbe0ede52f935bf142d1b6a7b00e066",
+      "bytes": 7235
+    },
+    {
+      "path": "stocks-bot/app.cjs",
+      "sha256": "610c6c56ee333e26ac01f56af3fcb0d7874d2dbebfebdb31505aa21fc5e98819",
+      "bytes": 105
+    },
+    {
+      "path": "stocks-bot/app.js",
+      "sha256": "f4af6d392320cfdcef57c9aeaaa20c67eecc0058b9dd1f6cf2eb3a92dc14fd50",
+      "bytes": 4036
+    },
+    {
+      "path": "stocks-bot/DECISION_QUOTE_REFRESH.md",
+      "sha256": "09828179ea984f8a9d940de9077975f77bfce0e49bff6a10ff7fd5c816b8d1b1",
+      "bytes": 10164
+    },
+    {
+      "path": "stocks-bot/INDEPENDENT_POSITION_MONITORING.md",
+      "sha256": "6b4b831f1ef5d5d7fd42900605323d0bc6fa5ee76292e210cd5c9e885f3db7f9",
+      "bytes": 9399
+    },
+    {
+      "path": "stocks-bot/OPPORTUNITY_DISCOVERY_AUDIT.md",
+      "sha256": "05f64239642f22274d174171f55954600e929db33ee63183484f1be215376a3f",
+      "bytes": 28119
+    },
+    {
+      "path": "stocks-bot/package-lock.json",
+      "sha256": "68f5ea4f85ce55d2b07cf73fd2610f060e8e264714dc8026b4f0de9dbe74a153",
+      "bytes": 12667
+    },
+    {
+      "path": "stocks-bot/package.json",
+      "sha256": "f5312b84a282df61bfd98ddf6172a9ce5fe2adc5eced5090680061f21d093d6f",
+      "bytes": 3334
+    },
+    {
+      "path": "stocks-bot/README.md",
+      "sha256": "b4ab8cabca74c4f663ed6354ff61d6498bb97f29b1d6dbbe5e8654299db80c74",
+      "bytes": 44690
+    },
+    {
+      "path": "stocks-bot/scripts/backfill-alpaca.js",
+      "sha256": "8c25ad87a6de088e12d9b835d63dfcc1de1b149a8a2b4fcfd61a9a340decb799",
+      "bytes": 6269
+    },
+    {
+      "path": "stocks-bot/scripts/backtest.js",
+      "sha256": "68ef6f26c52077b1b10d85ef092a646fc3e9fadf9eb81ac71de4713cf821334b",
+      "bytes": 12302
+    },
+    {
+      "path": "stocks-bot/scripts/create-backtest-manifest.js",
+      "sha256": "5f60bfd89f12b4f00048e29678bd397453260a6e51e5714c98ab2bc656ea88ca",
+      "bytes": 2146
+    },
+    {
+      "path": "stocks-bot/scripts/inspect-research-bar-locks.js",
+      "sha256": "d1899a25074ffadbc6837c533ee42f2c283b52b744e4682b344378372111ef59",
+      "bytes": 382
+    },
+    {
+      "path": "stocks-bot/scripts/investment-smoke.js",
+      "sha256": "8afc3a9acadb4d63865162b71d2225b0b9ec712a4a44ed27d14b5e777ce951ba",
+      "bytes": 790
+    },
+    {
+      "path": "stocks-bot/scripts/label-research.js",
+      "sha256": "ca85ababb6cf1ef8e21b51db6f756caca2546dd8691bb911bb3567736a20b4f1",
+      "bytes": 802
+    },
+    {
+      "path": "stocks-bot/scripts/monitor-paper.js",
+      "sha256": "4ffb556dbb3fb1a3a107034cebcff12a49c319173b8d8bba511d9f9214120ab9",
+      "bytes": 403
+    },
+    {
+      "path": "stocks-bot/scripts/probe-discovery.js",
+      "sha256": "725244802ce9590e3c1a7c8588086db7faf591d84e6989e809398f6ea8e3daaf",
+      "bytes": 2828
+    },
+    {
+      "path": "stocks-bot/scripts/train-model.js",
+      "sha256": "551bbfdeba12da1a58a38ae07e911ec6d50c9f2fded59d283f1119f8c62e7c9c",
+      "bytes": 1007
+    },
+    {
+      "path": "stocks-bot/scripts/train-research-model.js",
+      "sha256": "22472c7f53410f5f61c15c6267c8a40c4dff7ae30721afc69039693cfe2ca295",
+      "bytes": 1022
+    },
+    {
+      "path": "stocks-bot/src/alpacaBackfillPage.js",
+      "sha256": "809118f467dbb76c2d4b8a01ba181c49a8af17a7a12bcd3f761cfd95e0892825",
+      "bytes": 7960
+    },
+    {
+      "path": "stocks-bot/src/alpacaBackfillRequest.js",
+      "sha256": "229a9824bcb328e56150ed13ae566f5a8667d5cbc0db919bd6fa11f6f25f2439",
+      "bytes": 2369
+    },
+    {
+      "path": "stocks-bot/src/alpacaRequestGate.js",
+      "sha256": "63bf469cdbd5ff5c0207de5441ffb96c071cc16fd516e00b90134e05e677eec1",
+      "bytes": 225
+    },
+    {
+      "path": "stocks-bot/src/alpacaStream.js",
+      "sha256": "cd3aebf4cc2fd335001d96b42c0210473330f2b2adf9361d6e69ec111a506ebc",
+      "bytes": 13712
+    },
+    {
+      "path": "stocks-bot/src/backfillCheckpointLock.js",
+      "sha256": "c6dd4881759bb0ef0e19782497c3246c4a706dd18f1b732e73b05307fd6b43bb",
+      "bytes": 1719
+    },
+    {
+      "path": "stocks-bot/src/backtestData.js",
+      "sha256": "ea2fac9fb2afe49d85c91a8eb6a532c78273028bd3887628361d6f88b77f7cf9",
+      "bytes": 2619
+    },
+    {
+      "path": "stocks-bot/src/backtestManifest.js",
+      "sha256": "c396c504461e8ecbcea45147d210fe085660d4b344eb7a831bbdf70033a3a648",
+      "bytes": 2962
+    },
+    {
+      "path": "stocks-bot/src/backtestReport.js",
+      "sha256": "5d581738d549f7d9fed5a75abfe20b18b2e97d2a03c11a32518dc9de958bf3f9",
+      "bytes": 2249
+    },
+    {
+      "path": "stocks-bot/src/backtestSettings.js",
+      "sha256": "b574defe9e94a92b77b79c8ee97221c0c17ae76b53ce039e0b77cbb8fab783c8",
+      "bytes": 1078
+    },
+    {
+      "path": "stocks-bot/src/commands.js",
+      "sha256": "67e1e64ebcbae95c337da17de8de07cf2fe10e6873fdf6eb659f5327f221f190",
+      "bytes": 15808
+    },
+    {
+      "path": "stocks-bot/src/config.js",
+      "sha256": "196f02f4eedf68e0df8687cc3aae3e32a204af8f07a9f9d1577354d1dbd5bb98",
+      "bytes": 8251
+    },
+    {
+      "path": "stocks-bot/src/counterfactualLabels.js",
+      "sha256": "0e4a97d8e048cf2ea26b49ad62924d6ed4a50b777044215a595f698f0eea347e",
+      "bytes": 10940
+    },
+    {
+      "path": "stocks-bot/src/discordPublisher.js",
+      "sha256": "e6866b2fd119092e8f756854bf410e92c16f4298714ef1bc423f551b834a01a0",
+      "bytes": 30340
+    },
+    {
+      "path": "stocks-bot/src/ensembleModel.js",
+      "sha256": "4835c97685dddfc163a44d8a90dab64bedd5a473c5e146dcc37ec5f233f235ad",
+      "bytes": 19231
+    },
+    {
+      "path": "stocks-bot/src/etfDirectory.js",
+      "sha256": "ead24bcc9187ae2e161f3daaaace3852b0cecd2b65400877ab0b5b375ebf94cc",
+      "bytes": 7372
+    },
+    {
+      "path": "stocks-bot/src/eventIntelligence.js",
+      "sha256": "6585af9cb2f227efa5ff16cf3e8b9c53217ae93b3e151f1b4eea5f814e0c4d2e",
+      "bytes": 19545
+    },
+    {
+      "path": "stocks-bot/src/executionCostSchedule.js",
+      "sha256": "19c2406ffbd7cd7ff38fc7e930b1f46836bda55fcc7e5e03b5df03ca2fc61c84",
+      "bytes": 3502
+    },
+    {
+      "path": "stocks-bot/src/forwardInvestmentJournal.js",
+      "sha256": "01e9d4b06965b61b91a5bf03947f0e6be05aad28caef373313708ff0640d28ea",
+      "bytes": 8313
+    },
+    {
+      "path": "stocks-bot/src/guildSettings.js",
+      "sha256": "e84ca89cd28ab53c287c7ed0b816789a000faff8cfb07fd40421bfa84af2f6cd",
+      "bytes": 7242
+    },
+    {
+      "path": "stocks-bot/src/index.js",
+      "sha256": "6ee8d90c276510c6b55b5a845d9ed3301a9f6a110cde74d73359aeaf01b816b8",
+      "bytes": 135337
+    },
+    {
+      "path": "stocks-bot/src/investmentJournalStore.js",
+      "sha256": "1c8f99828a368a213aeb60c9a7913ab2646ac358eec09f0180870fe0a4601036",
+      "bytes": 14531
+    },
+    {
+      "path": "stocks-bot/src/investmentResearch.js",
+      "sha256": "0c60d2638b05abd868743a0ebabb62747398ed50d11e3bf5401f042321853508",
+      "bytes": 52258
+    },
+    {
+      "path": "stocks-bot/src/manualCatalysts.js",
+      "sha256": "af710fbdfc0222b46263bf760f5fcb91aa52e30f256cfe314257eb059ceceb02",
+      "bytes": 4916
+    },
+    {
+      "path": "stocks-bot/src/modelFeatures.js",
+      "sha256": "ed25a97f41cacd25c1c5875356bbc64fb4829ad9f8b535aca31d88c5b1cb5787",
+      "bytes": 4427
+    },
+    {
+      "path": "stocks-bot/src/notificationState.js",
+      "sha256": "6fb525481c6958580633389f0368a7e2f233a94c41e297ff0c8793a9e0a2087d",
+      "bytes": 858
+    },
+    {
+      "path": "stocks-bot/src/paperExecutionQuotes.js",
+      "sha256": "b974568fc197838be4aa5fabbc3f12c79cbf63b551c1115f67b373293630c8de",
+      "bytes": 2106
+    },
+    {
+      "path": "stocks-bot/src/paperPositionMonitor.js",
+      "sha256": "c6af4c7fa3c6a85a3b733487d718609af1539f40e6000faf8856280628291d33",
+      "bytes": 5576
+    },
+    {
+      "path": "stocks-bot/src/paperQuoteRefresh.js",
+      "sha256": "7ce1fcf13c8cc0699d2e109fd30058915a9e0a3ba25499cbdc4085e5cf8c6d32",
+      "bytes": 11670
+    },
+    {
+      "path": "stocks-bot/src/portfolioSelector.js",
+      "sha256": "920ce0f6f49c6225f8486584bad74abed3bbbcd2436a8b4f129e20405b4190d3",
+      "bytes": 11879
+    },
+    {
+      "path": "stocks-bot/src/predictionEngine.js",
+      "sha256": "2c1a672faf47fbdcea6e6b6c0ef8103616bc13239837161a74d058950eba1fbc",
+      "bytes": 43690
+    },
+    {
+      "path": "stocks-bot/src/registerCommands.js",
+      "sha256": "8e536bfce63521ac2529a089c4723b9210d0ae30585a38c16cb860748e81a43f",
+      "bytes": 559
+    },
+    {
+      "path": "stocks-bot/src/researchBarLockDiagnostics.js",
+      "sha256": "3dcba3987bc6800e0b8103bcaba0e27c18ffa4fe161f4c8514c105c1ce3b0519",
+      "bytes": 3982
+    },
+    {
+      "path": "stocks-bot/src/researchModel.js",
+      "sha256": "c1cd1b616b607db738b95a1dca506c0cdd30b88c0d1832e5a545e474ed309b7c",
+      "bytes": 28152
+    },
+    {
+      "path": "stocks-bot/src/researchStore.js",
+      "sha256": "b948f2048b8da8ee413ef523a203e5e3d7c93dae53a8c8aedf6b867c1aa449cb",
+      "bytes": 21578
+    },
+    {
+      "path": "stocks-bot/src/researchTaxonomy.js",
+      "sha256": "430af762aecd5f244342521f9d33a3a57c044bd4620eb61f7526dbbc8e6a2af1",
+      "bytes": 8709
+    },
+    {
+      "path": "stocks-bot/src/researchWatches.js",
+      "sha256": "9c3c49f8eb48a30b4ba5a42e65fc126b27af3a753490d1d888afb450e7be3f19",
+      "bytes": 10961
+    },
+    {
+      "path": "stocks-bot/src/scanDiagnostics.js",
+      "sha256": "85a05d8fc3643a8091d74c5e7aed083685c2f72ee4724f4eac124b036305a03f",
+      "bytes": 7546
+    },
+    {
+      "path": "stocks-bot/src/secEvidenceJournal.js",
+      "sha256": "9b3578cea895414220171753e4eb68c534315974c57da6b2ce598cf4527ef907",
+      "bytes": 5980
+    },
+    {
+      "path": "stocks-bot/src/secFundamentals.js",
+      "sha256": "b86a4d5d2fa7cc51ec61ad505d1e2447564974f6ddb52252819df5ccb52c7898",
+      "bytes": 30531
+    },
+    {
+      "path": "stocks-bot/src/secretStore.js",
+      "sha256": "4d2ef27b3d5bca1c98be0d759928e052efdab4ae3a8dc332bd230b1e410a43df",
+      "bytes": 1326
+    },
+    {
+      "path": "stocks-bot/src/stockDirectory.js",
+      "sha256": "76d882d6ba070d671b84af1e32dc4fca0b4d94ad1421bd9dc9e97280dc1ad1b8",
+      "bytes": 4277
+    },
+    {
+      "path": "stocks-bot/src/stockHeadlineClassifier.js",
+      "sha256": "4b68279104025c65d80379dc7b005c704047389dce0a1d96775c769c9e321a63",
+      "bytes": 5010
+    },
+    {
+      "path": "stocks-bot/src/stocksData.js",
+      "sha256": "63438223eef21522ca67da7610e521ac48ce5d437bab7be21df635a40c402f35",
+      "bytes": 92819
+    },
+    {
+      "path": "stocks-bot/src/storage.js",
+      "sha256": "ffdd7b7dc645f37d2436d4c612a79dd1d2b1024a77f3f29f7bad83e186df280f",
+      "bytes": 8531
+    },
+    {
+      "path": "stocks-bot/src/thesisJournal.js",
+      "sha256": "acd74be5892b9c35d98cdf992b106fdea5b68ffd86858191b219e8cf28471121",
+      "bytes": 27537
+    },
+    {
+      "path": "stocks-bot/src/thesisReviewFormat.js",
+      "sha256": "62c31b8b1a27ea52a86a62f3c75c9ff7ed151e679af3eb873b21d0cbb333bae4",
+      "bytes": 6619
+    },
+    {
+      "path": "stocks-bot/src/time.js",
+      "sha256": "abbacd4e4f81ff61cba1cf446fbb5c853e42b2ddff585192c1f060ca82fa1192",
+      "bytes": 6700
+    },
+    {
+      "path": "stocks-bot/src/universeStore.js",
+      "sha256": "d6efdedb4c4d8e0f96e44d67b5b3ef92a89a6702d57507694d753d1890ee6f04",
+      "bytes": 7682
+    },
+    {
+      "path": "stocks-bot/src/workspace.js",
+      "sha256": "b0b8378e7a233e64e48ff6ffba4ec8922df72b2f418bca6cf3eb4e849ec571aa",
+      "bytes": 4500
+    },
+    {
+      "path": "stocks-bot/STOCK_QUOTE_EXECUTION_EVIDENCE.md",
+      "sha256": "d86d324f616202d7e0198dc69236fcd660c7a7d59c1e5d9e24ac3f8983b9c4ae",
+      "bytes": 9945
+    },
+    {
+      "path": "stocks-bot/test/accuracy-regressions.test.js",
+      "sha256": "d32dd0d9c8ff7704bf0023c80405e5e755214f01256b22f4d7c8f40ebcd63f43",
+      "bytes": 12538
+    },
+    {
+      "path": "stocks-bot/test/alpaca-backfill-page.test.js",
+      "sha256": "0bae13c50cb37a3a988eb4abed917d52e35c1e53950bef5ef855b7d9ae928dc6",
+      "bytes": 4561
+    },
+    {
+      "path": "stocks-bot/test/alpaca-backfill-request.test.js",
+      "sha256": "cbb6cf34448dbc01e176df62daea14769646e5c74084f0e17170bf1958dbbe97",
+      "bytes": 2701
+    },
+    {
+      "path": "stocks-bot/test/alpaca-bars.test.js",
+      "sha256": "b7911e207a39cd430b40fccabc86d74226e54e6c1566bd665cc00de9140b4136",
+      "bytes": 4220
+    },
+    {
+      "path": "stocks-bot/test/alpaca-budget-routes.test.js",
+      "sha256": "5bc06800e019a29b10da21036148f8ddad90366110a96054c83941e21baf3360",
+      "bytes": 3415
+    },
+    {
+      "path": "stocks-bot/test/alpaca-request-gate.test.js",
+      "sha256": "fe76c8061ec63856aba868d9055a3d56b1dccfb411f563bb869c0ec83de67a98",
+      "bytes": 1384
+    },
+    {
+      "path": "stocks-bot/test/backfill-checkpoint-lock.test.js",
+      "sha256": "0716414ce7d12dec33c3f897dc1ff59398c8ffdc8ecb994c45119795575acce2",
+      "bytes": 3840
+    },
+    {
+      "path": "stocks-bot/test/backtest-data.test.js",
+      "sha256": "9b1f5d180bb23c533e5fd7cf346c5439792980f475b596decc63dfdb71c47b6d",
+      "bytes": 7528
+    },
+    {
+      "path": "stocks-bot/test/backtest-report.test.js",
+      "sha256": "bfb1de960265bd55fd1bbe895b5c3ae27aa70d292710c2678e750ecaa10635dd",
+      "bytes": 2445
+    },
+    {
+      "path": "stocks-bot/test/backtest-settings.test.js",
+      "sha256": "d9015409b807935cf88d4c673fabefb2bd3a328a00f8bc70b5ec9f2b6a4dc121",
+      "bytes": 1262
+    },
+    {
+      "path": "stocks-bot/test/counterfactual-labels.test.js",
+      "sha256": "7c9ef747b685048de370bf4205ea5be6bb2f610c1969fb5a71a621abef9b571b",
+      "bytes": 2296
+    },
+    {
+      "path": "stocks-bot/test/day-trading-embeds.test.js",
+      "sha256": "12ac258defc3a5a66215b21cf857d8c186f371673337d201d96b62679ed2d70b",
+      "bytes": 1384
+    },
+    {
+      "path": "stocks-bot/test/dynamic-discovery.test.js",
+      "sha256": "d0ca476af991f608f9e12735047fab4fa3f2df6fa8a168a5314ce3846e2791da",
+      "bytes": 4311
+    },
+    {
+      "path": "stocks-bot/test/ensemble-model.test.js",
+      "sha256": "2411860a3156b62d77f3f1da01a2a4a2dbbf38698311e01d122337c50813e3e9",
+      "bytes": 5255
+    },
+    {
+      "path": "stocks-bot/test/etf-directory.test.js",
+      "sha256": "8a4b4060495476b3d1fda75c31b9de7a14e2763299a721d5a54427e536c22ed7",
+      "bytes": 5620
+    },
+    {
+      "path": "stocks-bot/test/event-intelligence.test.js",
+      "sha256": "2a4c057e0d3552eacc6d301cd6ae4fdc68907177d2401b7d4d5abadb0f431d64",
+      "bytes": 5545
+    },
+    {
+      "path": "stocks-bot/test/execution-cost-schedule.test.js",
+      "sha256": "1d656748a4705989d4f84b11815bc2f52735b407cb6f2da617225d983e6959b4",
+      "bytes": 1796
+    },
+    {
+      "path": "stocks-bot/test/investment-journal.test.js",
+      "sha256": "c483feba9ce68b774d20b48f5b3267aa15c5f0c4db71b0a72591155769887d53",
+      "bytes": 10631
+    },
+    {
+      "path": "stocks-bot/test/investment-research.test.js",
+      "sha256": "15ba90c337372d97b338ea546e21adfa2704cd5f066f8a0997d9c65266153717",
+      "bytes": 30989
+    },
+    {
+      "path": "stocks-bot/test/manual-catalysts.test.js",
+      "sha256": "af311e8da8472aa7da6d4a3612ec519e38b9ddc2e29929c92ea2843136f41ebe",
+      "bytes": 1960
+    },
+    {
+      "path": "stocks-bot/test/notification-state.test.js",
+      "sha256": "b5d7a07ad3eafb880c9c5fe754941f954395ae0823da7fc1bd29585906180896",
+      "bytes": 1560
+    },
+    {
+      "path": "stocks-bot/test/ownership-snapshot-cache.test.js",
+      "sha256": "cc17b3eb992ad15e7479322767fea99eaf76c843fc0aa9ea4f24dadbf77e3059",
+      "bytes": 3412
+    },
+    {
+      "path": "stocks-bot/test/paper-position-monitor.test.js",
+      "sha256": "bbbd3bd0acf61cee66f609c97778e078fe867ed3ed1a4ed9b00783d3dd47acec",
+      "bytes": 6774
+    },
+    {
+      "path": "stocks-bot/test/paper-quote-evidence.test.js",
+      "sha256": "6c632aa14e9b2df09aba42c587bcaa60dbcbeade1e06851db6629835d979dfca",
+      "bytes": 4403
+    },
+    {
+      "path": "stocks-bot/test/paper-quote-refresh.test.js",
+      "sha256": "23d286e9e6144eab79a0d2a28860647f62da26b6c19c367a29a768a64d1222e6",
+      "bytes": 19102
+    },
+    {
+      "path": "stocks-bot/test/portfolio-selector.test.js",
+      "sha256": "4abc4e3e6967543c4efb9fa366c2c30aee1e777fb36e84a286136c006a87e0f6",
+      "bytes": 7083
+    },
+    {
+      "path": "stocks-bot/test/prediction-engine.test.js",
+      "sha256": "dc2e6fca3da89f00b65212df778ed9f6106ddbc5bae7bee15e9de357710393ed",
+      "bytes": 28109
+    },
+    {
+      "path": "stocks-bot/test/provider-auth.test.js",
+      "sha256": "d9b9a3515b3dd5a2193947589b3e756a2159ac14f34be012b9baff6ee96050c5",
+      "bytes": 5734
+    },
+    {
+      "path": "stocks-bot/test/provider-cache.test.js",
+      "sha256": "8c6f472e3e7cb19463c6c84c390be394dec36794eb206e3a4179b4fef07f6059",
+      "bytes": 2430
+    },
+    {
+      "path": "stocks-bot/test/research-bar-lock-diagnostics.test.js",
+      "sha256": "b1ea1541649dcaeaff1a2faabe58635f5219bf4ca2be94356f7b698a20bbf583",
+      "bytes": 3300
+    },
+    {
+      "path": "stocks-bot/test/research-model.test.js",
+      "sha256": "350735d65dbfa738f670e60d3f90960b6ca9ead52484c6ecc63fd8736568b190",
+      "bytes": 1394
+    },
+    {
+      "path": "stocks-bot/test/research-store-concurrency.test.js",
+      "sha256": "8fd2d025727ae8bb55bb2eb4bfa47a900039b2bde5ec50b2692bde7e4d463299",
+      "bytes": 3431
+    },
+    {
+      "path": "stocks-bot/test/research-store.test.js",
+      "sha256": "cf1cbb585576445dbca518ed0e7b48ba2a091e6f0313271ec46a4ba686e0f523",
+      "bytes": 6430
+    },
+    {
+      "path": "stocks-bot/test/research-taxonomy.test.js",
+      "sha256": "db9e9b273af4b788853f8bd4e994471cadf56ad3ca486ef05d27d8aa3f8a375c",
+      "bytes": 8425
+    },
+    {
+      "path": "stocks-bot/test/research-watches.test.js",
+      "sha256": "2d6724bb67791195cb17ddf651916e0a078adc037853fdd51c9569baf6db7e4e",
+      "bytes": 11831
+    },
+    {
+      "path": "stocks-bot/test/scan-diagnostics.test.js",
+      "sha256": "bb2b34f1985ec2ff307fb591e1a05678183feabb62b02aff592bc72c1e464ce2",
+      "bytes": 6345
+    },
+    {
+      "path": "stocks-bot/test/sec-evidence-journal.test.js",
+      "sha256": "8a481aa2f9a08c0f81551ae87aae07ace09c910f945545d3233e394365a5d091",
+      "bytes": 8226
+    },
+    {
+      "path": "stocks-bot/test/sec-fundamentals.test.js",
+      "sha256": "5a01d5fefc4188647784eff5350fc5ce9ccc8f5c18436a6e7814cfcf682ca457",
+      "bytes": 26081
+    },
+    {
+      "path": "stocks-bot/test/shared-paper-costs.test.js",
+      "sha256": "3ea0f94a2ef9844b19b39f96ef17220dbdb056eb930dd02bb089e9f354773f07",
+      "bytes": 1407
+    },
+    {
+      "path": "stocks-bot/test/stock-directory.test.js",
+      "sha256": "d947da8988c1897c6afac1a62ab19f7ceaa62a6df326f2f0e8b390950f34b660",
+      "bytes": 9865
+    },
+    {
+      "path": "stocks-bot/test/storage-integrity.test.js",
+      "sha256": "f6db9e99cfd8856d12dd80ecd5a2e27d8fcf5bc7e7ffe0bbdcc61dfaa4eca155",
+      "bytes": 2276
+    },
+    {
+      "path": "stocks-bot/test/thesis-journal.test.js",
+      "sha256": "dfbb77e7860757f8ff1f3347b8a7cc78c16715c2962f99487741295eebbe9db2",
+      "bytes": 18004
+    },
+    {
+      "path": "stocks-bot/test/thesis-review-format.test.js",
+      "sha256": "1ec1c6f842fe6280c0cfaf6edba007d7566e5a07f5cd718e705c087ddba85c65",
+      "bytes": 6451
+    },
+    {
+      "path": "stocks-bot/test/universe-store.test.js",
+      "sha256": "6596e10dd39a0f08d4b0f53b36b82e4a9734e13fd391da1d52040c785c8832a6",
+      "bytes": 10326
+    },
+    {
+      "path": "stocks-bot/test/weekly-status.test.js",
+      "sha256": "56e735c93babfe991f5c3853f208bdc3025c0b7bbb05e8eb51f8f0eb85e18dfb",
+      "bytes": 10073
+    },
+    {
+      "path": "stocks-bot/test/wide-discovery.test.js",
+      "sha256": "f6b4507ed2649c6a54b87b06892e6c2501799dbd72da96bbec52b5671f1d83c6",
+      "bytes": 14601
+    }
+  ],
+  "repositoryPurpose": "One primary bot with the unchanged shared integration source bundle."
+}

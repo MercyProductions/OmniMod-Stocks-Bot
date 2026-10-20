@@ -1,0 +1,19 @@
+{
+  "name": "omnimod-stocks-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "bootstrap": "node scripts/repository.mjs bootstrap",
+    "info": "node scripts/repository.mjs info",
+    "start": "node scripts/repository.mjs start",
+    "register": "node scripts/repository.mjs register",
+    "test": "node scripts/repository.mjs test",
+    "test:all": "node scripts/repository.mjs test:all",
+    "check": "node scripts/repository.mjs check",
+    "report": "node scripts/repository.mjs report"
+  }
+}

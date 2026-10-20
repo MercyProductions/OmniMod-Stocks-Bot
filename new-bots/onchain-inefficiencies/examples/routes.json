@@ -1,0 +1,21 @@
+[
+  {
+    "id": "eth-mainnet-usdc-usdt-weth-roundtrip-100",
+    "venue": "Uniswap V2 Ethereum Mainnet",
+    "chainId": 1,
+    "routerAddress": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+    "path": [
+      "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+    ],
+    "tokenSymbols": ["USDC", "USDT", "WETH", "USDC"],
+    "tokenDecimals": [6, 6, 18, 6],
+    "amountInRaw": "100000000",
+    "inputUsd": 100,
+    "gasUsd": 25,
+    "slippageReserveBps": 100,
+    "assumptions": "100 USDC nominally treated as $100; $25 gas cost and 1% extra slippage reserve are deliberately conservative placeholders, not live estimates. Verify before interpreting net edge."
+  }
+]

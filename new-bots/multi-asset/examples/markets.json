@@ -1,0 +1,9 @@
+[
+  { "symbol": "SPY", "providerSymbol": "SPY", "assetClass": "equity-index-etf" },
+  { "symbol": "QQQ", "providerSymbol": "QQQ", "assetClass": "equity-index-etf" },
+  { "symbol": "GLD", "providerSymbol": "GLD", "assetClass": "commodity-etf" },
+  { "symbol": "ES futures", "providerSymbol": "ES=F", "assetClass": "equity-index-future", "maxAgeMinutes": 30 },
+  { "symbol": "Gold futures", "providerSymbol": "GC=F", "assetClass": "commodity-future", "maxAgeMinutes": 30 },
+  { "symbol": "EUR/USD", "providerSymbol": "EURUSD=X", "assetClass": "fx", "maxAgeMinutes": 30 },
+  { "symbol": "USD/JPY", "providerSymbol": "JPY=X", "assetClass": "fx", "maxAgeMinutes": 30 }
+]

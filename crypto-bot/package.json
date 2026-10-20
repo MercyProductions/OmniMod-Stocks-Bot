@@ -1,0 +1,39 @@
+{
+  "name": "omnimod-crypto-bot",
+  "version": "4.0.0",
+  "private": true,
+  "description": "OmniMod Crypto multi-provider research, predictive validation, and paper signal tracking bot.",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node standalone.js",
+    "start:legacy-combined": "node app.js",
+    "start:cjs": "node app.cjs",
+    "restart:worker": "node scripts/restart-persistent-worker.cjs",
+    "register": "node src/registerCommands.js",
+    "smoke:day-market-data": "node scripts/smoke-day-market-data.mjs",
+    "probe:public-funnel": "node scripts/probe-public-funnel.mjs",
+    "study:public-cost-sensitivity": "node scripts/study-public-cost-sensitivity.mjs",
+    "smoke:kraken-websocket": "node scripts/smoke-kraken-websocket.mjs",
+    "backtest:cross-asset": "node scripts/backtest-cross-asset-fixed-rule.mjs",
+    "study:horizons": "node scripts/study-horizon-sensitivity.mjs",
+    "fetch:historical": "node scripts/fetch-historical-candles.js",
+    "check": "node --check src/paperIdentityCache.js && node --check src/krakenPositionQuotes.js && node --check src/krakenPaperBook.js && node --check src/positionQuotes.js && node --check src/paperPositionMonitor.js && node --check scripts/monitor-paper.js && node --check src/cryptoProductMetadata.js && node --check src/coinbasePaperBook.js && node --check src/paperQuoteRefresh.js && node --check src/researchProviderPacing.js && node --check src/venueDiscovery.js && node --check src/venueResearch.js && node --check src/spotPairRouting.js && node --check src/paperExecutionQuotes.js && node --check scripts/probe-venue-discovery.mjs && node --check src/broadDiscovery.js && node --check scripts/probe-broad-discovery.mjs && node scripts/check-hosting-syntax.js && node --check standalone.js && node --check src/standaloneHost.js && node --check app.js && node --check app.cjs && node --check scripts/restart-persistent-worker.cjs && node --check scripts/backtest-historical.js && node --check scripts/backtest-cross-asset-fixed-rule.mjs && node --check scripts/study-horizon-sensitivity.mjs && node --check scripts/study-public-cost-sensitivity.mjs && node --check scripts/fetch-historical-candles.js && node --check scripts/smoke-day-market-data.mjs && node --check scripts/probe-public-funnel.mjs && node --check scripts/public-probe-research.mjs && node --check scripts/smoke-kraken-websocket.mjs && node --check src/runtimeMode.js && node --check src/config.js && node --check src/workerConfiguration.js && node --check src/storage.js && node --check src/scanDiagnostics.js && node --check src/providerTelemetry.js && node --check src/providerCooldown.js && node --check src/researchTaxonomy.js && node --check src/shadowEntryEvidence.js && node --check src/backtest.js && node --check src/dayClusterBootstrap.js && node --check src/executionCostSchedule.js && node --check src/validationCostSensitivity.js && node --check src/historicalBacktest.js && node --check src/eventRisk.js && node --check src/cryptoMacroCalendar.js && node --check src/cryptoNews.js && node --check src/metaModel.js && node --check src/outcomeModels.js && node --check src/modelRegistry.js && node --check src/historicalImporter.js && node --check src/derivativesProviders.js && node --check src/realtimeFeeds.js && node --check src/portfolioRisk.js && node --check src/riskGuard.js && node --check src/edgeEvidence.js && node --check src/investmentResearch.js && node --check src/investmentJournal.js && node --check src/forwardInvestmentJournal.js && node --check src/thesisJournal.js && node --check src/thesisEvidence.js && node --check src/protocolFundamentals.js && node --check src/tokenSupplyJournal.js && node --check src/githubActivity.js && node --check src/marketProviders.js && node --check src/dayMarketDataSmoke.js && node --check src/dayMarketDataHistory.js && node --check src/krakenWebsocketSmokeHistory.js && node --check src/retryPolicy.js && node --check src/cryptoData.js && node --check src/cryptoUniverseJournal.js && node --check src/predictionEngine.js && node --check src/discordPublisher.js && node --check src/commands.js && node --check src/workspace.js && node --check src/index.js",
+    "test": "node --test test/*.test.js",
+    "backtest:historical": "node scripts/backtest-historical.js",
+    "probe:broad-discovery": "node scripts/probe-broad-discovery.mjs",
+    "probe:venue-discovery": "node scripts/probe-venue-discovery.mjs",
+    "monitor:paper": "node scripts/monitor-paper.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.6.1",
+    "ws": "^8.21.2"
+  },
+  "overrides": {
+    "undici": "6.28.0"
+  }
+}
