@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-20",
+  "baselineCommit": "0787c785769eea037fa5751349f5bf657129890d",
+  "baselineTag": "baseline/pre-stocks-predictive-2026-10-20",
+  "baselineNodeTests": {
+    "passed": 302,
+    "failed": 0
+  },
+  "currentNodeTests": {
+    "passed": 309,
+    "failed": 0,
+    "command": "npm test"
+  },
+  "pythonTests": {
+    "passed": 10,
+    "failed": 0,
+    "command": "python -m unittest discover -s stocks-bot/forecasting -p 'test_*.py' -v",
+    "covers": [
+      "actual LightGBM synthetic fit/calibration/serialization",
+      "timestamp/label availability purging",
+      "same-feed/gap/cost semantics",
+      "immutable forecasts",
+      "real Node-to-Python authenticated HTTP"
+    ]
+  },
+  "syntaxChecks": {
+    "stocks": "passed",
+    "repositoryBundle": "passed"
+  },
+  "localUniverse": {
+    "configured": 49,
+    "withContext": 52,
+    "nonContextBeforeOwnershipAndQuality": 37,
+    "dynamicDeepCap": 15,
+    "providerWideEligible": null,
+    "successfulLiveScanCount": null
+  },
+  "syntheticObservationConstructionBenchmark": {
+    "observations": 1000,
+    "elapsedMs": 304.674,
+    "meanMs": 0.304674,
+    "providerRequests": 0,
+    "limitations": "CPU-only construction fixture, not a live scan latency measurement"
+  },
+  "actualMarketTraining": {
+    "performed": false,
+    "reason": "No locally available authorized stock-provider credentials or archived research JSONL dataset",
+    "realModelsPromoted": 0,
+    "baselineComparison": null,
+    "profitabilityEvidence": null
+  },
+  "readinessProbe": {
+    "observations": 0,
+    "forecasts": 0,
+    "labels": 0,
+    "horizonsTrained": 0,
+    "horizonsBlocked": 6,
+    "noInventedMetrics": true
+  },
+  "newForecastCoverage": {
+    "intradayMinutes": [
+      5,
+      15,
+      30,
+      90,
+      240
+    ],
+    "nextSession": "explicit abstention; verified calendar/actions/labels missing",
+    "premarket": "observed, not calibrated by new regular-session learner"
+  },
+  "productionDeployed": false,
+  "liveTradingEnabled": false,
+  "newDiscordPosts": 0,
+  "secretScan": {
+    "gitleaksFindings": 0,
+    "knownCredentialMatches": 0,
+    "valuesPrinted": false
+  }
+}

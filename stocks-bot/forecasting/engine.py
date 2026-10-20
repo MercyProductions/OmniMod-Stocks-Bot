@@ -38,6 +38,13 @@ def validate(observation):
         raise ValueError('instrument identity required')
     if not math.isfinite(epoch(observation['availableAt'])):
         raise ValueError('invalid availableAt')
+    requests = observation.get('requests')
+    if not isinstance(requests, list) or [r.get('horizon') for r in requests] != HORIZONS:
+        raise ValueError('complete horizon contract required')
+    for request in requests:
+        horizon = request['horizon']
+        if isinstance(horizon, int) and abs(epoch(request['expiresAt']) - epoch(observation['availableAt']) - horizon * 60) > .001:
+            raise ValueError('incorrect horizon deadline')
     for value in observation['features'].values():
         if value is not None and (not isinstance(value, (int, float)) or not math.isfinite(value)):
             raise ValueError('nonfinite feature')

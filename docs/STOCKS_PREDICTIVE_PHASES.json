@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-20",
+  "branch": "feat/stocks-predictive-intelligence-2026-10-20",
+  "baseline": "0787c785769eea037fa5751349f5bf657129890d",
+  "productionChanged": false,
+  "liveTradingEnabled": false,
+  "items": [
+    {
+      "id": "baseline",
+      "status": "verified complete",
+      "evidence": "Preserved remote baseline tag and private Git bundle; 302 baseline Node tests passed."
+    },
+    {
+      "id": "source-audit",
+      "status": "verified complete",
+      "evidence": "STOCKS_PREDICTIVE_AUDIT.md traces current discovery, data, model, event, portfolio, persistence and grading paths; deployment remains unverified."
+    },
+    {
+      "id": "effective-universe",
+      "status": "verified complete",
+      "evidence": "Defaults measured: 49 watchlist, 52 with context, 37 non-context; dynamic cap 15. Provider-wide count explicitly unavailable."
+    },
+    {
+      "id": "live-coverage-and-funnel",
+      "status": "blocked",
+      "evidence": "No accessible stock-provider keys or archived local research rows; production host not inspected. Real counts, timing and entitlements cannot be fabricated."
+    },
+    {
+      "id": "provider-audit",
+      "status": "in progress",
+      "evidence": "Alpaca/Massive/SEC primary documentation checked; Finnhub/Nasdaq/Stooq licensing and account entitlements remain unverified."
+    },
+    {
+      "id": "point-in-time-observations",
+      "status": "verified complete",
+      "evidence": "Deep-screen snapshots contain actual availability, separate native source times, missingness, valid catalyst timestamps and six horizon contracts; contract/calendar regression tests pass."
+    },
+    {
+      "id": "research-warehouse",
+      "status": "verified complete",
+      "evidence": "Immutable SQLite observations, versioned forecasts, JSONL cursors, same-feed full-path costed labels and label-availability purging verified locally."
+    },
+    {
+      "id": "lightgbm-implementation",
+      "status": "verified complete",
+      "evidence": "Actual direction/target classifiers and return regressor, separate selection/calibration/holdout, baseline metrics, integrity-checked native artifacts; synthetic correctness fixture only."
+    },
+    {
+      "id": "lightgbm-real-training-and-validation",
+      "status": "blocked",
+      "evidence": "No lawful point-in-time stock dataset or accumulated prospective samples available locally. No trained stock champion or performance claim."
+    },
+    {
+      "id": "chronos-adapter",
+      "status": "in progress",
+      "evidence": "Optional pinned CPU challenger and strict same-session input checks implemented; actual stock inference/benchmark not run without verified data."
+    },
+    {
+      "id": "next-session-forecast",
+      "status": "blocked",
+      "evidence": "Explicit abstention until verified next-session calendar, corporate actions and appropriate labels are available."
+    },
+    {
+      "id": "quiet-market-discovery",
+      "status": "pending",
+      "evidence": "Existing positive-move ranking confirmed. A shadow activity/acceleration ranking and forwarding to detailed research still require implementation and validation."
+    },
+    {
+      "id": "early-watch-lead-time",
+      "status": "in progress",
+      "evidence": "Early-watch observations and pre-observation movement retained; no early-prediction claim. Discord delivery and executable-entry lead-time study pending."
+    },
+    {
+      "id": "point-in-time-events",
+      "status": "in progress",
+      "evidence": "Future/untimestamped manual catalysts excluded from new inputs; SEC filing-date fallback, revisions, actions, verified news and surprise features need deeper point-in-time handling."
+    },
+    {
+      "id": "isolated-service",
+      "status": "verified complete",
+      "evidence": "Authenticated loopback HTTP, bounded Node worker, idempotent retries and Node-to-Python integration tested. Main scanner does not await inference."
+    },
+    {
+      "id": "hosting-and-deployment-parity",
+      "status": "blocked",
+      "evidence": "No production/cPanel access used, no hosting/runtime entitlement probe or deployment performed."
+    },
+    {
+      "id": "walk-forward-and-auralith-comparison",
+      "status": "pending",
+      "evidence": "Chronological isolated holdout implemented; expanding purged walk-forward, full Auralith matched replay, regimes/liquidity/market-cap and multiple-experiment controls remain required."
+    },
+    {
+      "id": "forward-paper-performance",
+      "status": "blocked",
+      "evidence": "Needs fresh authorized provider data, frozen forecasts and subsequent outcomes; no strategy promotion or profitable claim is supported."
+    },
+    {
+      "id": "regression-and-secret-checks",
+      "status": "verified complete",
+      "evidence": "309/309 Node tests; 10/10 Python tests including actual Node-to-Python HTTP; syntax checks and zero-finding publication secret scans. See STOCKS_PREDICTIVE_RESULTS.json."
+    }
+  ],
+  "nextSteps": [
+    "Configure an authorized free Alpaca account on a research instance; probe feed/history/stream entitlements without revealing credentials.",
+    "Measure actual diagnostics and capture complete point-in-time snapshots, minute paths and corporate actions.",
+    "Implement shadow quiet-market activity discovery and measured evidence-to-executable-entry lead time without changing approvals.",
+    "Run purged walk-forward and untouched matched holdout comparisons against Auralith and simple baselines, then forward paper validation.",
+    "Only review production integration after evidence, hosting checks and explicit approval; leave live orders disabled."
+  ]
+}
