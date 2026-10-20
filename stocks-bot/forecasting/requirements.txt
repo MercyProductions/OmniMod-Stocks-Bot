@@ -1,5 +1,6 @@
 lightgbm==4.6.0
 numpy==2.4.3
 scikit-learn==1.9.1
+tzdata==2026.4
 # Optional Chronos challenger: install chronos-forecasting==2.3.2 and an appropriate
 # PyTorch build separately. Model code/weights are never downloaded at bot startup.

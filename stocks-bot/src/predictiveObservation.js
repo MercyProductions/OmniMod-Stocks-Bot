@@ -66,6 +66,8 @@ export function buildPredictiveObservation(asset, { snapshotId, guildId = '', av
     price, features, missingFeatures: FIELDS.filter((key) => features[key] === null),
     session: session.state, sessionCloseAt: close.toISOString(), marketRegime: asset.marketRegime || 'unknown',
     catalysts: sourceEvents, dataIssues, requests,
+    discoveryTrack: asset.quietDiscovery ? 'quiet_market_shadow' : 'production_screen',
+    quietDiscovery: asset.quietDiscovery || null,
     alertStage: !dataIssues.length && evidence.length >= 2 ? 'EARLY_WATCH' : 'OBSERVATION',
     evidence, movementBeforeObservationPct: features.changeDay,
     earlyPredictionProven: false, productionApproval: false };

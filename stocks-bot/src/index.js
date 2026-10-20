@@ -1,3 +1,4 @@
+import { summarizeQuietResearch } from './quietMarketDiscovery.js';
 import { Client, EmbedBuilder, Events, GatewayIntentBits, REST, Routes } from 'discord.js';
 import { config, requireRuntimeConfig, dataDir } from './config.js';
 import { buildCommands } from './commands.js';
@@ -179,6 +180,7 @@ export async function runGuildScan(guildId, options = {}) {
       stockDirectory: snapshot.dynamicDiscovery?.directoryDiagnostics ?? null,
       discoveryArchive: snapshot.dynamicDiscovery?.archive ?? null,
       wideEligibleUniverse: snapshot.dynamicDiscovery?.wideEligibleUniverse ?? null,
+      quietResearch: summarizeQuietResearch(snapshot.dynamicDiscovery?.quietResearch),
       wideDiscoveryCandidates: snapshot.dynamicDiscovery?.wideCandidates ?? null,
       wideSnapshotsReturned: snapshot.dynamicDiscovery?.wideSnapshotsReturned ?? null,
       wideDataFeed: snapshot.dynamicDiscovery?.feed || config.alpacaDataFeed,
@@ -581,6 +583,7 @@ export async function runGuildScan(guildId, options = {}) {
       stockDirectory: snapshot.dynamicDiscovery?.directoryDiagnostics ?? null,
       discoveryArchive: snapshot.dynamicDiscovery?.archive ?? null,
       wideEligibleUniverse: snapshot.dynamicDiscovery?.wideEligibleUniverse ?? null,
+      quietResearch: summarizeQuietResearch(snapshot.dynamicDiscovery?.quietResearch),
       wideDiscoveryCandidates: snapshot.dynamicDiscovery?.wideCandidates ?? null,
       deepAnalysisCapOmissions: deepAnalysisOmissions.length,
       wideSnapshotsReturned: snapshot.dynamicDiscovery?.wideSnapshotsReturned ?? null,
@@ -1128,6 +1131,7 @@ async function handleCommand(interaction) {
       `Alpaca discovery ${last.wideFeedUsed ? `queried ${String(last.wideDataFeed || 'unknown').toUpperCase()}` : `feed not queried (configured ${String(last.wideDataFeed || config.alpacaDataFeed).toUpperCase()})`}: ${formatDiagnosticCount(last.wideSnapshotsReturned)}/${formatDiagnosticCount(last.wideEligibleUniverse)} eligible stock snapshots returned; ${formatDiagnosticCount(last.wideDiscoveryCandidates)} wide candidates + ${formatDiagnosticCount(last.dynamicScreenerCandidates)} screener candidates → ${formatDiagnosticCount(last.dynamicSymbolsRequested)} deep scans; ETF/ETP ownership directory ${last.etfDirectory?.status || 'unknown'}, ${formatDiagnosticCount(last.etfDirectory?.excludedFromDiscovery)} wrappers excluded (${formatDiagnosticCount(last.etfDirectory?.blockedExcludedCount)} held for review)${last.dynamicDiscoveryError ? ` | ${String(last.dynamicDiscoveryError).slice(0, 120)}` : ''}`,
       `Directory ${last.stockDirectory?.status || 'unknown'}: ${formatDiagnosticCount(last.stockDirectory?.providerInstruments)} returned records; ${formatDiagnosticCount(last.stockDirectory?.activeRecords)} active; ${formatDiagnosticCount(last.stockDirectory?.attempted)} snapshot symbols attempted; ${formatDiagnosticCount(last.stockDirectory?.deferred)} deferred.`,
       `Wide seed exclusions (first failure) ${Object.entries(last.wideRejectionCounts || {}).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([reason, count]) => `${reason} ${count}`).join(', ') || 'none'} | wide rank cap ${formatDiagnosticCount(last.wideCapOmissions)} | combined deep-analysis cap omissions ${formatDiagnosticCount(last.deepAnalysisCapOmissions)}`,
+      `Quiet shadow ${last.quietResearch?.status || 'unavailable'}: ${formatDiagnosticCount(last.quietResearch?.qualified)} research candidates / ${formatDiagnosticCount(last.quietResearch?.universe)} eligible; ${formatDiagnosticCount(last.quietResearch?.selected)} shortlisted. No production approval.`,
       ...(last.premarketDiscovery ? [`Premarket funnel ${last.premarketDiscovery.considered} symbols → window ${last.premarketDiscovery.stages.inWindow} → fresh ${last.premarketDiscovery.stages.fresh} (${last.premarketDiscovery.freshCrossProviderPrices || 0} fresh cross-provider prices) → quality ${last.premarketDiscovery.stages.dataQuality} → liquid ${last.premarketDiscovery.stages.priceAndLiquidity} → move ${last.premarketDiscovery.stages.movement} → breakouts ${last.premarketDiscovery.breakoutCandidates} → posted watch cap 5 (${last.premarketDiscovery.watchCapOmissions} omitted); rejects ${Object.entries(last.premarketDiscovery.rejectionCounts).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([reason, count]) => `${reason} ${count}`).join(', ') || 'none'}`] : []),
       `Stale gate rejections ${formatDiagnosticCount(last.staleRejections)} (deep ${formatDiagnosticCount(last.staleRejectionBreakdown?.technical)}, wide ${formatDiagnosticCount(last.staleRejectionBreakdown?.wideDiscovery)}, premarket ${formatDiagnosticCount(last.staleRejectionBreakdown?.premarket)}; counts may overlap)`
     ].join('\n');
