@@ -1,4 +1,4 @@
-"""Bounded official demo downloads and isolated retrospective five-minute research.
+"""Bounded authorized historical downloads and isolated native-bar research.
 
 Never imports reconstructed historical availability into the prospective warehouse.
 The documented Alpha Vantage demo is for private individual research only. Raw data
@@ -88,13 +88,15 @@ def normalize_demo(data):
     return sorted(bars,key=lambda b:b['timestamp'])
 
 
-def build_rows(bars, horizon, calendar, cost_bps=20, stride=3):
-    if horizon not in [5,15,30,90,240] or cost_bps<0 or stride<1:
+def build_rows(bars, horizon, calendar, cost_bps=20, stride=3, bar_minutes=5, symbol='IBM', source_label='alpha-demo'):
+    if horizon not in [5,15,30,90,240] or cost_bps<0 or stride<1 or bar_minutes not in [1,5]:
         raise ValueError('unsupported research policy')
+    interval=bar_minutes*60
+    lookback=60//bar_minutes
     by_date={}
     for bar in bars:
         session=calendar.get(bar['date'])
-        if session and session['open'] <= bar['timestamp'] and bar['timestamp']+300 <= session['close']:
+        if session and session['open'] <= bar['timestamp'] and bar['timestamp']+interval <= session['close']:
             by_date.setdefault(bar['date'],[]).append(bar)
     rows=[]; missing_paths=0
     previous_sessions=[]
@@ -104,16 +106,16 @@ def build_rows(bars, horizon, calendar, cost_bps=20, stride=3):
         if len(indexed)!=len(session_bars):
             raise ValueError('duplicate historical bar identity')
         recent_sessions=[s for d,s in previous_sessions[-5:] if (datetime.fromisoformat(date)-datetime.fromisoformat(d)).days<=30]
-        for i in range(12,len(session_bars),stride):
+        for i in range(lookback,len(session_bars),stride):
             current=session_bars[i]
-            available=int(current['timestamp'])+300
+            available=int(current['timestamp'])+interval
             end=available+horizon*60
             if end>calendar[date]['close']:
                 continue
-            context=session_bars[i-12:i+1]
-            if any(context[n]['timestamp']-context[n-1]['timestamp']!=300 for n in range(1,len(context))):
+            context=session_bars[i-lookback:i+1]
+            if any(context[n]['timestamp']-context[n-1]['timestamp']!=interval for n in range(1,len(context))):
                 continue
-            future_times=list(range(available,end,300))
+            future_times=list(range(available,end,interval))
             if any(t not in indexed for t in future_times):
                 missing_paths+=1
                 continue
@@ -130,35 +132,35 @@ def build_rows(bars, horizon, calendar, cost_bps=20, stride=3):
                 continue
             changes=[context[n]['close']/context[n-1]['close']-1 for n in range(1,len(context))]
             average=sum(changes)/len(changes)
-            features={'return5mPct':(close/context[-2]['close']-1)*100,
-                      'return15mPct':(close/context[-4]['close']-1)*100,
+            features={'return5mPct':(close/context[-1-5//bar_minutes]['close']-1)*100,
+                      'return15mPct':(close/context[-1-15//bar_minutes]['close']-1)*100,
                       'change1h':(close/context[0]['close']-1)*100,'relativeVolume':relative_volume,
                       'rangePct':(current['high']/current['low']-1)*100,'vwapDistancePct':(close/vwap-1)*100,
                       'sessionHighDistancePct':(max(b['high'] for b in past)/close-1)*100,
                       'volatilityPct':math.sqrt(sum((x-average)**2 for x in changes)/len(changes))*100,
                       'minuteOfSession':offset/60}
-            # Full-bar execution latency. At the 5-minute horizon there is no executable path after that delay.
+            # Full-native-bar latency; never invent finer-grained execution than the source supports.
             trade_path=future[1:]
-            outcome='not_filled'; net_return=None; terminal=end; start=available+300
+            outcome='not_filled'; net_return=None; terminal=end; start=available+interval
             if trade_path:
                 entry=trade_path[0]['open']*(1+cost_bps/20000)
                 stop,target=entry*.9925,entry*1.01
                 exit_price=trade_path[-1]['close'];outcome='expiry'
                 for b in trade_path:
                     if b['low']<=stop:
-                        exit_price=min(stop,b['open']);outcome='stop';terminal=b['timestamp']+300;break
+                        exit_price=min(stop,b['open']);outcome='stop';terminal=b['timestamp']+interval;break
                     if b['high']>=target:
-                        exit_price=target;outcome='target';terminal=b['timestamp']+300;break
+                        exit_price=target;outcome='target';terminal=b['timestamp']+interval;break
                 net_return=(exit_price*(1-cost_bps/20000)/entry-1)*100
-            original={'id':digest(['alpha-demo',date,current['timestamp'],horizon]),'symbol':'IBM',
+            original={'id':digest([source_label,symbol,date,current['timestamp'],horizon]),'symbol':symbol,
                       'availableAt':datetime.fromtimestamp(available,timezone.utc).isoformat(),
                       'features':features,'marketRegime':'unavailable_no_market_context',
-                      'dataMode':'retrospective_adjusted_demo','historicalAvailabilityVerified':False}
+                      'dataMode':'retrospective_'+source_label,'historicalAvailabilityVerified':False}
             label={'end':end,'availableAt':end,'start':start,'terminalAt':terminal,'terminal':outcome,
                    'direction':int(future[-1]['close']>close),'targetBeforeStop':int(outcome=='target'),
                    'returnPct':(future[-1]['close']/close-1)*100,'netReturnPct':net_return,
                    'costBps':cost_bps,'stopPct':.75,'targetPct':1,'executionVerified':False,
-                   'latencySeconds':300,'filled':bool(trade_path),'pathHash':digest(future)}
+                   'latencySeconds':interval,'filled':bool(trade_path),'pathHash':digest(future)}
             rows.append({'observation':original,'label':label,'time':available,'day':date})
         previous_sessions.append((date,{b['timestamp']-calendar[date]['open']:b for b in session_bars}))
     return rows,{'missingFuturePaths':missing_paths,'sourceSessionDates':len(by_date),'usableObservationDates':len({r['day'] for r in rows})}
@@ -166,6 +168,8 @@ def build_rows(bars, horizon, calendar, cost_bps=20, stride=3):
 
 def load_research_dataset(path,horizon):
     description=json.loads(Path(path).read_text(encoding='utf-8'))
+    if description.get('schema')=='alpaca-authorized-historical-study-v1':
+        return load_alpaca_study(path,description,horizon)
     if description.get('schema')!='alpha-official-demo-study-v1':
         raise ValueError('unsupported historical research manifest')
     bars=[];sources=[]
@@ -187,6 +191,43 @@ def load_research_dataset(path,horizon):
                  '300-second assumed entry latency and 20-bp assumed round-trip cost; stop-first ambiguity.',
                  'Existing recurring US cash calendar; extraordinary historical closures not independently verified.',
                  'No data, weights or row-level forecasts may be redistributed from this private demo study.'],
+                 'prospectiveWarehouseImportAllowed':False,'productionPromotionAllowed':False}
+
+
+def load_alpaca_study(path,description,horizon):
+    if not description.get('complete') or description.get('adjustment')!='raw' or description.get('barMinutes')!=1 or description.get('feed') not in ['iex','sip']:
+        raise ValueError('completed raw one-minute entitled capture required')
+    source=(Path(path).parent/description['dataFile']).resolve()
+    if source.parent!=Path(path).resolve().parent or hashlib.sha256(source.read_bytes()).hexdigest()!=description['sha256']:
+        raise ValueError('historical data path/checksum mismatch')
+    groups={symbol:[] for symbol in description['symbols']}
+    start,end=epoch(description['start']),epoch(description['end'])
+    with source.open(encoding='utf-8') as stream:
+        for line in stream:
+            row=json.loads(line);symbol=row.get('symbol');stamp=row.get('timestamp')
+            values=[row.get(key) for key in ['open','high','low','close','volume']]
+            if symbol not in groups or not isinstance(stamp,(int,float)) or not math.isfinite(stamp) or stamp%60 or not start<=stamp<=end:
+                raise ValueError('invalid historical identity/timestamp')
+            if not all(isinstance(v,(int,float)) and math.isfinite(v) for v in values) or min(values[:4])<=0 or values[4]<0:
+                raise ValueError('invalid historical values')
+            if row['high']<max(row['open'],row['close']) or row['low']>min(row['open'],row['close']) or row['low']>row['high']:
+                raise ValueError('invalid historical OHLC')
+            if groups[symbol] and stamp<=groups[symbol][-1]['timestamp']:
+                raise ValueError('duplicate/reversed historical series')
+            groups[symbol].append({**row,'date':datetime.fromtimestamp(stamp,ZoneInfo('America/New_York')).strftime('%Y-%m-%d')})
+    calendar=session_calendar({row['date'] for rows in groups.values() for row in rows})
+    rows=[];coverage={}
+    for symbol,bars in groups.items():
+        labeled,info=build_rows(bars,horizon,calendar,stride=15,bar_minutes=1,symbol=symbol,source_label='alpaca-'+description['feed']+'-raw')
+        rows.extend(labeled);coverage[symbol]=info
+    return rows,{'source':'authorized Alpaca raw historical capture','feed':description['feed'],'sha256':description['sha256'],
+                 'downloadedAt':description['downloadedAt'],'barMinutes':1,'coverage':coverage,
+                 'historicalAvailabilityVerified':False,'corporateActionsVerified':False,
+                 'scope':'bounded retrospective sample, not a full-market or executable-quote validation',
+                 'limitations':['Raw bars avoid retrospective price adjustment, but data corrections/vintages and corporate actions remain unverified.',
+                   'One-minute-native-bar execution latency; 20-bp assumed round-trip costs; stop-first ambiguous candles.',
+                   'Missing minute paths are excluded, never filled; IEX is single venue if selected.',
+                   'Current selected tickers introduce selection/survivorship bias; no NBBO/news/sector/champion archive.'],
                  'prospectiveWarehouseImportAllowed':False,'productionPromotionAllowed':False}
 
 

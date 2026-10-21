@@ -116,5 +116,17 @@ class WalkForwardTests(unittest.TestCase):
             self.assertNotEqual(process.returncode,0)
             self.assertFalse(missing.exists())
 
+    def test_native_one_minute_study_uses_real_minute_paths_and_one_minute_latency(self):
+        bars=[];calendar={}
+        for day in range(6):
+            at=datetime(2026,1,5,14,30,tzinfo=timezone.utc)+timedelta(days=day)
+            date=at.strftime('%Y-%m-%d');calendar[date]={'open':at.timestamp(),'close':at.timestamp()+390*60}
+            for n in range(390):
+                bars.append({'date':date,'timestamp':at.timestamp()+n*60,'open':100,'high':100.1,'low':99.9,'close':100,'volume':100})
+        rows,_=build_rows(bars,5,calendar,stride=15,bar_minutes=1,symbol='TEST',source_label='alpaca-iex-raw')
+        self.assertTrue(rows)
+        self.assertTrue(all(row['label']['latencySeconds']==60 and row['label']['filled'] for row in rows))
+        self.assertTrue(all(row['observation']['symbol']=='TEST' and row['label']['executionVerified'] is False for row in rows))
+
 
 if __name__=='__main__':unittest.main()

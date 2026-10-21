@@ -49,7 +49,7 @@
     {
       "id": "lightgbm-real-training-and-validation",
       "status": "in progress",
-      "evidence": "Actual LightGBM candidates were fit/evaluated privately on documented free IBM demo history. This narrow retrospective study is not broad-market, quiet-track, execution or forward validation; no production model promoted."
+      "evidence": "Actual private LightGBM walk-forward candidates evaluated on official demos and entitled three-stock Alpaca minute history at five predefined horizons. No reliable edge or production promotion established; broad-market and forward execution validation remain open."
     },
     {
       "id": "chronos-adapter",
@@ -89,17 +89,17 @@
     {
       "id": "walk-forward-and-auralith-comparison",
       "status": "in progress",
-      "evidence": "Expanding nested purged folds and untouched final holdout are implemented/tested. Five private official-demo horizon studies completed without promotion. Full Auralith replay still lacks historical champions, quote/event/context evidence."
+      "evidence": "Purged nested folds and untouched final holdout tested and executed on private official-demo and entitled Alpaca studies. Full production replay still lacks historical champions, quotes, events and context."
     },
     {
       "id": "forward-paper-performance",
-      "status": "blocked",
-      "evidence": "Needs fresh authorized provider data, frozen forecasts and subsequent outcomes; no strategy promotion or profitable claim is supported."
+      "status": "in progress",
+      "evidence": "Authorized paper market-data access verified. Market was closed; regular-session frozen forecasts and subsequent executable outcomes remain pending. No production promotion."
     },
     {
       "id": "regression-and-secret-checks",
       "status": "verified complete",
-      "evidence": "315 Stocks Node + 17 Python tests; all 1,847 bundled Node tests and syntax checks pass. Gitleaks and known-credential publication scans found zero leaks. Raw demo data/results are ignored and not published."
+      "evidence": "Current Stocks verification: 324 Node tests, 18 Python tests and syntax pass. Operator .env isolated from tests; credentials/datasets/artifacts ignored. Earlier bundled verification remains historical, not rerun for this change."
     },
     {
       "id": "purged-walk-forward-infrastructure",
@@ -115,13 +115,22 @@
       "id": "quiet-deep-research-live-runtime",
       "status": "blocked",
       "evidence": "Worker requires configured authorized Alpaca credentials. No live runtime, lead-time or quiet-strategy profitability claim is supported."
+    },
+    {
+      "id": "alpaca-read-only-data-validation",
+      "status": "verified complete",
+      "evidence": "Authenticated paper GET access, IEX quotes/trades, entitled historical SIP/IEX, broad-directory/snapshot requests, bounded native-minute capture and five retrospective horizon studies executed privately. This verifies data/research plumbing, not live-session signal skill or profitable execution."
+    },
+    {
+      "id": "next-session-breakout-validation",
+      "status": "pending",
+      "evidence": "Bounded read-only minute-spaced observer implemented; 328 Stocks Node tests pass. Two thread follow-ups scheduled for October 21, 2026 at 07:30 and 08:30 America/Chicago, each up to 55 observations. Actual eligible-session results and lead-time evidence pending; no strategy approval or live orders."
     }
   ],
   "nextSteps": [
-    "Configure an authorized free Alpaca account on a research instance and measure actual feed/history/stream entitlements.",
-    "Run the optional quiet deep-research and predictive workers with real source timestamps, minute paths and executable quotes.",
-    "Collect independent forward outcomes and measure quiet evidence-to-alert-to-executable-entry lead time.",
-    "Run broad-universe matched Auralith replay with point-in-time champions/context/actions; do not treat the private demo as production validation.",
-    "Leave live trading disabled; no production deployment or model promotion without separate review and evidence."
+    "Rotate the paper secret disclosed in chat and replace it only in the private local environment.",
+    "Verify IEX coverage and freshness during eligible premarket and regular sessions without relaxing gates.",
+    "Collect frozen quiet-track forecasts and actual subsequent outcomes; continue independent paper validation.",
+    "Retain live trading disabled; no production deployment or model promotion without separate review and evidence."
   ]
 }

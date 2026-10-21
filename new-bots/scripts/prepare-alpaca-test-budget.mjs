@@ -8,6 +8,8 @@ if (/\.test\.[cm]?js$/.test(process.argv[1] || '')) {
   const root = resolve(tmpdir());
   const directory = mkdtempSync(join(root, 'omnimod-alpaca-test-'));
   process.env.ALPACA_SHARED_RATE_DIR = directory;
+  // Market tests must never read the operator's real Stocks API keys or safety settings.
+  process.env.OMNIMOD_STOCKS_ENV_FILE = join(directory, 'no-operator-credentials.env');
   process.env.TRADIER_SHARED_RATE_DIR = join(directory, 'tradier');
   process.env.ALPACA_REQUESTS_PER_MINUTE = '10000';
   process.env.ALPACA_RATE_LIMIT_GROUP = '';
