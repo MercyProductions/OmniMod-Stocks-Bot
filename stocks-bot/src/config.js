@@ -9,7 +9,9 @@ import { paperMonitorProfile } from '../../new-bots/shared/paperMonitorConfig.js
 const here = path.dirname(fileURLToPath(import.meta.url));
 export const projectRoot = path.resolve(here, '..');
 export const legacyDataDir = path.join(projectRoot, 'data');
-const localEnvPath = path.join(projectRoot, '.env');
+const localEnvPath = process.env.OMNIMOD_STOCKS_ENV_FILE
+  ? path.resolve(process.env.OMNIMOD_STOCKS_ENV_FILE)
+  : path.join(projectRoot, '.env');
 const localEnv = fs.existsSync(localEnvPath)
   ? parse(fs.readFileSync(localEnvPath))
   : {};

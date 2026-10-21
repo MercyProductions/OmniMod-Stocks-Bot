@@ -12,6 +12,10 @@ Discover U.S. stock day-trading research opportunities and track qualified paper
 
 Highlights are not the full universe and watches are not automatically approved entries. Model probability, heuristic strength and data quality have different meanings. Zero results can mean a closed session, disabled provider, missing evidence, pending model or risk rejection.
 
+## Predictive intelligence research branch
+
+The preserved Auralith baseline remains unchanged. This branch adds point-in-time observations, an isolated LightGBM research service and warehouse, and an optional Chronos challenger. No new stock model is validated or promoted. Read the [audit](docs/STOCKS_PREDICTIVE_AUDIT.md), [setup and limits](docs/STOCKS_PREDICTIVE_SETUP.md), and [phase checklist](docs/STOCKS_PREDICTIVE_PHASES.json) before use.
+
 ## Requirements and layout
 
 Use Git, **Node.js 22.9+** (the export was checked with Node 24), npm and your own Discord app/server. The primary project is [`stocks-bot/`](stocks-bot/). The existing six-market source integration bundle is preserved because shared adapters/tests import sibling projects. Their presence does not start those bots. The root wrapper selects only this repository’s named application.
@@ -167,3 +171,7 @@ Fork, create a development branch and use your own local credentials. Add regres
 - [The Odds API v4](https://the-odds-api.com/liveapi/guides/v4/)
 
 References checked on 2026-10-20. Confirm current region, licensing, quota and endpoint entitlement in your own account before enabling a paid selector. Each contributor needs their own provider account; this code does not redistribute the maintainer’s data subscriptions.
+
+## Quiet-market and walk-forward continuation
+
+The continuation adds a separate quiet-market shadow rank, bounded deep research, expanding purged walk-forward evaluation and a limited private study using official free historical demos. See [STOCKS_QUIET_WALKFORWARD.md](docs/STOCKS_QUIET_WALKFORWARD.md) and the updated phase checklist. Earlier initial-phase statements about absent historical studies are superseded by this follow-up; no production validation or promotion is implied.

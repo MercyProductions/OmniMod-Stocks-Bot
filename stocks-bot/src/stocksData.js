@@ -11,6 +11,7 @@ import { localDateKey } from './time.js';
 import { alpacaThrottleDelayMs, waitForAlpacaRequest } from './alpacaRequestGate.js';
 import { classifyStockDirectory, stockDirectoryChanges, STOCK_DISCOVERY_VERSION } from './stockDirectory.js';
 import { archiveDiscovery } from '../../new-bots/shared/equitySnapshotDiscovery.js';
+import { rankQuietMarketSnapshots } from './quietMarketDiscovery.js';
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, Number(value) || 0));
 const finite = (value, fallback = 0) => value !== null && value !== undefined && value !== '' && Number.isFinite(Number(value)) ? Number(value) : fallback;
@@ -59,6 +60,7 @@ export function summarizeStockUniverseCoverage(snapshot = {}) {
 }
 const activeEquityUniverseCache = new Map();
 const wideDiscoveryCache = new Map();
+const quietResearchHistory = new Map();
 const wideDiscoveryInFlight = new Map();
 const DAILY_FIELDS = Object.freeze([
   'dailySma20','dailySma50','dailySma200','dailyRsi14','dailyMacd','dailyMacdSignal','dailyMacdHistogram',
@@ -709,6 +711,23 @@ async function fetchAlpacaWideDiscoverySymbolsUncached({ keys, metrics, maxSymbo
     for (const row of rejected) rejectionCounts[row.reasonCode] = (rejectionCounts[row.reasonCode] || 0) + 1;
     Object.assign(result, ranked, { rejectionRecords: rejected, rejectionCounts, rejectionSamples: rejected.slice(0, 100),
       symbols: ranked.rows.map((row) => row.symbol), snapshotSymbolsReturned: Object.keys(snapshots).length });
+    // Reuse the already fetched snapshots; this does not change production shortlist membership.
+    const quietKey = `${universeKey}:${feed}:${session}`;
+    const quietStarted = clock();
+    try {
+      const quiet = rankQuietMarketSnapshots(snapshots, eligible, { now: new Date(observedAt()), feed,
+        previous: quietResearchHistory.get(quietKey) || {} });
+      if (!stop) {
+        if (quietResearchHistory.size >= 32 && !quietResearchHistory.has(quietKey)) quietResearchHistory.delete(quietResearchHistory.keys().next().value);
+        quietResearchHistory.set(quietKey, quiet.next);
+      }
+      const { next: _quietState, ...quietPublic } = quiet;
+      result.quietResearch = stop ? { ...quietPublic, candidates: [], deferred: true,
+        diagnostics: { ...quietPublic.diagnostics, selected: 0, deferredCandidates: quietPublic.candidates.length } } : quietPublic;
+    } catch {
+      result.quietResearch = { candidates: [], deferred: true, status: 'shadow_research_unavailable', productionApproval: false };
+    }
+    d.stageDurationsMs.quietResearch = Math.max(0, clock() - quietStarted);
     d.returned = result.snapshotSymbolsReturned; d.usableScreens = ranked.candidateCount;
     // Account/feed denial or an exhausted quota must not turn a partial scan into a normal shortlist.
     if (stop) { result.rows = []; result.symbols = []; }
@@ -717,7 +736,7 @@ async function fetchAlpacaWideDiscoverySymbolsUncached({ keys, metrics, maxSymbo
     if (stop || d.providerFailures) result.error = stop || 'One or more snapshot batches failed; inspect diagnostics.';
     d.observedAt = new Date(observedAt()).toISOString(); d.elapsedMs = Math.max(0, clock() - started);
     if (archiveDirectory) result.archive = await archiveDiscovery({ owner: 'stocks', version: STOCK_DISCOVERY_VERSION,
-      feed, session, diagnostics: d, directory: directory.rows, snapshots, selections: result.rows,
+      feed, session, diagnostics: d, directory: directory.rows, snapshots, selections: result.rows, quietResearch: result.quietResearch,
       rejections: [...rejected, ...ranked.capOmissionRecords] }, { directory: archiveDirectory, now: observedAt() });
     if (d.status === 'screen_complete') wideDiscoveryCache.set(key, { fetchedAt: Date.now(), result });
   } catch (error) {
@@ -1131,6 +1150,8 @@ export async function fetchMarketUniverse(guildId, options = {}) {
         etfDirectory: dynamicDiscovery.etfDirectory || { status: 'not_required', symbols: null, excludedFromDiscovery: 0 },
         feed: dynamicDiscovery.feed || config.alpacaDataFeed,
         feedUsed: Boolean(dynamicDiscovery.feedUsed),
+        quietResearch: dynamicDiscovery.quietResearch ? { ...dynamicDiscovery.quietResearch,
+          diagnostics: { ...dynamicDiscovery.quietResearch.diagnostics, rejections: dynamicDiscovery.quietResearch.diagnostics?.rejections?.slice(0, 100) } } : null,
         version: STOCK_DISCOVERY_VERSION, directoryDiagnostics: dynamicDiscovery.diagnostics ?? null, archive: dynamicDiscovery.archive ?? null,
         wideCacheAgeMs: dynamicDiscovery.cacheAgeMs ?? 0,
         screenerDirectoryRejected: dynamicDiscovery.screenerDirectoryRejected || [], capOmissionRecords: dynamicDiscovery.capOmissionRecords || [],

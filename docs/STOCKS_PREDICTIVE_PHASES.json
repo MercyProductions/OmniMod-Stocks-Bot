@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-20",
+  "branch": "feat/stocks-predictive-intelligence-2026-10-20",
+  "baseline": "0787c785769eea037fa5751349f5bf657129890d",
+  "productionChanged": false,
+  "liveTradingEnabled": false,
+  "items": [
+    {
+      "id": "baseline",
+      "status": "verified complete",
+      "evidence": "Preserved remote baseline tag and private Git bundle; 302 baseline Node tests passed."
+    },
+    {
+      "id": "source-audit",
+      "status": "verified complete",
+      "evidence": "STOCKS_PREDICTIVE_AUDIT.md traces current discovery, data, model, event, portfolio, persistence and grading paths; deployment remains unverified."
+    },
+    {
+      "id": "effective-universe",
+      "status": "verified complete",
+      "evidence": "Defaults measured: 49 watchlist, 52 with context, 37 non-context; dynamic cap 15. Provider-wide count explicitly unavailable."
+    },
+    {
+      "id": "live-coverage-and-funnel",
+      "status": "blocked",
+      "evidence": "No accessible stock-provider keys or archived local research rows; production host not inspected. Real counts, timing and entitlements cannot be fabricated."
+    },
+    {
+      "id": "provider-audit",
+      "status": "in progress",
+      "evidence": "Official Alpha Vantage demo and personal-use terms checked; bounded private research downloader implemented. HF Data Library excluded for academic/non-trading restrictions. Broad live account entitlements and other providers remain unverified."
+    },
+    {
+      "id": "point-in-time-observations",
+      "status": "verified complete",
+      "evidence": "Deep-screen snapshots contain actual availability, separate native source times, missingness, valid catalyst timestamps and six horizon contracts; contract/calendar regression tests pass."
+    },
+    {
+      "id": "research-warehouse",
+      "status": "verified complete",
+      "evidence": "Immutable SQLite observations, versioned forecasts, JSONL cursors, same-feed full-path costed labels and label-availability purging verified locally."
+    },
+    {
+      "id": "lightgbm-implementation",
+      "status": "verified complete",
+      "evidence": "Actual direction/target classifiers and return regressor, separate selection/calibration/holdout, baseline metrics, integrity-checked native artifacts; synthetic correctness fixture only."
+    },
+    {
+      "id": "lightgbm-real-training-and-validation",
+      "status": "in progress",
+      "evidence": "Actual private LightGBM walk-forward candidates evaluated on official demos and entitled three-stock Alpaca minute history at five predefined horizons. No reliable edge or production promotion established; broad-market and forward execution validation remain open."
+    },
+    {
+      "id": "chronos-adapter",
+      "status": "in progress",
+      "evidence": "Optional pinned CPU challenger and strict same-session input checks implemented; actual stock inference/benchmark not run without verified data."
+    },
+    {
+      "id": "next-session-forecast",
+      "status": "blocked",
+      "evidence": "Explicit abstention until verified next-session calendar, corporate actions and appropriate labels are available."
+    },
+    {
+      "id": "quiet-market-discovery",
+      "status": "verified complete",
+      "evidence": "Separate quiet rank reuses verified snapshots, records flat/negative unusual activity, archives evidence and admin counts, and preserves the production shortlist. Optional bounded deep research is implemented; live runtime and predictive value remain unverified."
+    },
+    {
+      "id": "early-watch-lead-time",
+      "status": "in progress",
+      "evidence": "Early-watch observations and pre-observation movement retained; no early-prediction claim. Discord delivery and executable-entry lead-time study pending."
+    },
+    {
+      "id": "point-in-time-events",
+      "status": "in progress",
+      "evidence": "Future/untimestamped manual catalysts excluded from new inputs; SEC filing-date fallback, revisions, actions, verified news and surprise features need deeper point-in-time handling."
+    },
+    {
+      "id": "isolated-service",
+      "status": "verified complete",
+      "evidence": "Authenticated loopback HTTP, bounded Node worker, idempotent retries and Node-to-Python integration tested. Main scanner does not await inference."
+    },
+    {
+      "id": "hosting-and-deployment-parity",
+      "status": "blocked",
+      "evidence": "No production/cPanel access used, no hosting/runtime entitlement probe or deployment performed."
+    },
+    {
+      "id": "walk-forward-and-auralith-comparison",
+      "status": "in progress",
+      "evidence": "Purged nested folds and untouched final holdout tested and executed on private official-demo and entitled Alpaca studies. Full production replay still lacks historical champions, quotes, events and context."
+    },
+    {
+      "id": "forward-paper-performance",
+      "status": "in progress",
+      "evidence": "Authorized paper market-data access verified. Market was closed; regular-session frozen forecasts and subsequent executable outcomes remain pending. No production promotion."
+    },
+    {
+      "id": "regression-and-secret-checks",
+      "status": "verified complete",
+      "evidence": "Current Stocks verification: 324 Node tests, 18 Python tests and syntax pass. Operator .env isolated from tests; credentials/datasets/artifacts ignored. Earlier bundled verification remains historical, not rerun for this change."
+    },
+    {
+      "id": "purged-walk-forward-infrastructure",
+      "status": "verified complete",
+      "evidence": "Three expanding nested development folds, separate inner selection/calibration, horizon/availability embargo purging and a final 20%-date holdout; held-out outcome mutation leaves model hashes unchanged."
+    },
+    {
+      "id": "private-authorized-demo-study",
+      "status": "verified complete",
+      "evidence": "Five predefined intraday horizon studies executed using exact official free demo endpoints; corrected/adjusted data and assumed availability clearly marked; raw data and private results excluded from Git."
+    },
+    {
+      "id": "quiet-deep-research-live-runtime",
+      "status": "blocked",
+      "evidence": "Worker requires configured authorized Alpaca credentials. No live runtime, lead-time or quiet-strategy profitability claim is supported."
+    },
+    {
+      "id": "alpaca-read-only-data-validation",
+      "status": "verified complete",
+      "evidence": "Authenticated paper GET access, IEX quotes/trades, entitled historical SIP/IEX, broad-directory/snapshot requests, bounded native-minute capture and five retrospective horizon studies executed privately. This verifies data/research plumbing, not live-session signal skill or profitable execution."
+    },
+    {
+      "id": "next-session-breakout-validation",
+      "status": "pending",
+      "evidence": "Bounded read-only minute-spaced observer implemented; 328 Stocks Node tests pass. Two thread follow-ups scheduled for October 21, 2026 at 07:30 and 08:30 America/Chicago, each up to 55 observations. Actual eligible-session results and lead-time evidence pending; no strategy approval or live orders."
+    }
+  ],
+  "nextSteps": [
+    "Rotate the paper secret disclosed in chat and replace it only in the private local environment.",
+    "Verify IEX coverage and freshness during eligible premarket and regular sessions without relaxing gates.",
+    "Collect frozen quiet-track forecasts and actual subsequent outcomes; continue independent paper validation.",
+    "Retain live trading disabled; no production deployment or model promotion without separate review and evidence."
+  ]
+}

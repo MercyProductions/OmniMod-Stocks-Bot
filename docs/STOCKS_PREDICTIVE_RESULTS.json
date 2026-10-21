@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-20",
+  "baselineCommit": "0787c785769eea037fa5751349f5bf657129890d",
+  "baselineTag": "baseline/pre-stocks-predictive-2026-10-20",
+  "baselineNodeTests": {
+    "passed": 302,
+    "failed": 0
+  },
+  "currentNodeTests": {
+    "passed": 315,
+    "failed": 0,
+    "command": "npm test"
+  },
+  "pythonTests": {
+    "passed": 17,
+    "failed": 0,
+    "command": "python -m unittest discover -s stocks-bot/forecasting -p 'test_*.py' -v",
+    "covers": [
+      "actual LightGBM walk-forward fits",
+      "global horizon/availability purging",
+      "unchanged fits under held-out outcome mutations",
+      "historical same-session path and latency checks",
+      "read-only SQLite CLI",
+      "real authenticated Node-to-Python service"
+    ]
+  },
+  "syntaxChecks": {
+    "stocks": "passed",
+    "repositoryBundle": "passed"
+  },
+  "localUniverse": {
+    "configured": 49,
+    "withContext": 52,
+    "nonContextBeforeOwnershipAndQuality": 37,
+    "dynamicDeepCap": 15,
+    "providerWideEligible": null,
+    "successfulLiveScanCount": null
+  },
+  "syntheticObservationConstructionBenchmark": {
+    "observations": 1000,
+    "elapsedMs": 304.674,
+    "meanMs": 0.304674,
+    "providerRequests": 0,
+    "limitations": "CPU-only construction fixture, not a live scan latency measurement"
+  },
+  "actualMarketTraining": {
+    "performed": true,
+    "scope": "private retrospective official IBM demo study only",
+    "productionValidation": false,
+    "realModelsPromoted": 0,
+    "profitabilityEvidence": null,
+    "broadMarketValidation": false
+  },
+  "readinessProbe": {
+    "observations": 0,
+    "forecasts": 0,
+    "labels": 0,
+    "horizonsTrained": 0,
+    "horizonsBlocked": 6,
+    "noInventedMetrics": true
+  },
+  "newForecastCoverage": {
+    "intradayMinutes": [
+      5,
+      15,
+      30,
+      90,
+      240
+    ],
+    "nextSession": "explicit abstention; verified calendar/actions/labels missing",
+    "premarket": "observed, not calibrated by new regular-session learner"
+  },
+  "productionDeployed": false,
+  "liveTradingEnabled": false,
+  "newDiscordPosts": 0,
+  "secretScan": {
+    "gitleaksFindings": 0,
+    "knownCredentialMatches": 0,
+    "valuesPrinted": false
+  },
+  "previousPhaseNodeTests": {
+    "passed": 309,
+    "failed": 0,
+    "command": "npm test"
+  },
+  "previousPhasePythonTests": {
+    "passed": 10,
+    "failed": 0,
+    "command": "python -m unittest discover -s stocks-bot/forecasting -p 'test_*.py' -v",
+    "covers": [
+      "actual LightGBM synthetic fit/calibration/serialization",
+      "timestamp/label availability purging",
+      "same-feed/gap/cost semantics",
+      "immutable forecasts",
+      "real Node-to-Python authenticated HTTP"
+    ]
+  },
+  "continuation": {
+    "startingCommit": "4c254acca34040f965239a0cd241304f721718ab",
+    "bundleNodeTests": {
+      "newBots": 1140,
+      "stocks": 315,
+      "crypto": 392,
+      "total": 1847,
+      "failed": 0
+    },
+    "quietDiscovery": {
+      "source": "already fetched directory-verified snapshots",
+      "addsProviderRequests": 0,
+      "changesProductionShortlist": false,
+      "maxHighlights": 5,
+      "maxOptionalDeepNames": 3,
+      "deepAnalysisIncludesExistingContextSymbols": true,
+      "liveRuntimeVerified": false
+    },
+    "quietCpuFixture": {
+      "symbols": 6000,
+      "elapsedMs": 26.8492,
+      "selected": 5,
+      "providerRequests": 0,
+      "scope": "synthetic construction/ranking fixture, not real market coverage"
+    },
+    "walkForward": {
+      "developmentFolds": 3,
+      "innerDateFractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "finalHoldoutDateFraction": 0.2,
+      "embargoSeconds": 300,
+      "minimumDates": 24,
+      "minimumLabels": 200,
+      "holdoutMutationTest": "passed",
+      "productionPromotionAllowed": false
+    },
+    "historicalData": {
+      "source": "exact documented Alpha Vantage IBM demos",
+      "use": "private individual research only",
+      "rawDataAndStudyMetricsPublished": false,
+      "reconstructedAvailabilityImportedToProspectiveWarehouse": false,
+      "scope": "limited retrospective methodology study; not broad-market or quiet-track validation"
+    },
+    "secretScan": {
+      "gitleaksFindings": 0,
+      "knownCredentialMatches": 0,
+      "rawDataOrArtifactsPublished": false
+    },
+    "liveTradingEnabled": false,
+    "productionDeployed": false
+  },
+  "previousPhaseMarketTraining": {
+    "performed": false,
+    "reason": "No locally available authorized stock-provider credentials or archived research JSONL dataset",
+    "realModelsPromoted": 0,
+    "baselineComparison": null,
+    "profitabilityEvidence": null
+  }
+}

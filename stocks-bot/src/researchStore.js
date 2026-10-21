@@ -6,6 +6,7 @@ import { config, dataDir } from './config.js';
 import { extractModelFeatures, featureObject } from './modelFeatures.js';
 import { paths } from './storage.js';
 import { localDateKey } from './time.js';
+import { buildPredictiveObservation } from './predictiveObservation.js';
 
 let writeQueue = Promise.resolve();
 
@@ -165,7 +166,11 @@ function researchAsset(asset, metadata = {}) {
     },
     ensemble: metadata.ensemble || null,
     featureVersion: extractModelFeatures(asset).version,
-    features: featureObject(asset)
+    features: featureObject(asset),
+    predictiveObservation: buildPredictiveObservation(asset, {
+      snapshotId: stableId([metadata.guildId, metadata.recordedAt, asset.symbol, metadata.reason]),
+      guildId: metadata.guildId, availableAt: metadata.availableAt || new Date(), scanStartedAt: metadata.recordedAt
+    })
   };
 }
 
